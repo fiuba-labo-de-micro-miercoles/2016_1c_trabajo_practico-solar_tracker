@@ -46,6 +46,7 @@ TX_BUF:	.byte	BUF_SIZE	; buffer de transmisión
 
 .def	t0	= r16
 .def	t1	= r17
+.DEF	AUX	= R18
 .DEF	AUX1 = R19
 .DEF	AUX2 = R20
 .DEF	AUX3 = R21
@@ -62,16 +63,19 @@ TX_BUF:	.byte	BUF_SIZE	; buffer de transmisión
 		.org	UDREaddr		; USART Data Register Empty
 		rjmp	ISR_REG_USART_VACIO
 
-		.org 	INT_VECTORS_SIZE
-
+.ORG 	INT_VECTORS_SIZE
 RESET:
 
 		LDI R18,0xFF
 		OUT DDRC,R18
+		LDI R18,0x90
+		OUT DDRD,R18
 		RCALL DELAY
 		SBI PORTC,3
 		SBI PORTC,2
-
+		SBI PORTD,4
+		SBI PORTD,7
+		
 		ldi 	r16,LOW(RAMEND)
 		out 	spl,r16
 		ldi 	r16,HIGH(RAMEND)
@@ -81,8 +85,6 @@ RESET:
 
 		sei					; habilitación global de todas las interrupciones
 
-		;rcall	TEST_TX
-
 X_SIEMPRE:
 
 		USART_Receive:
@@ -91,73 +93,60 @@ X_SIEMPRE:
 		sbrs r16, RXC0
 		rjmp USART_Receive
 		; Get and return received data from buffer
-		input r16, UDR0
+		input AUX, UDR0
 
-		CPI R16,0x00
-		BREQ VERDE1
-		CPI R16,0x0F
-		BREQ VERDE2
-		RCALL VER_DATO
+		CPI AUX,'1'
+		BREQ CALL_TEST_TX
 
-		RJMP X_SIEMPRE
+		CPI AUX,'2'
+		BREQ CALL_V_BAT
 
+		CPI AUX,'3'
+		BREQ CALL_V_PANEL
+
+SIGO:	RJMP X_SIEMPRE
+
+CALL_TEST_TX:
+		ldiw	Z,(MSJ_TEST_TX*2)
+		RCALL TRANSMITIR_MENSAJE
+		RJMP SIGO
+CALL_V_BAT:
+		ldiw	Z,(MSJ_V_BAT*2)
+		RCALL TRANSMITIR_MENSAJE
+		RJMP SIGO
+CALL_V_PANEL:
+		ldiw	Z,(MSJ_V_PANEL*2)
+		RCALL TRANSMITIR_MENSAJE
+		RJMP SIGO
+
+;PARA CONFIGURAR EL OSCILADOR EXTERNO A 8MHZ.
 ;avrdude -c usbtiny -p m328p -U lfuse:r:-:i -F		
 ;avrdude -c usbtiny -p m328p -U lfuse:w:0xE2:m -F
 
-VER_DATO:
-		SBRC R16,0
-		CBI PORTC,3
-		SBRC R16,1
-		CBI PORTC,2
-		RCALL DELAY
-		SBI PORTC,3
-		SBI PORTC,2
-		RCALL DELAY
-
-		SBRC R16,2
-		CBI PORTC,3
-		SBRC R16,3
-		CBI PORTC,2
-		RCALL DELAY
-		SBI PORTC,3
-		SBI PORTC,2
-		RCALL DELAY
-
-		SBRC R16,4
+VERDE4:
+		CLI
 		CBI PORTC,3
 		RCALL DELAY
 		SBI PORTC,3
 		RCALL DELAY
-
-		SBRC R16,5
-		CBI PORTC,2
-		RCALL DELAY
-		SBI PORTC,2
-		RCALL DELAY
-
-		SBRC R16,6
+VERDE3:
+		CLI
 		CBI PORTC,3
 		RCALL DELAY
 		SBI PORTC,3
 		RCALL DELAY
-
-		SBRC R16,7
-		CBI PORTC,2
-		RCALL DELAY
-		SBI PORTC,2
-		RCALL DELAY
-
-		RET
-VERDE1:
-		CBI PORTC,3
-		RCALL DELAY
-		SBI PORTC,3
-		rjmp	X_SIEMPRE
-
 VERDE2:
-		CBI PORTC,2
+		CLI
+		CBI PORTC,3
 		RCALL DELAY
-		SBI PORTC,2
+		SBI PORTC,3
+		RCALL DELAY
+VERDE1:
+		CLI
+		CBI PORTC,3
+		RCALL DELAY
+		SBI PORTC,3
+		SEI
 		rjmp	X_SIEMPRE
 
 DELAY:	LDI AUX1,131			;1
@@ -178,7 +167,6 @@ DELAY_:	DEC AUX1				;1
 							; 25	38.4 kbps e=0.2%	@8MHz y U2X=1
 							; 51	19.2 kbps e=0.2% 	@8MHz y U2X=1
 							; 103	9600 bps  e=0.2% 	@8MHz y U2X=1
-							; TENEMOS EL MICRO TRABAJANDO @1MHz => CON 12 TRABAJA A 9600bps
 ;-------------------------------------------------------------------------
 USART_init:
 		push	t0
@@ -187,27 +175,21 @@ USART_init:
 	
 		ldi		t0,high(BAUD_RATE)
 		output		UBRR0H,t0	; Velocidad de transmisión
-		;outi	UBRRH,high(BAUD_RATE)
 		ldi		t0,low(BAUD_RATE)
 		output		UBRR0L,t0	
-
-		;outi	UBRRL,low(BAUD_RATE)
-		;outi	UCSRA,(1<<U2X)			; Modo asinc., doble velocidad
-		ldi		t0,1<<U2X0
+		
+		ldi		t0,1<<U2X0		; Modo asinc., doble velocidad
 		output		UCSR0A,t0	
 
 		; Trama: 8 bits de datos, sin paridad y 1 bit de stop, 
-		;outi 	UCSRC,(1<<URSEL)|(0<<UPM1)|(0<<UPM0)|(0<<USBS)|(1<<UCSZ1)|(1<<UCSZ0)
 		ldi		t0,(0<<UPM01)|(0<<UPM00)|(0<<USBS0)|(1<<UCSZ01)|(1<<UCSZ00)
 		output		UCSR0C,t0
 
 
 		; Configura los terminales de TX y RX; y habilita
 		; 	únicamente la int. de recepción
-		;outi	UCSRB,(1<<RXCIE)|(1<<RXEN)|(1<<TXEN)|(0<<UDRIE)
 		ldi		t0,(1<<RXCIE0)|(1<<RXEN0)|(1<<TXEN0)|(0<<UDRIE0)
 		output		UCSR0B,t0
-
 
 		movi	ptr_tx_L,LOW(TX_BUF)	; inicializa puntero al 
 		movi	ptr_tx_H,HIGH(TX_BUF)	; buffer de transmisión.
@@ -274,12 +256,12 @@ SALVA_PTR_TX:
 		dec		bytes_a_tx	; Descuenta el nro. de bytes a tx. en 1
 		brne	SIGUE_TX	; si quedan datos que transmitir
 							;	vuelve en la próxima int.
-
+;REVISAR ESTE GRUPO DE INSTRUCCIONES
 FIN_TRANSMISION:			; si no hay nada que enviar,
 		input	t0,UCSR0B
-		cbr		t0,UDRIE0
+		cbr		t0,(1<<UDRIE0)
 		output	UCSR0B,t0
-		;cbi		UCSR0B,UDRIE0	; 	se deshabilita la interrupción.
+		;se deshabilita la interrupción.
 
 sigue_tx:
 		popw	X
@@ -295,44 +277,47 @@ sigue_tx:
 ; Devuelve: ptr_tx_L|H, bytes_a_tx.  
 ; Habilita la int. de transmisión serie con ISR en ISR_REG_USART_VACIO().
 ;-------------------------------------------------------------------------
-TEST_TX:
+TRANSMITIR_MENSAJE:
 		pushw	Z
 		pushw	X
 		push	t0
 
-		ldiw	Z,(MSJ_TEST_TX*2)
+;		ldiw	Z,(MSJ_V_BAT*2)
 		movw	XL,ptr_tx_L
 
-LOOP_TEST_TX:
+LOOP_TRANSMITIR_MENSAJE:
 		lpm		t0,Z+
 		tst		t0
-		breq	FIN_TEST_TX
+		breq	FIN_TRANSMITIR_MENSAJE
 
 		st		X+,t0
 		inc		bytes_a_tx
 
 		cpi		XL,LOW(TX_BUF+BUF_SIZE)
-		brlo	LOOP_TEST_TX
+		brlo	LOOP_TRANSMITIR_MENSAJE
 		cpi		XH,HIGH(TX_BUF+BUF_SIZE)
-		brlo	LOOP_TEST_TX
+		brlo	LOOP_TRANSMITIR_MENSAJE
 		ldiw	X,TX_BUF	; ptr_tx++ módulo BUF_SIZE
 
-		rjmp	LOOP_TEST_TX
-	
-FIN_TEST_TX:
+		rjmp	LOOP_TRANSMITIR_MENSAJE
+;REVISAR INSTRUCCIONES
+;	
+FIN_TRANSMITIR_MENSAJE:
 		input	t0,UCSR0B
-		sbr		t0,UDRIE0
+
+		sbr		t0,(1<<UDRIE0)
 		output	UCSR0B,t0
 		;sbi		UCSR0B,UDRIE0
 
 		pop		t0
+		popw	X
 		popw	Z
 		ret
 
-MSJ_TEST_TX:
-.db		"Puerto Serie Version 0.1 ",'\r','\n',0
-
-
+;LOS MENSAJES DEBEN SER EN ASCII [NO EXTENDIDO]
+MSJ_TEST_TX:	.DB	"SOLAR TRACKER",'\r','\n',0
+MSJ_V_BAT:		.DB	"HACIENDO EL FUTURO",'\r',0,0
+MSJ_V_PANEL:	.DB "LA TENSION DEL PANEL ES: ",'\r',0,0
 ;-------------------------------------------------------------------------
 ; fin del código
 ;-------------------------------------------------------------------------
