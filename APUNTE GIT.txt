@@ -1,0 +1,5 @@
+git status
+git clone <URL>
+git add <archivo modificado>
+git commit -m "<explicacion de lo modificado>"
+git push origin master
