@@ -25,7 +25,14 @@
 .CSEG
 ;***************************************************** 
 .ORG 0x0000					;se setean los registros de interrupciones
-RJMP SETUP					;CONVIENE HACER ESTOY ASI??
+RJMP SETUP	
+
+.ORG	URXCaddr		; USART, Rx Complete
+RJMP	ISR_RX_USART_COMPLETA
+	
+.ORG	UDREaddr		; USART Data Register Empty
+RJMP	ISR_REG_USART_VACIO
+
 ;Interrupciones
 
 SETUP:
@@ -39,6 +46,7 @@ SETUP:
 	RCALL PWM_INIT ;TIENE QUE ESTAR EN "PWM.inc"
 	RCALL SP_INIT ;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
 
+	SEI
 ;Inicializacion
 
 MAIN:	
