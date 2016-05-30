@@ -1,2 +1,1 @@
-# profesores
-Ver leeme.txt
+# SOLAR TRACKER
