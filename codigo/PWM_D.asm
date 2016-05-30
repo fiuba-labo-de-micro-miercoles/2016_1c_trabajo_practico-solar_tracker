@@ -42,7 +42,7 @@ SETUP_PWM_D:
 	INPUT PWM_DATA,TCCR1B	;Timer/counter control register B
 	;hacer mascara de forma tal que los bits 0, 1, 2 queden en 0
 ;	ANDI PWM_DATA,(~0x1F)	;Mascara para no tocar bits 3 a 7
-	ANDI PWM_DATA,(~((0<<WGM13)|(1<<WGM12)|(0<<CS10)|(1<<CS11)|(0<<CS12)))
+	ANDI PWM_DATA,(~((1<<WGM13)|(1<<WGM12)|(1<<CS10)|(1<<CS11)|(1<<CS12)))
 	ORI PWM_DATA,((0<<WGM13)|(1<<WGM12)|(0<<CS10)|(1<<CS11)|(0<<CS12))	;Prescaler = 8
 	OUTPUT TCCR1B,PWM_DATA
 RET

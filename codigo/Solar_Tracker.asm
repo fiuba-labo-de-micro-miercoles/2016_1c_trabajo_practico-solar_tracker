@@ -73,4 +73,3 @@ RJMP MAIN
 
 
 ;Nos falta saber como hacer una interrupcion serie y como ir a modo bajo consumo
-;Tener en cuenta que si el ADC de la bateria es 0x000 => NO HAY BATERIA CONECTADA. [IDEM PANEL SOLAR]
