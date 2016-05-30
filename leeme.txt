@@ -1,5 +1,7 @@
 Repositorio para la documentación de proyectos de
 6609/8607 Laboratorio de Microcontroladores
 
-Integrantes (quiénes integran el grupo de trabajo)
-Proyecto (nombre) y breve descripción (3 párrafos)
+Integrantes: Joaquín Ulloa, Agustín Picard, Mauro Giordano.
+Proyecto: Solar Tracker
+Descripción:
+  'Solar Tracker' es un panel solar fotovoltaico montado sobre una base capaz de orientarse al sol. Mediante un cargador, almacena energía en una batería, la cual alimenta el sistema de control. Dicho sistema es capaz de sensar la tensión del panel, la de la batería, sensar los lds para la orientación, mover los motores en consecuencia y comunicarse con el usuario mediante Bluetooth. 
