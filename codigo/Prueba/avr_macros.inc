@@ -41,13 +41,13 @@
 .endm
 
 .macro	movi	; carga registro con constante
-		ldi	t0,@1
-		mov	@0,t0
+		ldi	AUX,@1
+		mov	@0,AUX
 .endm
 
 .macro	outi
-		ldi		t0,@1
-		output	@0,r16
+		ldi		AUX,@1
+		output	@0,AUX  ;FIGURABA R16!!!!! OJO!
 .endm
 
 
@@ -64,22 +64,22 @@
 
 
 .macro	pushi	;@0			; Pone en pila un registro de I/O
-			in		t0,@0	; usa la variable auxiliar t0
-			push	t0
+			in		AUX,@0	; usa la variable auxiliar t0
+			push	AUX
 .endm
 
 
 .macro	popi	;@0			; Saca de pila un registro de I/O
-			pop		t0		; usa la variable auxiliar t0
-			out		@0,t0
+			pop		AUX		; usa la variable auxiliar t0
+			out		@0,AUX
 .endm
 
 .macro	sti		;@0,@1	; Guarda una constante de modo indirecto
-		ldi		t0,@1	; Usa: variable auxiliar "t0" y un puntero
-		st		@0,t0	; [3 ciclos, 2 words] @0={X, Y, Z}
+		ldi		AUX,@1	; Usa: variable auxiliar "t0" y un puntero
+		st		@0,AUX	; [3 ciclos, 2 words] @0={X, Y, Z}
 .endm
 
 .macro	stsi	;@0,@1	; Guarda una constante en SRAM
-		ldi		t0,@1	; Usa: variable auxiliar "t0".
-		sts		@0,t0	; [3 ciclos, 2 words] @0={any SRAM ADDRESS}
+		ldi		AUX,@1	; Usa: variable auxiliar "t0".
+		sts		@0,AUX	; [3 ciclos, 2 words] @0={any SRAM ADDRESS}
 .endm
