@@ -6,3 +6,4 @@
       avrdude -c usbtiny -p m328p -U lfuse:r:-:i -F		
       avrdude -c usbtiny -p m328p -U lfuse:w:0xE2:m -F
   
+PREGUNTAR SI HACER FUNCIONES COMO READ_BATTERY O ELEGIR EL CANAL, LLAMAR CONVERSION, ETC ETC
