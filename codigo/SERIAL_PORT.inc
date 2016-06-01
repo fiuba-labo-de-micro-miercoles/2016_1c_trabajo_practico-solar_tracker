@@ -8,8 +8,9 @@
 ;-------------------------------------------------------------------------
 ; CONSTANTES y MACROS
 ;-------------------------------------------------------------------------
+.IFNDEF MAURO
 .EQU	 BUF_SIZE	= 64	; tamaño en bytes del buffer de transmisión
-
+.ENDIF
 ;-------------------------------------------------------------------------
 ; variables en SRAM
 ;-------------------------------------------------------------------------
@@ -41,43 +42,6 @@ SERIAL_PORT_INIT:
 
 		RCALL	USART_INIT	; Configuración del puerto serie a 76k8 bps
 RET
-
-/**********************EJEMPLO SIN INTERRUPCION***************************
-X_SIEMPRE:
-
-		USART_Receive:
-		; Wait for data to be received
-		input AUX,UCSR0A
-		sbrs AUX,RXC0
-		rjmp USART_Receive
-		; Get and return received data from buffer
-		input AUX,UDR0
-
-		CPI AUX,'1'
-		BREQ CALL_TEST_TX
-
-		CPI AUX,'2'
-		BREQ CALL_V_BAT
-
-		CPI AUX,'3'
-		BREQ CALL_V_PANEL
-
-SIGO:	RJMP X_SIEMPRE
-
-CALL_TEST_TX:
-		LDIW	Z,(MSJ_TEST_TX*2)
-		RCALL TRANSMITIR_MENSAJE
-		RJMP SIGO
-CALL_V_BAT:
-		LDIW	Z,(MSJ_V_BAT*2)
-		RCALL TRANSMITIR_MENSAJE
-		RJMP SIGO
-CALL_V_PANEL:
-		LDIW	Z,(MSJ_V_PANEL*2)
-		RCALL TRANSMITIR_MENSAJE
-		RJMP SIGO
-
-**************************************************************************/
 
 ;-------------------------------------------------------------------------
 ;					COMUNICACION SERIE
@@ -128,7 +92,6 @@ loop_limpia:
 		POP		AUX
 RET
 
-
 ;-------------------------------------------------------------------------
 ; RECEPCION: Interrumpe cada vez que se recibe un byte x RS232.
 ;
@@ -139,7 +102,31 @@ ISR_RX_USART_COMPLETA:
 ;
 ; EL registro UDR tiene un dato y debería ser procesado
 ;
-    	RETI 
+		input AUX,UDR0
+
+		CPI AUX,'1'
+		BREQ CALL_TEST_TX
+
+		CPI AUX,'2'
+		BREQ CALL_V_BAT
+
+		CPI AUX,'3'
+		BREQ CALL_V_PANEL
+
+SIGO:  	RETI 
+
+CALL_TEST_TX:
+		LDIW	Z,(MSJ_TEST_TX*2)
+		RCALL TRANSMITIR_MENSAJE
+		RJMP SIGO
+CALL_V_BAT:
+		LDIW	Z,(MSJ_V_BAT*2)
+		RCALL TRANSMITIR_MENSAJE
+		RJMP SIGO
+CALL_V_PANEL:
+		LDIW	Z,(MSJ_V_PANEL*2)
+		RCALL TRANSMITIR_MENSAJE
+		RJMP SIGO
 
 ;------------------------------------------------------------------------
 ; TRANSMISION: interrumpe cada vez que puede transmitir un byte.
