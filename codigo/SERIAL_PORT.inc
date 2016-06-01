@@ -5,27 +5,6 @@
  *   Author: MAU
  */ 
 
-;-------------------------------------------------------------------------
-; CONSTANTES y MACROS
-;-------------------------------------------------------------------------
-.IFNDEF MAURO
-.EQU	 BUF_SIZE	= 64	; tamaño en bytes del buffer de transmisión
-.ENDIF
-;-------------------------------------------------------------------------
-; variables en SRAM
-;-------------------------------------------------------------------------
-.DSEG
-TX_BUF:	.BYTE	BUF_SIZE	; buffer de transmisión
-
-;-------------------------------------------------------------------------
-; variables en registros
-;-------------------------------------------------------------------------
-.DEF	PTR_TX_L = r8		; puntero al buffer de datos a transmitir
-.DEF	PTR_TX_H = r9
-.DEF	BYTES_A_TX = r10 	; nro. de bytes a transmitir desde el buffer
-
-.DEF	AUX	= r16
-.DEF	AUX1= r17
 
 ;-------------------------------------------------------------------------
 ; codigo
@@ -38,19 +17,12 @@ RJMP	ISR_RX_USART_COMPLETA
 .ORG	UDREaddr		; USART Data Register Empty
 RJMP	ISR_REG_USART_VACIO
 
-SERIAL_PORT_INIT:
+SP_INIT:
 
 		RCALL	USART_INIT	; Configuración del puerto serie a 76k8 bps
 RET
+;-------------------------------------------------------------------------
 
-;-------------------------------------------------------------------------
-;					COMUNICACION SERIE
-;-------------------------------------------------------------------------
-.equ	BAUD_RATE	= 103	; 12	76.8 kbps e=0.2%	@8MHz y U2X=1
-							; 25	38.4 kbps e=0.2%	@8MHz y U2X=1
-							; 51	19.2 kbps e=0.2% 	@8MHz y U2X=1
-							; 103	9600 bps  e=0.2% 	@8MHz y U2X=1
-;-------------------------------------------------------------------------
 USART_INIT:
 		PUSH	AUX
 		PUSH	AUX1
@@ -99,24 +71,32 @@ RET
 ; Devuelve: nada
 ;-------------------------------------------------------------------------
 ISR_RX_USART_COMPLETA:
-;
-; EL registro UDR tiene un dato y debería ser procesado
-;
+
+		SET					;[T=1]: ESTA CONECTADO A BT. [T=0]: NO ESTA CONECTADO A BT.
 		input AUX,UDR0
 
-		CPI AUX,'1'
+		CPI AUX,BT_COMMAND_PROJECT_NAME
 		BREQ CALL_TEST_TX
 
-		CPI AUX,'2'
+		CPI AUX,BT_COMMAND_V_BAT
 		BREQ CALL_V_BAT
 
-		CPI AUX,'3'
+		CPI AUX,BT_COMMAND_V_PANEL
 		BREQ CALL_V_PANEL
+
+		CPI AUX,BT_COMMAND_LIGHT_TURN_ON
+		BREQ _LIGHT_TURN_ON
+
+		CPI AUX,BT_COMMAND_LIGHT_TURN_OFF
+		BREQ _LIGHT_TURN_OFF
+
+		CPI AUX,BT_COMMAND_DISCONNECT
+		BREQ BT_DISCONNECT
 
 SIGO:  	RETI 
 
 CALL_TEST_TX:
-		LDIW	Z,(MSJ_TEST_TX*2)
+		LDIW	Z,(MSJ_PROJECT_NAME*2)
 		RCALL TRANSMITIR_MENSAJE
 		RJMP SIGO
 CALL_V_BAT:
@@ -127,7 +107,15 @@ CALL_V_PANEL:
 		LDIW	Z,(MSJ_V_PANEL*2)
 		RCALL TRANSMITIR_MENSAJE
 		RJMP SIGO
-
+_LIGHT_TURN_ON:
+		RCALL LIGHT_TURN_ON
+		RJMP SIGO
+_LIGHT_TURN_OFF:
+		RCALL LIGHT_TURN_OFF
+		RJMP SIGO
+BT_DISCONNECT:
+		CLT
+		RJMP SIGO
 ;------------------------------------------------------------------------
 ; TRANSMISION: interrumpe cada vez que puede transmitir un byte.
 ; Se transmiten "BYTES_A_TX" comenzando desde la posición TX_BUF del
@@ -177,8 +165,8 @@ sigue_tx:
 		RETI
 
 ;-------------------------------------------------------------------------
-; TEST_TX: transmite el mensaje almacenado en memoria flash a partir
-; de la dirección MSJ_TEST_TX que termina con 0x00 (el 0 no se transmite).
+; TRANSMITIR_MENSAJE: transmite el mensaje almacenado en memoria flash a partir
+; de la dirección ¡APUNTADA POR Z! que termina con 0x00 (el 0 no se transmite).
 ; Recibe: nada
 ; Devuelve: PTR_TX_L|H, BYTES_A_TX.  
 ; Habilita la int. de transmisión serie con ISR en ISR_REG_USART_VACIO().
@@ -189,7 +177,7 @@ TRANSMITIR_MENSAJE:
 		PUSH	AUX
 
 ;		LDIW	Z,(MSJ_V_BAT*2)
-		MOV2	XL,PTR_TX_L
+		MOVW	XL,PTR_TX_L
 
 LOOP_TRANSMITIR_MENSAJE:
 		LPM		AUX,Z+
@@ -207,7 +195,7 @@ LOOP_TRANSMITIR_MENSAJE:
 
 		RJMP	LOOP_TRANSMITIR_MENSAJE
 ;REVISAR INSTRUCCIONES
-;	
+	
 FIN_TRANSMITIR_MENSAJE:
 		INPUT	AUX,UCSR0B
 
@@ -219,10 +207,6 @@ FIN_TRANSMITIR_MENSAJE:
 		POPW	Z
 		RET
 
-;LOS MENSAJES DEBEN SER EN ASCII [NO EXTENDIDO]
-MSJ_TEST_TX:	.DB	"SOLAR TRACKER",'\r','\n',0
-MSJ_V_BAT:		.DB	"HACIENDO EL FUTURO",'\r',0,0
-MSJ_V_PANEL:	.DB "LA TENSION DEL PANEL ES: ",'\r',0,0
 ;-------------------------------------------------------------------------
 ; fin del código
 ;-------------------------------------------------------------------------
