@@ -19,6 +19,7 @@
 .include "LIGHT.inc"
 
 ;-------------------------------------------------------------------------------- 
+.CSEG
 .ORG 0x0000					;se setean los registros de interrupciones
 RJMP SETUP	
 
@@ -30,16 +31,15 @@ RJMP	ISR_REG_USART_VACIO
 	
 ;-------------------------------SETUP--------------------------------------------
 SETUP:
-
 	LDI PWM_DATA,LOW(RAMEND)
 	OUT SPL,PWM_DATA
 	LDI	PWM_DATA,HIGH(RAMEND)
 	OUT SPH,PWM_DATA
 
-	RCALL ADC_INIT ;TIENE QUE ESTAR EN "ADC.inc"
-	RCALL PWM_INIT ;TIENE QUE ESTAR EN "PWM.inc"
-	RCALL SERIAL_PORT_INIT ;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
-	RCALL LIGHT_TURN_OFF
+	RCALL ADC_INIT			;TIENE QUE ESTAR EN "ADC.inc"
+	RCALL PWM_INIT			;TIENE QUE ESTAR EN "PWM.inc"
+	RCALL SERIAL_PORT_INIT	;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
+	RCALL LIGHT_TURN_OFF	;TIENE QUE ESTAR EN "LIGHT.inc"
 
 	CLT	;[T=1]: ESTA CONECTADO A BT. [T=0]: NO ESTA CONECTADO A BT.
 	SEI
@@ -49,18 +49,15 @@ SETUP:
 MAIN:	
 	;MEDIR BATERIA 
 		RCALL	READ_BATTERY					;MIDO LA BATERIA
-		CPI		ADC_DATA_H,MIN_BATTERY_VALUE	;COMPARAR PARA VER SI HAY SUFICIENTE BATERIA PARA OPERAR
-		BRLO	LOW_BATTERY						;SI ES MENOR AL MINIMO, VA A BAJO CONSUMO
-;Joaco: "Habria que pense si de todas formas no hay que mover el panel"
-;Mauro:	"Para mi no. Si no tiene energía, que no gaste. "
+		RCALL	CHECK_IF_BATTERY_MINIMUM		;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
+		BRCC 
 
 ;Mauro: "Creo que para ver si es de dia o noche leemos los 4 LDRs y nos quedamos con el minimo"
-
 ;	¿DIA O NOCHE?
 		RCALL	READ_MINIMUM_LDR				;LEE LOS 4 LDRS Y DEJA EL MINIMO EN ...........
 		RCALL	COMPARE_IF_DAY_OR_NIGHT			;[CARRY=1]: ES DE DIA. [CARRY=0]: ES DE NOCHE.
-		BRCC	AT_NIGHT						;Me aseguro que esta funcione no modifique SREG 
-		BRCS	AT_DAY							;Me aseguro que esta funcione no modifique SREG
+		BRCC	AT_NIGHT						;Me aseguro que esta funcion no modifique SREG 
+		BRCS	AT_DAY							;Me aseguro que esta funcion no modifique SREG
 CONTINUE:
 ;SI ESTOY ACA YA TENGO BATERIA SUFICIENTE Y DECIDI SI PRENDER O NO LA LUZ Y ES DE DIA.
 		RCALL	ORIENTATE_SOLAR_PANEL			;HAY QUE RESOLVER ESTO TODAVIA.
@@ -78,31 +75,22 @@ CONTINUE:
 
 ;	leer panel
 		BRTS MAIN
-		RJMP SLEEP_MODE
+		RCALL SLEEP_MODE
 		
 
 ;------------------------------MAIN_FUNCTIONS-----------------------------------
-LOW_BATTERY:
-	RCALL LIGHT_TURN_OFF
-	RJMP SLEEP_MODE
-
 SLEEP_MODE:
 ;HAY QUE HACER COSAS ANTES DE IR A SLEEP, COMO APAGAR EL ADC Y NO SE QUE MAS
-;HAY 2 FORMAS DE SALIR DE SLEEP: EN UN TIEMPO t [TIEMPO ENTRE MEDICION Y MEDICION] Y POR CONEXION BT.
-;¿GUARDAR INFORMACION?
-;VER TIMER DE SLEEP MODE EN DIAPOSITIVAS DROPBOX
+;SALIR DE SLEEP: EN UN TIEMPO t [TIEMPO ENTRE MEDICION Y MEDICION].
 	SLEEP
 	RJMP MAIN
 
 AT_NIGHT:
 		RCALL LIGHT_TURN_ON
-		RJMP SLEEP_MODE
+		RCALL SLEEP_MODE
 
 AT_DAY:
 		RCALL LIGHT_TURN_OFF
 		RJMP CONTINUE
-
-;JOACO: "Nos falta saber como hacer una interrupcion serie y como ir a modo bajo consumo."
-;MAURO: "INTERRUPCION SERIE YA ESTA. IR A BAJO CONSUMO HAY QUE PREGUNTAR SI ESTA BIEN ASI."
 
 .include "MESSAGES.inc"

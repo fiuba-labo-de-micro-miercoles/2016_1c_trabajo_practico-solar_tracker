@@ -20,7 +20,6 @@
 
 .EQU	ADC_BATTERY = 6			;LA BATERIA ESTA EN EL PIN 19 [ADC6]
 .EQU	ADC_SOLAR_PANEL = 7		;EL PANEL ESTA EN EL PIN 22 [ADC7]
-.EQU	MIN_BATTERY_VALUE =		;RESULTADO DEL ADC QUE HACE IR A BAJO CONSUMO EL EQUIPO POR NO TENER SUFICIENTE TENSION {0,255}
 ;-----------------------------------------------------------------------------------
 
 
@@ -47,7 +46,11 @@ TX_BUF:	.BYTE	BUF_SIZE	; buffer de transmisión
 .DEF	BYTES_A_TX = r10 	; nro. de bytes a transmitir desde el buffer
 ;-----------------------------------------------------------------------------------
 
-;--------------------REGISTROS DE USO GENERAL SIN IMPORTAR QUE TENGA----------------------------------------
+;--------------------------------HEADER DE LA BATERIA-------------------------------
+.EQU	MIN_BATTERY_VALUE =		;{0,255} RESULTADO DEL ADC QUE HACE IR A BAJO CONSUMO EL EQUIPO POR NO TENER SUFICIENTE TENSION
+;-----------------------------------------------------------------------------------
+
+;--------------------REGISTROS DE USO GENERAL SIN IMPORTAR QUE TENGA----------------
 .DEF	AUX	= R16
 .DEF	AUX1= R17
 ;-----------------------------------------------------------------------------------
