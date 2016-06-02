@@ -1068,12 +1068,12 @@ $EndComp
 $Comp
 L R R9
 U 1 1 5735AF7E
-P 2100 5750
-F 0 "R9" V 2180 5750 50  0000 C CNN
-F 1 "330" V 2100 5750 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 2030 5750 30  0001 C CNN
-F 3 "" H 2100 5750 30  0000 C CNN
-	1    2100 5750
+P 2100 5650
+F 0 "R9" V 2180 5650 50  0000 C CNN
+F 1 "330" V 2100 5650 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 2030 5650 30  0001 C CNN
+F 3 "" H 2100 5650 30  0000 C CNN
+	1    2100 5650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1081,13 +1081,13 @@ Wire Wire Line
 Wire Wire Line
 	2300 6300 2250 6300
 Wire Wire Line
-	2250 5650 2300 5650
+	2250 5750 2300 5750
 Wire Wire Line
-	2300 5750 2250 5750
-Wire Wire Line
-	1950 5750 1900 5750
+	2300 5650 2250 5650
 Wire Wire Line
 	1950 5650 1900 5650
+Wire Wire Line
+	1950 5750 1900 5750
 Wire Wire Line
 	1900 6200 1950 6200
 Wire Wire Line
@@ -1111,12 +1111,12 @@ LED_4
 $Comp
 L R R10
 U 1 1 5735FE4B
-P 2100 5650
-F 0 "R10" V 2180 5650 50  0000 C CNN
-F 1 "330" V 2100 5650 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 2030 5650 30  0001 C CNN
-F 3 "" H 2100 5650 30  0000 C CNN
-	1    2100 5650
+P 2100 5750
+F 0 "R10" V 2180 5750 50  0000 C CNN
+F 1 "330" V 2100 5750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 2030 5750 30  0001 C CNN
+F 3 "" H 2100 5750 30  0000 C CNN
+	1    2100 5750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1141,9 +1141,9 @@ F 3 "" H 2100 6300 30  0000 C CNN
 	1    2100 6300
 	0    1    1    0   
 $EndComp
-Text Label 1900 5750 2    60   ~ 0
-LED_1
 Text Label 1900 5650 2    60   ~ 0
+LED_1
+Text Label 1900 5750 2    60   ~ 0
 LED_2
 Text Label 1900 6200 2    60   ~ 0
 LED_3
@@ -1225,4 +1225,6 @@ F 3 "" H 2500 6200 50  0000 C CNN
 	1    2500 6200
 	1    0    0    -1  
 $EndComp
+Text Notes 4800 4750 0    60   ~ 0
+CAMBIAR LUZ CON BOT_1
 $EndSCHEMATC

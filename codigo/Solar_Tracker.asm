@@ -16,16 +16,9 @@
 .include "PWM.inc"
 .include "SERIAL_PORT.inc"
 .include "DELAY.inc"
+.include "LIGHT.inc"
 
-;***************************************************** 
-.DSEG						;Se abre un segmento de datos para definir variables
-
-.DEF
-
-.EQU
-
-.CSEG
-;***************************************************** 
+;-------------------------------------------------------------------------------- 
 .ORG 0x0000					;se setean los registros de interrupciones
 RJMP SETUP	
 
@@ -34,9 +27,7 @@ RJMP	ISR_RX_USART_COMPLETA
 	
 .ORG	UDREaddr		; USART Data Register Empty
 RJMP	ISR_REG_USART_VACIO
-
-;Interrupciones
-
+	
 ;-------------------------------SETUP--------------------------------------------
 SETUP:
 
@@ -47,7 +38,7 @@ SETUP:
 
 	RCALL ADC_INIT ;TIENE QUE ESTAR EN "ADC.inc"
 	RCALL PWM_INIT ;TIENE QUE ESTAR EN "PWM.inc"
-	RCALL SP_INIT ;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
+	RCALL SERIAL_PORT_INIT ;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
 	RCALL LIGHT_TURN_OFF
 
 	CLT	;[T=1]: ESTA CONECTADO A BT. [T=0]: NO ESTA CONECTADO A BT.
@@ -98,7 +89,8 @@ LOW_BATTERY:
 SLEEP_MODE:
 ;HAY QUE HACER COSAS ANTES DE IR A SLEEP, COMO APAGAR EL ADC Y NO SE QUE MAS
 ;HAY 2 FORMAS DE SALIR DE SLEEP: EN UN TIEMPO t [TIEMPO ENTRE MEDICION Y MEDICION] Y POR CONEXION BT.
-
+;¿GUARDAR INFORMACION?
+;VER TIMER DE SLEEP MODE EN DIAPOSITIVAS DROPBOX
 	SLEEP
 	RJMP MAIN
 

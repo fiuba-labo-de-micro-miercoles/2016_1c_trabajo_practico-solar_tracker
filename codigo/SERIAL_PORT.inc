@@ -17,7 +17,7 @@ RJMP	ISR_RX_USART_COMPLETA
 .ORG	UDREaddr		; USART Data Register Empty
 RJMP	ISR_REG_USART_VACIO
 
-SP_INIT:
+SERIAL_PORT_INIT:
 
 		RCALL	USART_INIT	; Configuración del puerto serie a 76k8 bps
 RET
