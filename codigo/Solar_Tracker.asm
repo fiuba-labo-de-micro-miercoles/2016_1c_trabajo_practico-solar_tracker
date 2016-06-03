@@ -17,10 +17,12 @@
 .include "SERIAL_PORT.inc"
 .include "DELAY.inc"
 .include "LIGHT.inc"
+.include "BATTERY.inc"
+.include "SOLAR_PANEL.inc"
 
 ;-------------------------------------------------------------------------------- 
 .CSEG
-.ORG 0x0000					;se setean los registros de interrupciones
+.ORG	0x0000
 RJMP SETUP	
 
 .ORG	URXCaddr		; USART, Rx Complete
@@ -48,18 +50,18 @@ SETUP:
 ;-------------------------------PROGRAMA_PRINCIPAL-------------------------------
 MAIN:	
 	;MEDIR BATERIA 
-		RCALL	READ_BATTERY					;MIDO LA BATERIA
+		RCALL	READ_V_BATTERY					;MIDO LA BATERIA
 		RCALL	CHECK_IF_BATTERY_MINIMUM		;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
-		BRCC 
+		BRCC	SLEEP_MODE
+		RCALL	INDICATE_BATTERY_OK
 
 ;Mauro: "Creo que para ver si es de dia o noche leemos los 4 LDRs y nos quedamos con el minimo"
 ;	¿DIA O NOCHE?
-		RCALL	READ_MINIMUM_LDR				;LEE LOS 4 LDRS Y DEJA EL MINIMO EN ...........
-		RCALL	COMPARE_IF_DAY_OR_NIGHT			;[CARRY=1]: ES DE DIA. [CARRY=0]: ES DE NOCHE.
+		RCALL	READ_V_SOLAR_PANEL				;PARA VER SI ES DE DIA O NOCHE, MIDO LA TENSION DEL PANEL SOLAR.
+		RCALL	CHECK_IF_SOLAR_PANEL_MINIMUM	;[CARRY=1]: ES DE DIA. [CARRY=0]: ES DE NOCHE.
 		BRCC	AT_NIGHT						;Me aseguro que esta funcion no modifique SREG 
-		BRCS	AT_DAY							;Me aseguro que esta funcion no modifique SREG
-CONTINUE:
-;SI ESTOY ACA YA TENGO BATERIA SUFICIENTE Y DECIDI SI PRENDER O NO LA LUZ Y ES DE DIA.
+;SI ESTOY ACA YA TENGO BATERIA SUFICIENTE, ES DE DIA.
+		RCALL	LIGHT_TURN_OFF
 		RCALL	ORIENTATE_SOLAR_PANEL			;HAY QUE RESOLVER ESTO TODAVIA.
 ;	track:
 ;			leerLDRs
@@ -70,27 +72,29 @@ CONTINUE:
 ;		detenerMotores
 
 ;Joaco: "hay que pensar si harcodiamos cuanto tiempo se mueven los motores dependiendo la diferencia entre LDR o si hacemos otra cosa"
-;Mauro: "como leemos de 0-5v y el adc es de 10bits [1023 valores = 4,8mV por muestra]; shifteamos 2 lugares el adc y perdemos 15mV y listo.
-;		En síntesis: comparamos hasta que sea igual [control por lazo cerrado] y listo." 
-
-;	leer panel
+;;Mauro: "como leemos de 0-5v y el adc es de 10bits [1023 valores = 4,8mV por muestra]; shifteamos 2 lugares el adc y perdemos 15mV y listo.
+;;		En síntesis: comparamos hasta que sea igual [control por lazo cerrado] y listo." 
+;Mauro: "MEJOR AUN: AJUSTAMOS A LA IZQUIERDA LA INFO [CON ADLAR=1] Y AGARRO SOLO ADCH, YA TIRANDO LOS 15mV.
 		BRTS MAIN
-		RCALL SLEEP_MODE
-		
 
-;------------------------------MAIN_FUNCTIONS-----------------------------------
 SLEEP_MODE:
 ;HAY QUE HACER COSAS ANTES DE IR A SLEEP, COMO APAGAR EL ADC Y NO SE QUE MAS
 ;SALIR DE SLEEP: EN UN TIEMPO t [TIEMPO ENTRE MEDICION Y MEDICION].
-	SLEEP
-	RJMP MAIN
+		INPUT AUX,SMCR
+		ANDI AUX,(~(1<<SM2)|(1<<SM1)|(1<<SM0)|(1<<SE))
+		ORI AUX,((0<<SM2)|(0<<SM1)|(0<<SM0)|(1<<SE))	;SETEO EL MODO IDLE.
+		OUTPUT SMCR,AUX
+		SLEEP
+		NOP
+;CUANDO SALGO DE SLEEP, PONGO SE=0.
+		ANDI AUX,(~(1<<SE))
+		OUTPUT SMCR,AUX
+		RJMP MAIN
 
+;------------------------------MAIN_FUNCTIONS-----------------------------------
 AT_NIGHT:
 		RCALL LIGHT_TURN_ON
-		RCALL SLEEP_MODE
-
-AT_DAY:
-		RCALL LIGHT_TURN_OFF
-		RJMP CONTINUE
+		RCALL INDICATE_SOLAR_PANEL_LOW
+		RJMP SLEEP_MODE
 
 .include "MESSAGES.inc"
