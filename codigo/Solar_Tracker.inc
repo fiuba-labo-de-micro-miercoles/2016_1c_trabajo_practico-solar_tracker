@@ -67,4 +67,28 @@ TX_BUF:	.BYTE	BUF_SIZE	; buffer de transmisión
 .DEF	AUX1						=	R17
 ;-----------------------------------------------------------------------------------
 
+;------------------------------HEADER DE LDRS---------------------------------------
+.EQU NUM_SAMPLES = 32 ;TIENE QUE SER MULTIPLO DE 2
+
+.ORG SRAM_START
+LDR_NO_VEC: .BYTE NUM_SAMPLES
+LDR_NE_VEC: .BYTE NUM_SAMPLES
+LDR_SE_VEC: .BYTE NUM_SAMPLES
+LDR_SO_VEC: .BYTE NUM_SAMPLES
+
+;LAS CONSTANTES SON PARA EL MUX EN EL ADC
+.EQU LDR_NO = ADC2
+.EQU LDR_NE = ADC3
+.EQU LDR_SE = ADC4
+.EQU LDR_SO = ADC5
+
+.DEF LDR_NO_MEAN = R16
+.DEF LDR_NE_MEAN = R17
+.DEF LDR_SE_MEAN = R18
+.DEF LDR_NO_MEAN = R19
+
+.DEF LDR = R20
+
+;-----------------------------------------------------------------------------------
+
 .ENDIF

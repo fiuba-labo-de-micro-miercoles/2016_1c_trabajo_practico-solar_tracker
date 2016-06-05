@@ -19,6 +19,7 @@
 .include "LIGHT.inc"
 .include "BATTERY.inc"
 .include "SOLAR_PANEL.inc"
+.include "LDRS.inc"
 
 ;-------------------------------------------------------------------------------- 
 .CSEG
@@ -41,8 +42,8 @@ SETUP:
 	RCALL ADC_INIT			;TIENE QUE ESTAR EN "ADC.inc"
 	RCALL PWM_INIT			;TIENE QUE ESTAR EN "PWM.inc"
 	RCALL SERIAL_PORT_INIT	;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
+	RCALL LDRS_INIT
 	RCALL LIGHT_TURN_OFF	;TIENE QUE ESTAR EN "LIGHT.inc"
-
 	CLT	;[T=1]: ESTA CONECTADO A BT. [T=0]: NO ESTA CONECTADO A BT.
 	SEI
 ;--------------------------------------------------------------------------------
