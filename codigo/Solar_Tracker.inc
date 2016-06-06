@@ -76,6 +76,12 @@ LDR_NO_VEC:							.BYTE NUM_SAMPLES
 LDR_NE_VEC:							.BYTE NUM_SAMPLES
 LDR_SE_VEC:							.BYTE NUM_SAMPLES
 LDR_SO_VEC:							.BYTE NUM_SAMPLES
+LDR_NO_MEAN:						.BYTE 1
+LDR_NE_MEAN:						.BYTE 1
+LDR_SE_MEAN:						.BYTE 1
+LDR_SO_MEAN:						.BYTE 1
+COUNTER:							.BYTE 2
+BT_FLAG:							.BYTE 1			;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO ESTA CONECTADO A BT.
 
 ;LAS CONSTANTES SON PARA EL MUX EN EL ADC
 .EQU LDR_NO							=	ADC2
@@ -92,10 +98,6 @@ LDR_SO_VEC:							.BYTE NUM_SAMPLES
 .DEF LDR_NE_LOW						=	R6
 .DEF LDR_NE_HIGH					=	R7
 
-.DEF LDR_NO_MEAN					=	R21
-.DEF LDR_SO_MEA						=	R22
-.DEF LDR_SE_MEAN					=	R23
-.DEF LDR_NE_MEAN					=	R24
 ;-----------------------------------------------------------------------------------
 
 .ENDIF

@@ -11,19 +11,7 @@
 ;-------------------------------------------------------------------------
 .CSEG
 
-.ORG	URXCaddr		; USART, Rx Complete
-RJMP	ISR_RX_USART_COMPLETA
-	
-.ORG	UDREaddr		; USART Data Register Empty
-RJMP	ISR_REG_USART_VACIO
-
 SERIAL_PORT_INIT:
-
-		RCALL	USART_INIT	; Configuración del puerto serie a 76k8 bps
-RET
-;-------------------------------------------------------------------------
-
-USART_INIT:
 		PUSH	AUX
 		PUSH	AUX1
 		PUSHW	X
@@ -72,8 +60,10 @@ RET
 ;-------------------------------------------------------------------------
 ISR_RX_USART_COMPLETA:
 
-		SET					;[T=1]: ESTA CONECTADO A BT. [T=0]: NO ESTA CONECTADO A BT.
-		input AUX,UDR0
+		SER AUX
+		OUTPUT BT_FLAG,AUX	;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO ESTA CONECTADO A BT.
+	
+		INPUT AUX,UDR0
 
 		CPI AUX,BT_COMMAND_PROJECT_NAME
 		BREQ CALL_TEST_TX
@@ -91,7 +81,7 @@ ISR_RX_USART_COMPLETA:
 		BREQ _LIGHT_TURN_OFF
 
 		CPI AUX,BT_COMMAND_DISCONNECT
-		BREQ BT_DISCONNECT
+		BREQ _BT_DISCONNECT
 
 SIGO:  	RETI 
 
@@ -113,9 +103,14 @@ _LIGHT_TURN_ON:
 _LIGHT_TURN_OFF:
 		RCALL LIGHT_TURN_OFF
 		RJMP SIGO
-BT_DISCONNECT:
-		CLT
+_BT_DISCONNECT:
+		RCALL BT_DISCONNECT
 		RJMP SIGO
+BT_DISCONNECT:
+		CLR AUX
+		OUTPUT BT_FLAG,AUX
+RET
+
 ;------------------------------------------------------------------------
 ; TRANSMISION: interrumpe cada vez que puede transmitir un byte.
 ; Se transmiten "BYTES_A_TX" comenzando desde la posición TX_BUF del
