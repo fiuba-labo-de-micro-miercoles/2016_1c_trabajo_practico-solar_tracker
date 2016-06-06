@@ -83,3 +83,51 @@
 		ldi		AUX,@1	; Usa: variable auxiliar "t0".
 		sts		@0,AUX	; [3 ciclos, 2 words] @0={any SRAM ADDRESS}
 .endm
+
+;---------------------MACROS PROPIAS-----------------------------------------------
+.macro SLDR
+;STORE_LDR
+;PROTOTYPE: SLDR LDR_XX_LOW,LDR_XX_HIGH,ADC_DATA_H
+	MOV	ZL,@0
+	MOV	ZH,@1	
+	ST	Z+,@2
+	MOV	@0,ZL
+	MOV	@1,ZH
+.endm
+
+.macro LLDR
+;LOAD_LDR_TO_POINTER
+;PROTOTYPE: LLDR Z,LDR_XX_LOW,LDR_XX_HIGH
+	LDI @0L,@1
+	LDI @0H,@2
+.endm
+
+.macro RLDR
+;READ_LDR
+;RECIBE: LDR_XX
+;DEVUELVE: EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
+	LDI ADC_DATA_L,@0
+	RCALL ADC_INPUT_SELECT
+	RCALL ADC_SIMPLE_CONVERSION
+.endm
+
+.macro	VECTMEAN	;@0,@1,@2	;Calcula la media de un vector @0 de longitud @1 y guarda la media en @2
+		push		@1
+		ld 		AUX,@0+
+		clr		@2
+loop_mean:
+		ld		AUX1,@0+
+		add		AUX,AUX1
+		clr		AUX2
+		adc		@2,AUX2
+		dec		@1
+		brne		loop_mean
+		ldi		AUX2,3
+division:
+		lsl		AUX
+		rol		@2
+		dec		AUX2
+		brne		division
+		pop		@1
+.endm
+;-----------------------------------------------------------------------------------

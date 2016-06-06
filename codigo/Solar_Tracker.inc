@@ -10,7 +10,7 @@
 .DSEG
 
 ;--------------------HEADER DE LA LUZ-----------------------------------------------
-.EQU	LIGHT_PIN	=	PB0
+.EQU	LIGHT_PIN					=	PB0
 ;-----------------------------------------------------------------------------------
 
 
@@ -65,30 +65,37 @@ TX_BUF:	.BYTE	BUF_SIZE	; buffer de transmisión
 ;--------------------REGISTROS DE USO GENERAL SIN IMPORTAR QUE TENGA----------------
 .DEF	AUX							=	R16
 .DEF	AUX1						=	R17
+.DEF	AUX2						=	R18
 ;-----------------------------------------------------------------------------------
 
 ;------------------------------HEADER DE LDRS---------------------------------------
 .EQU NUM_SAMPLES = 32 ;TIENE QUE SER MULTIPLO DE 2
 
 .ORG SRAM_START
-LDR_NO_VEC: .BYTE NUM_SAMPLES
-LDR_NE_VEC: .BYTE NUM_SAMPLES
-LDR_SE_VEC: .BYTE NUM_SAMPLES
-LDR_SO_VEC: .BYTE NUM_SAMPLES
+LDR_NO_VEC:							.BYTE NUM_SAMPLES
+LDR_NE_VEC:							.BYTE NUM_SAMPLES
+LDR_SE_VEC:							.BYTE NUM_SAMPLES
+LDR_SO_VEC:							.BYTE NUM_SAMPLES
 
 ;LAS CONSTANTES SON PARA EL MUX EN EL ADC
-.EQU LDR_NO = ADC2
-.EQU LDR_NE = ADC3
-.EQU LDR_SE = ADC4
-.EQU LDR_SO = ADC5
+.EQU LDR_NO							=	ADC2
+.EQU LDR_NE							=	ADC3
+.EQU LDR_SE							=	ADC4
+.EQU LDR_SO							=	ADC5
 
-.DEF LDR_NO_MEAN = R16
-.DEF LDR_NE_MEAN = R17
-.DEF LDR_SE_MEAN = R18
-.DEF LDR_NO_MEAN = R19
+.DEF LDR_NO_LOW						=	R11
+.DEF LDR_NO_HIGH					=	R12
+.DEF LDR_SO_LOW						=	R2
+.DEF LDR_SO_HIGH					=	R3
+.DEF LDR_SE_LOW						=	R4
+.DEF LDR_SE_HIGH					=	R5
+.DEF LDR_NE_LOW						=	R6
+.DEF LDR_NE_HIGH					=	R7
 
-.DEF LDR = R20
-
+.DEF LDR_NO_MEAN					=	R21
+.DEF LDR_SO_MEA						=	R22
+.DEF LDR_SE_MEAN					=	R23
+.DEF LDR_NE_MEAN					=	R24
 ;-----------------------------------------------------------------------------------
 
 .ENDIF

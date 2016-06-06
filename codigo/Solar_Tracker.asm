@@ -23,7 +23,7 @@
 
 ;-------------------------------------------------------------------------------- 
 .CSEG
-.ORG	0x0000
+.ORG 0x0000
 RJMP SETUP	
 
 .ORG	URXCaddr		; USART, Rx Complete
@@ -31,14 +31,14 @@ RJMP	ISR_RX_USART_COMPLETA
 	
 .ORG	UDREaddr		; USART Data Register Empty
 RJMP	ISR_REG_USART_VACIO
-	
-;-------------------------------SETUP--------------------------------------------
-SETUP:
-	LDI PWM_DATA,LOW(RAMEND)
-	OUT SPL,PWM_DATA
-	LDI	PWM_DATA,HIGH(RAMEND)
-	OUT SPH,PWM_DATA
 
+.ORG	OVF1addr
+RJMP	ISR_TIMER_1_OV
+
+;-------------------------------SETUP--------------------------------------------
+.ORG	INT_VECTORS_SIZE
+SETUP:
+	RCALL STACK_INIT
 	RCALL ADC_INIT			;TIENE QUE ESTAR EN "ADC.inc"
 	RCALL PWM_INIT			;TIENE QUE ESTAR EN "PWM.inc"
 	RCALL SERIAL_PORT_INIT	;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
@@ -64,21 +64,11 @@ MAIN:
 ;SI ESTOY ACA YA TENGO BATERIA SUFICIENTE, ES DE DIA.
 		RCALL	LIGHT_TURN_OFF
 		RCALL	INDICATE_SOLAR_PANEL_OK
+;PRENDER EL TIMER, LA INTERRUPCION DEL ADC MANDAR A SLEEP
+		RCALL	READ_LDRS						;
+		BRCC	SLEEP_MODE						;[CARRY=1]: HIZO PROMEDIO, NO SE VA A SLEEP. [CARRY=0]: NO HIZO PROMEDIO, SE VA A SLEEP.
 		RCALL	ORIENTATE_SOLAR_PANEL			;HAY QUE RESOLVER ESTO TODAVIA.
-;	track:
-;			leerLDRs
-;			comparar
-;			si no hay diferencia salgo del loop
-;			moverMotores
-;			volver a track
-;		detenerMotores
-
-;Joaco: "hay que pensar si harcodiamos cuanto tiempo se mueven los motores dependiendo la diferencia entre LDR o si hacemos otra cosa"
-;;Mauro: "como leemos de 0-5v y el adc es de 10bits [1023 valores = 4,8mV por muestra]; shifteamos 2 lugares el adc y perdemos 15mV y listo.
-;;		En síntesis: comparamos hasta que sea igual [control por lazo cerrado] y listo." 
-;Mauro: "MEJOR AUN: AJUSTAMOS A LA IZQUIERDA LA INFO [CON ADLAR=1] Y AGARRO SOLO ADCH, YA TIRANDO LOS 15mV.
-		BRTS MAIN
-
+	BRTS MAIN
 SLEEP_MODE:
 ;HAY QUE HACER COSAS ANTES DE IR A SLEEP, COMO APAGAR EL ADC Y NO SE QUE MAS
 ;SALIR DE SLEEP: EN UN TIEMPO t [TIEMPO ENTRE MEDICION Y MEDICION].
@@ -90,12 +80,23 @@ SLEEP_MODE:
 		NOP
 		ANDI AUX,(~(1<<SE))								;CUANDO SALGO DE SLEEP, PONGO SE=0.
 		OUTPUT SMCR,AUX
-		RJMP MAIN
+RJMP MAIN
+;-----------------------------------------------------------------------------------
 
-;------------------------------MAIN_FUNCTIONS-----------------------------------
+;------------------------------MAIN_FUNCTIONS---------------------------------------
 AT_NIGHT:
 		RCALL LIGHT_TURN_ON
 		RCALL INDICATE_SOLAR_PANEL_LOW
 		RJMP SLEEP_MODE
+
+STACK_INIT:
+	LDI AUX,LOW(RAMEND)
+	OUT SPL,AUX
+	LDI	AUX,HIGH(RAMEND)
+	OUT SPH,AUX
+RET
+
+ISR_TIMER_1_OV:
+RETI
 
 .include "MESSAGES.inc"
