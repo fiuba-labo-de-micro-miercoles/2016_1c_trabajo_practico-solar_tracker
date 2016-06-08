@@ -2,7 +2,7 @@
 ;* 	CODIGO PWM 
 ;*
 ;*  Created: 29/05/2016
-;*  Autor: Mauro Giordano
+;*  Autor: Mauro Giordano, Agustin Picard, Joaquín Ulloa
 ;*	
 ;*	f_outPWM = f_clkIO / (prescaler * 256)
 ;*	Configuracion Fast Pwm
@@ -11,16 +11,17 @@
 .DSEG						;Se abre un segmento de datos para definir variables
 .DEF	PWM_DATA 	= R30	;USO EL REGISTRO Z PARA INTERCAMBIAR DATOS EN WORDS
 .DEF	PWM_DATA_H	= R31
-.EQU	PWM_DC_DEFAULT = 30		;Duty cicle {0,255}
+;.EQU	PWM_DC_DEFAULT = 30		;Duty cicle {0,255} Variable de prueba
 ;***************************************************** 
 .CSEG
 PWM_INIT:
-	RCALL PWM_INIT_PORT_B
-;	RCALL PWM_INIT_PORT_D
+	RCALL PWM_INIT_0
+	;RCALL PWM_INIT_1
+	RCALL PWM_INIT_2
 ;COMENTO LA FUNCION ANTERIOR PORQUE VAMOS A USAR MOTORES DE CONTINUA PUESTOS EN OC1A Y OC1B QUE SON LOS DEL PUERTO B SOLAMENTE.
 RET
 
-PWM_INIT_PORT_B:
+PWM_INIT_0:
 ;Se inicializan como salida los pines de PWM
 	INPUT PWM_DATA,DDRB
 	ANDI PWM_DATA (~((1<<DDB1)|(1<<DDB2)))	;Mascara para tocar solo B1 Y B2
@@ -29,16 +30,15 @@ PWM_INIT_PORT_B:
 ;Se inicializan como Fast PWM y non-inverting mode
 	;Fast PWM: WGM02=0 (por defecto), WGM01=1 y WGM00=1
 	;Non-inverting mode: COM0A1=1 y COM0A0=0
-	;Descripcion de registros en seccion 15.9 (pag 106-112)
 	INPUT PWM_DATA,TCCR0A	;Timer/counter control register A
-	ANDI PWM_DATA,(~((1<<WGM01)|(1<<WGM00)|(1<<COM0A1)|(1<<COM0A0)|(1<<COM0B1)|(1<<COM0B0)))	;Mascara para no tocar bits 2 y 3
+	ANDI PWM_DATA,(~((1<<WGM01)|(1<<WGM00)|(1<<COM0A1)|(1<<COM0A0)|(1<<COM0B1)|(1<<COM0B0)))
 	ORI PWM_DATA,((1<<WGM01)|(1<<WGM00)|(1<<COM0A1)|(0<<COM0A0)|(1<<COM0B1)|(0<<COM0B0))	;fast PWM, non-inverting
 	OUTPUT TCCR0A,PWM_DATA
 ;Se inicializa el prescaler del PWM
 	INPUT PWM_DATA,TCCR0B	;Timer/counter control register B
 	;hacer mascara de forma tal que los bits 0, 1, 2 no se toquen
-	ANDI PWM_DATA,(~((1<<CS00)|(1<<CS01)|(1<<CS02)))	;Mascara para no tocar bits 3 a 7
-	ORI PWM_DATA,((0<<CS00)|(1<<CS01)|(0<<CS02))	;Prescaler = 8
+	ANDI PWM_DATA,(~((1<<CS00)|(1<<CS01)|(1<<CS02)))
+	ORI PWM_DATA,((0<<CS00)|(1<<CS01)|(0<<CS02))	;Ver tabla prescalers al final del archivo
 	OUTPUT TCCR0B,PWM_DATA
 ;Se inicializa el pwm en cero
 	RCALL PWM_MOTOR_ASIMUT_RESET
@@ -47,7 +47,7 @@ RET
 
 ;*****************************************************
 /*
-PWM_INIT_PORT_D:
+PWM_INIT_1:
 ;Se inicializan como salida los pines de PWM
 	INPUT PWM_DATA,DDRD
 	ANDI PWM_DATA,(~((1<<DDD5)|(1<<DDD6)))	;Mascara para tocar solo D5 Y D6
@@ -69,29 +69,84 @@ PWM_INIT_PORT_D:
 	OUTPUT TCCR1B,PWM_DATA
 RET
 */
+;*****************************************************
+
+PWM_INIT_2:
+;Se inicializan como salida los pines de PWM
+;Se usa uno solo de los pines (para la luz), el otro es el MOSI, lo dejamos solo para programar
+	INPUT PWM_DATA,DDRD
+	ANDI PWM_DATA,(~(1<<DDD3))	;Mascara para tocar solo D3
+	ORI PWM_DATA,((1<<DDD3))
+	OUTPUT DDRD,PWM_DATA
+;Se inicializan como Fast PWM y non-inverting mode
+	;Fast PWM: WGM22=0 (por defecto), WGM21=1 y WGM20=1
+	;Non-inverting mode: COM2A1=1 y COM2A0=0
+	INPUT PWM_DATA,TCCR2A	;Timer/counter control register A
+	ANDI PWM_DATA,(~((1<<COM2B1)|(1<<COM2B0)|(1<<WGM20)|(1<<WGM21)))
+	ORI PWM_DATA,((1<<COM2B1)|(0<<COM2B0)|(1<<WGM20)|(1<<WGM21))	;fast PWM, non-inverting
+	OUTPUT TCCR2A,PWM_DATA
+;Se inicializa el prescaler del PWM
+	INPUT PWM_DATA,TCCR2B	;Timer/counter control register B
+	;hacer mascara de forma tal que los bits 0, 1, 2 no se toquen
+	ANDI PWM_DATA,(~((1<<CS20)|(1<<CS21)|(1<<CS22)))
+	ORI PWM_DATA,((0<<CS20)|(1<<CS21)|(0<<CS22))	;Ver tabla prescalers al final del archivo
+	OUTPUT TCCR2B,PWM_DATA
+RET
+
 
 ;*****************************************************
-;PARA SETEAR EL PWM SE HACE CON ADIW ZL,k
-;COMO EL PWM ES DE 16 BITS, RECIBE EL VALOR POR PWM_DATA_L Y PWM_DATA_L_H
-PWM_MOTOR_ASIMUT_SET:		;EL DE ASIMUT ES PB1 [EN_A]
-	OUTPUT OCR1AL,PWM_DATA
-	OUTPUT OCR1AH,PWM_DATA_H	
+;EL PWM ES DE 8 BITS, RECIBE EL VALOR POR PWM_DATA
+;Se concidera Azimut en PB1 (EN_A), altitud en PB2 (EN_B) y la luz en PD3
+PWM_MOTOR_AZIMUT_SET:
+	OUTPUT OCR1A,PWM_DATA
 RET
 
-PWM_MOTOR_ASIMUT_RESET:
-	CLR PWM_DATA			;EL DE ASIMUT ES PB1 [EN_A]
-	OUTPUT OCR1AL,PWM_DATA	
-	OUTPUT OCR1AH,PWM_DATA	
+PWM_MOTOR_AZIMUT_RESET:
+	CLR PWM_DATA
+	OUTPUT OCR1A,PWM_DATA	
 RET
 
-;COMO EL PWM ES DE 16 BITS, RECIBE EL VALOR POR PWM_DATA_L Y PWM_DATA_L_H
-PWM_MOTOR_ELEVACION_SET:	;EL DE ELEVACION ES PB2 [EN_B]
+PWM_MOTOR_ELEVACION_SET:
+	OUTPUT OCR1B,PWM_DATA	
+RET
+
+PWM_MOTOR_ELEVACION_RESET:
+	CLR PWM_DATA
+	OUTPUT OCR1B,PWM_DATA
+RET
+
+PWM_LIGHT_SET:
+	OUTPUT OCR2B,PWM_DATA	
+RET
+
+PWM_LIGHT_RESET:
+	CLR PWM_DATA
+	OUTPUT OCR2B,PWM_DATA
+RET
+
+/*
+;PWM DE 16 BITS, RECIBE EL VALOR POR PWM_DATA_L Y PWM_DATA_L_H
+PWM_MOTOR_ELEVACION_SET:	;EL DE ELEVACION ES PD5 [MOT_1]
 	OUTPUT OCR1BL,PWM_DATA
 	OUTPUT OCR1BH,PWM_DATA_H	
 RET
 
-PWM_MOTOR_ELEVACION_RESET:	;EL DE ELEVACION ES PB2 [EN_B]
+PWM_MOTOR_ELEVACION_RESET:	;EL DE ELEVACION ES PD6 [MOT_2]
 	CLR PWM_DATA
 	OUTPUT OCR1BL,PWM_DATA	
-	OUTPUT OCR1BH,PWM_DATA	
+	OUTPUT OCR1BH,PWM_DATA_H	
 RET
+*/
+
+;*****************************************************
+/*
+CS22	CS21	CS20	Description
+0 		0 		0 		No clock source (timer/counter stopped)
+0 		0 		1 		clkT2S/(no prescaling)
+0 		1 		0 		clkT2S/8 (from prescaler)
+0 		1 		1 		clkT2S/32 (from prescaler)
+1 		0 		0 		clkT2S/64 (from prescaler)
+1 		0 		1 		clkT2S/128 (from prescaler)
+1 		1 		0 		clkT2S/256 (from prescaler)
+1 		1 		1 		clkT2S/1024 (from prescaler)
+*/
