@@ -1,15 +1,12 @@
 # Solar Tracker
 COMENTARIOS [MAU]:
 
-  08/06 SE IMPRIMEN LOS ENGRANAJES.
+08/06 SE IMPRIMEN LOS ENGRANAJES.
 
-  10/06 SE MONTA EL PANEL.
+10/06 SE MONTA EL PANEL.
 
-  11/06-12/06 FIN DE SEMANA RE-LOCO DE PRUEBAS.
+11/06-12/06 FIN DE SEMANA RE-LOCO DE PRUEBAS.
 
-
-
-  
 FALTA TERMINAR UN EJE DE LA MECANICA.
 
 FALTA TERMINAR PWM.inc
@@ -20,8 +17,8 @@ Tener en cuenta que si el ADC de la bateria es 0x000 => NO HAY BATERIA CONECTADA
 
 Para configurar el oscilador externo a 8MHz:
 
-  avrdude -c usbtiny -p m328p -U lfuse:r:-:i -F		
-  avrdude -c usbtiny -p m328p -U lfuse:w:0xE2:m -F
+  avrdude -c usbtiny -p m88p -U lfuse:r:-:i -F		
+  avrdude -c usbtiny -p m888p -U lfuse:w:0xE2:m -F
   
 OJO QUE PARA HACER PUSHI Y POPI DE SREG SIEMPRE HAY QUE HACER PUSH Y POP DE ¡¡¡¡AUX!!!!
 
