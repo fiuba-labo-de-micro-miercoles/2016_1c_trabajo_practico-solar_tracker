@@ -41,8 +41,8 @@ PWM_INIT_0:
 	ORI PWM_DATA,((0<<CS00)|(1<<CS01)|(0<<CS02))	;Ver tabla prescalers al final del archivo
 	OUTPUT TCCR0B,PWM_DATA
 ;Se inicializa el pwm en cero
-	RCALL PWM_MOTOR_ASIMUT_RESET
-	RCALL PWM_MOTOR_ELEVACION_RESET
+	RPWM MOTOR_AZIMUT
+	RPWM MOTOR_ELEVATION
 RET
 
 ;*****************************************************

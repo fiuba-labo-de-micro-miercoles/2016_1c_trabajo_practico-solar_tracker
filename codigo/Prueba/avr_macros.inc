@@ -132,4 +132,20 @@ division:
 		brne		division
 		pop		@1
 .endm
+
+
+.macro SPWM 
+;PROTOTYPE SET_PWM: SPWM OCRnx,PWM_DATA
+;RECIBE: OCRnx,PWM_DATA
+;DEVUELVE: .
+	OUTPUT @0,@1
+.endm
+
+.macro RPWM 
+;PROTOTYPE RESET_PWM: RPWM OCRnx
+;RECIBE: OCRnx
+;DEVUELVE: -
+	CLR AUX
+	OUTPUT @0,AUX
+.endm
 ;-----------------------------------------------------------------------------------
