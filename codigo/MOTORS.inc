@@ -4,9 +4,9 @@
 
 ;-------------------------------------------------------------------------
 
-;	HACER QUE TODAS LAS FUNCIONES DE MOVIMIENTO NO TOQUEN EL SREG!!!
-
 MOTORS_INIT:
+	RCALL MOTOR_AZIMUT_OFF
+	RCALL MOTOR_ELEVATION_OFF
 RET
 
 MOTOR_AZIMUT_LEFT:
