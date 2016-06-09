@@ -1,28 +1,16 @@
-;*************************************************************
-;*				Programa Principal Seudo Codigo
-;*
-;*					Created: 29/05/2016
-;*
-;*  Autors: Joaquín Ulloa, Agustin Picard, Mauro Giordano
-;*	
-;*************************************************************
+/*
+ * Solar_Tracker.asm
+ *
+ *  Created: 08/06/2016 07:45:11 p.m.
+ *   Author: Agustín Picard, Joaquin Ulloa, Mauro Giordano
+ */ 
 
 .include "m88def.inc"   	;Incluye los nombres de los registros del micro
+.include "Solar_Tracker.inc"
+.include "MESSAGES.inc"
 .include "avr_macros.inc"	;Incluye los macros
 .listmac					;Permite que se expandan las macros en el listado
 
-.include "Solar_Tracker.inc"
-.include "ADC.inc"
-.include "PWM.inc"
-.include "SERIAL_PORT.inc"
-.include "DELAY.inc"
-.include "LIGHT.inc"
-.include "BATTERY.inc"
-.include "SOLAR_PANEL.inc"
-.include "LDRS.inc"
-.include "MOTORS.inc"
-
-;-------------------------------------------------------------------------------- 
 .CSEG
 .ORG 0x0000
 RJMP SETUP	
@@ -48,7 +36,9 @@ SETUP:
 	RCALL MOTORS_INIT
 	RCALL BT_DISCONNECT		;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO ESTA CONECTADO A BT.
 	SEI
+	RJMP MAIN
 ;--------------------------------------------------------------------------------
+
 
 ;-------------------------------PROGRAMA_PRINCIPAL-------------------------------
 MAIN:	
@@ -70,7 +60,7 @@ MAIN:
 		RCALL	ORIENTATE_SOLAR_PANEL			;HAY QUE RESOLVER ESTO TODAVIA.
 ;HACE UN LOOP CON LOS VALORES MEDIDOS Y MOVER A OJO.		
 SLEEP_MODE:
-;HAY QUE HACER COSAS ANTES DE IR A SLEEP, COMO APAGAR EL ADC Y NO SE QUE MAS
+;HAY QUE HACER COSAS ANTES DE IR A SLEEP, COMO APAGAR EL ADC Y NO SE QUE MAS [COMO EL PWM DE LOS MOTORES]
 ;SALIR DE SLEEP: EN UN TIEMPO t [TIEMPO ENTRE MEDICION Y MEDICION].
 		INPUT AUX,SMCR
 		ANDI AUX,(~(1<<SM2)|(1<<SM1)|(1<<SM0)|(1<<SE))
@@ -100,4 +90,12 @@ RET
 ISR_TIMER_1_OV:
 RETI
 
-.include "MESSAGES.inc"
+.include "ADC.inc"
+.include "PWM.inc"
+.include "SERIAL_PORT.inc"
+.include "DELAY.inc"
+.include "LIGHT.inc"
+.include "BATTERY.inc"
+.include "SOLAR_PANEL.inc"
+.include "LDRS.inc"
+.include "MOTORS.inc"

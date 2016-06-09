@@ -167,7 +167,7 @@ sigue_tx:
 ; Habilita la int. de transmisión serie con ISR en ISR_REG_USART_VACIO().
 ;-------------------------------------------------------------------------
 TRANSMITIR_MENSAJE:
-		PUSH	Z
+		PUSHW	Z
 		PUSHW	X
 		PUSH	AUX
 

@@ -6,7 +6,7 @@
 ;		TENER EN CUENTA QUE EL MICRO TRABAJA A 8MHZ
 ;
 ;***********************************************************
-
+.CSEG
 DELAY_50ms:
 
 	PUSH R18

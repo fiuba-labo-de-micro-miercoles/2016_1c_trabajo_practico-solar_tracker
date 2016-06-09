@@ -104,15 +104,6 @@
 	LDI @0H,@2
 .endm
 
-.macro RLDR
-;READ_LDR
-;RECIBE: LDR_XX
-;DEVUELVE: EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
-	LDI ADC_DATA_L,@0
-	RCALL ADC_INPUT_SELECT
-	RCALL ADC_SIMPLE_CONVERSION
-.endm
-
 .macro	VECTMEAN	;@0,@1,@2	;Calcula la media de un vector @0 de longitud @1 y guarda la media en @2
 		push		@1
 		ld 		AUX,@0+

@@ -5,9 +5,8 @@
 		en un header general
 
 ******************************************/
-
-.IFNDEF SOLAR_TRACKER
 .DSEG
+.ORG SRAM_START
 
 ;--------------------HEADER DE LA LUZ-----------------------------------------------
 .EQU	LIGHT_PIN					=	PB0
@@ -47,19 +46,17 @@ TX_BUF:	.BYTE	BUF_SIZE	; buffer de transmisión
 ;-----------------------------------------------------------------------------------
 
 ;--------------------------------HEADER DE LA BATERIA-------------------------------
-.DEF	PIN_BATTERY					=	ADC6
-.DEF	PIN_BATTERY_LED_OK			=	PD4
-.DEF	PIN_BATTERY_LED_LOW			=	PD7
+.EQU	PIN_BATTERY_LED_OK			=	PD4
+.EQU	PIN_BATTERY_LED_LOW			=	PD7
 
-.EQU	MIN_BATTERY_VALUE			=			;{0,255} RESULTADO DEL ADC QUE HACE IR A BAJO CONSUMO EL EQUIPO POR NO TENER SUFICIENTE TENSION
+.EQU	MIN_BATTERY_VALUE			=	10		;{0,255} RESULTADO DEL ADC QUE HACE IR A BAJO CONSUMO EL EQUIPO POR NO TENER SUFICIENTE TENSION
 ;-----------------------------------------------------------------------------------
 
 ;-------------------------------HEADER DEL PANEL SOLAR------------------------------
-.DEF	PIN_SOLAR_PANEL				=	ADC7
-.DEF	PIN_SOLAR_PANEL_LED_OK		=	PC0
-.DEF	PIN_SOLAR_PANEL_LED_LOW		=	PC1
+.EQU	PIN_SOLAR_PANEL_LED_OK		=	PC0
+.EQU	PIN_SOLAR_PANEL_LED_LOW		=	PC1
 
-.EQU	MIN_SOLAR_PANEL_VALUE		=			;{0,255} RESULTADO DEL ADC QUE DECIDE SI ES DE DIA O NOCHE. 
+.EQU	MIN_SOLAR_PANEL_VALUE		=	10		;{0,255} RESULTADO DEL ADC QUE DECIDE SI ES DE DIA O NOCHE. 
 ;-----------------------------------------------------------------------------------
 
 ;--------------------REGISTROS DE USO GENERAL SIN IMPORTAR QUE TENGA----------------
@@ -69,13 +66,12 @@ TX_BUF:	.BYTE	BUF_SIZE	; buffer de transmisión
 ;-----------------------------------------------------------------------------------
 
 ;------------------------------HEADER DE LDRS---------------------------------------
-.EQU NUM_SAMPLES = 32 ;TIENE QUE SER MULTIPLO DE 2
+.EQU CANT_SAMPLES = 8 ;TIENE QUE SER MULTIPLO DE 2
 
-.ORG SRAM_START
-LDR_NO_BUFFER:						.BYTE NUM_SAMPLES
-LDR_NE_BUFFER:						.BYTE NUM_SAMPLES
-LDR_SE_BUFFER:						.BYTE NUM_SAMPLES
-LDR_SO_BUFFER:						.BYTE NUM_SAMPLES
+LDR_NO_BUFFER:						.BYTE CANT_SAMPLES
+LDR_NE_BUFFER:						.BYTE CANT_SAMPLES
+LDR_SE_BUFFER:						.BYTE CANT_SAMPLES
+LDR_SO_BUFFER:						.BYTE CANT_SAMPLES
 LDR_NO_MEAN:						.BYTE 1
 LDR_NE_MEAN:						.BYTE 1
 LDR_SE_MEAN:						.BYTE 1
@@ -84,10 +80,10 @@ COUNTER:							.BYTE 2
 BT_FLAG:							.BYTE 1			;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO ESTA CONECTADO A BT.
 
 ;LAS CONSTANTES SON PARA EL MUX EN EL ADC
-.EQU LDR_NO							=	ADC2
-.EQU LDR_NE							=	ADC3
-.EQU LDR_SE							=	ADC4
-.EQU LDR_SO							=	ADC5
+.EQU LDR_NO							=	2	;ADC2
+.EQU LDR_NE							=	3	;ADC3
+.EQU LDR_SE							=	4	;ADC4
+.EQU LDR_SO							=	5	;ADC5
 
 .DEF LDR_NO_LOW						=	R11
 .DEF LDR_NO_HIGH					=	R12
@@ -101,11 +97,10 @@ BT_FLAG:							.BYTE 1			;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO ESTA
 ;-----------------------------------------------------------------------------------
 
 ;------------------------------HEADER DEL PWM---------------------------------------
+.DEF PWM_DATA					 	=	R21
 
-.DEF MOTOR_AZIMUT					=	OCR0A
-.DEF MOTOR_ELEVATION				=	OCR0B
-.DEF LIGHT							=	OCR2B
+.EQU MOTOR_AZIMUT					=	OCR0A
+.EQU MOTOR_ELEVATION				=	OCR0B
+.EQU LIGHT							=	OCR2B
 
 ;-----------------------------------------------------------------------------------
-
-.ENDIF

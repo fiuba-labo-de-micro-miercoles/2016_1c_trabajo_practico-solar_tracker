@@ -1,9 +1,9 @@
 ;-------------------------------------------------------------------------
-
-							BATTERY.inc
-
+;
+;							BATTERY.inc
+;
 ;-------------------------------------------------------------------------
-
+.CSEG
 READ_V_BATTERY:
 		LDI ADC_DATA_L,ADC_BATTERY			;ELIJO EL PIN DE LA BATERÍA
 		RCALL ADC_SELECT_INPUT				;LLAMO LA FUNCION PARA SELECCIONAR LA BATERIA

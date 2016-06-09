@@ -8,11 +8,6 @@
 ;*	Configuracion Fast Pwm
 ;*	
 ;*****************************************************
-.DSEG						;Se abre un segmento de datos para definir variables
-.DEF	PWM_DATA 	= R30	;USO EL REGISTRO Z PARA INTERCAMBIAR DATOS EN WORDS
-.DEF	PWM_DATA_H	= R31
-;.EQU	PWM_DC_DEFAULT = 30		;Duty cicle {0,255} Variable de prueba
-;***************************************************** 
 .CSEG
 PWM_INIT:
 	RCALL PWM_INIT_0
@@ -24,7 +19,7 @@ RET
 PWM_INIT_0:
 ;Se inicializan como salida los pines de PWM
 	INPUT PWM_DATA,DDRB
-	ANDI PWM_DATA (~((1<<DDB1)|(1<<DDB2)))	;Mascara para tocar solo B1 Y B2
+	ANDI PWM_DATA,(~((1<<DDB1)|(1<<DDB2)))	;Mascara para tocar solo B1 Y B2
 	ORI PWM_DATA,((1<<DDB1)|(1<<DDB2))
 	OUTPUT DDRB,PWM_DATA
 ;Se inicializan como Fast PWM y non-inverting mode
@@ -95,34 +90,6 @@ RET
 
 
 ;*****************************************************
-;EL PWM ES DE 8 BITS, RECIBE EL VALOR POR PWM_DATA
-;Se concidera Azimut en PB1 (EN_A), altitud en PB2 (EN_B) y la luz en PD3
-PWM_MOTOR_AZIMUT_SET:
-	OUTPUT OCR1A,PWM_DATA
-RET
-
-PWM_MOTOR_AZIMUT_RESET:
-	CLR PWM_DATA
-	OUTPUT OCR1A,PWM_DATA	
-RET
-
-PWM_MOTOR_ELEVACION_SET:
-	OUTPUT OCR1B,PWM_DATA	
-RET
-
-PWM_MOTOR_ELEVACION_RESET:
-	CLR PWM_DATA
-	OUTPUT OCR1B,PWM_DATA
-RET
-
-PWM_LIGHT_SET:
-	OUTPUT OCR2B,PWM_DATA	
-RET
-
-PWM_LIGHT_RESET:
-	CLR PWM_DATA
-	OUTPUT OCR2B,PWM_DATA
-RET
 
 /*
 ;PWM DE 16 BITS, RECIBE EL VALOR POR PWM_DATA_L Y PWM_DATA_L_H

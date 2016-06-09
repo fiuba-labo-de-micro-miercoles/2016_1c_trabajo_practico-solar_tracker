@@ -1,9 +1,10 @@
 /*
- *	LIGHT.inc [COMO SI FUERA UN OBJETO]
- *
- *  Created: 01/06/2016 13:10:11 p.m.
- *   Author: MAU
- */ 
+*	LIGHT.inc [COMO SI FUERA UN OBJETO]
+*
+*  Created: 01/06/2016 13:10:11 p.m.
+*   Author: MAU
+*/ 
+.CSEG
 
 LIGHT_TURN_ON:
 	PUSH AUX
