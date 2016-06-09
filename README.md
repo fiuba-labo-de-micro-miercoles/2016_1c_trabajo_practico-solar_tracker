@@ -9,8 +9,6 @@ COMENTARIOS [MAU]:
 
 FALTA TERMINAR UN EJE DE LA MECANICA.
 
-FALTA TERMINAR PWM.inc
-
 Poner la luz en un pin pwm [no puede ser mot1 ni mot2, puede ser bot2 o mosi].
 
 Tener en cuenta que si el ADC de la bateria es 0x000 => NO HAY BATERIA CONECTADA. [IDEM PANEL SOLAR].
@@ -24,4 +22,4 @@ OJO QUE PARA HACER PUSHI Y POPI DE SREG SIEMPRE HAY QUE HACER PUSH Y POP DE ¡¡
 
 HAY QUE HACER QUE CUANDO SE VAYA A DORMIR, SE GIRE A LA POSICION INICIAL!
 
-PREGUNTAS: VER ARCHIVO LDRS.inc
+Hacer que se pueda mover manual 
