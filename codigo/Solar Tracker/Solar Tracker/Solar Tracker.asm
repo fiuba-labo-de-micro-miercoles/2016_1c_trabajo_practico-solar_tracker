@@ -77,7 +77,6 @@ RJMP MAIN
 ;------------------------------MAIN_FUNCTIONS---------------------------------------
 AT_NIGHT:
 		RCALL LIGHT_TURN_ON
-		RCALL INDICATE_SOLAR_PANEL_LOW
 		RJMP SLEEP_MODE
 
 STACK_INIT:
