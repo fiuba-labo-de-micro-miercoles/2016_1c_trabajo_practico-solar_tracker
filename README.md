@@ -11,8 +11,8 @@ Tener en cuenta que si el ADC de la bateria es 0x000 => NO HAY BATERIA CONECTADA
 
 Para configurar el oscilador externo a 8MHz:
 
-  avrdude -c usbtiny -p m88p -U lfuse:r:-:i -F		
-  avrdude -c usbtiny -p m888p -U lfuse:w:0xE2:m -F
+  avrdude -c usbtiny -p m88 -U lfuse:r:-:i -F		
+  avrdude -c usbtiny -p m88 -U lfuse:w:0xE2:m -F
   
 OJO QUE PARA HACER PUSHI Y POPI DE SREG SIEMPRE HAY QUE HACER PUSH Y POP DE ¡¡¡¡AUX!!!!
 
