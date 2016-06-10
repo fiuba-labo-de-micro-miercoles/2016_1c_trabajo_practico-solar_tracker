@@ -18,4 +18,4 @@ OJO QUE PARA HACER PUSHI Y POPI DE SREG SIEMPRE HAY QUE HACER PUSH Y POP DE ¡¡
 
 HAY QUE HACER QUE CUANDO SE VAYA A DORMIR, SE GIRE A LA POSICION INICIAL!
 
-Hacer que se pueda mover manual 
+Hacer que se pueda mover manual [calibracion]
