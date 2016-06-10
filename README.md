@@ -19,3 +19,6 @@ OJO QUE PARA HACER PUSHI Y POPI DE SREG SIEMPRE HAY QUE HACER PUSH Y POP DE ¡¡
 HAY QUE HACER QUE CUANDO SE VAYA A DORMIR, SE GIRE A LA POSICION INICIAL!
 
 Hacer que se pueda mover manual [calibracion]
+
+# Hacer funciones de conversión del adc al valor de tension del panel y bat
+
