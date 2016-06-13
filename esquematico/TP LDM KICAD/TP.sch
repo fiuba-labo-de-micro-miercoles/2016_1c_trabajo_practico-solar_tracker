@@ -61,7 +61,7 @@ Text Label 5700 2000 2    60   ~ 0
 EN_A
 Text Label 5700 2100 2    60   ~ 0
 EN_B
-Text Label 5700 1900 2    60   ~ 0
+Text Label 5700 3800 2    60   ~ 0
 LUZ
 Text Label 5700 3500 2    60   ~ 0
 RX
@@ -71,9 +71,9 @@ Text Label 5700 4000 2    60   ~ 0
 MOT_1
 Text Label 5700 4100 2    60   ~ 0
 MOT_2
-Text Label 5700 3700 2    60   ~ 0
+Text Label 6250 3350 2    60   ~ 0
 BOT_1
-Text Label 5700 3800 2    60   ~ 0
+Text Label 5700 1900 2    60   ~ 0
 BOT_2
 $Comp
 L ATMEGA328-A IC1

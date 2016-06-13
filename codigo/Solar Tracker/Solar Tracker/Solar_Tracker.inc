@@ -9,7 +9,7 @@
 .ORG SRAM_START
 
 ;--------------------HEADER DE LA LUZ-----------------------------------------------
-.EQU	LIGHT_PIN					=	PB0
+.EQU	LIGHT_PIN					=	PD3
 ;-----------------------------------------------------------------------------------
 
 
@@ -100,8 +100,19 @@ BT_FLAG:							.BYTE 1				;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO EST
 ;------------------------------HEADER DEL PWM---------------------------------------
 .DEF PWM_DATA					 	=	R21
 
+.EQU PWM_AZIMUT_DEFAULT				=	60		;{0,255} PARA SETEAR EL PWM
+.EQU PWM_ELEVATION_DEFAULT			=	70		;{0,255} PARA SETEAR EL PWM
+
 .EQU MOTOR_AZIMUT					=	OCR0A
 .EQU MOTOR_ELEVATION				=	OCR0B
+
 .EQU LIGHT							=	OCR2B
+
+;-----------------------------------------------------------------------------------
+
+;------------------------------HEADER DE MOTORES------------------------------------
+
+.EQU MOTOR_EN_A						=	PB1
+.EQU MOTOR_EN_B						=	PB2
 
 ;-----------------------------------------------------------------------------------
