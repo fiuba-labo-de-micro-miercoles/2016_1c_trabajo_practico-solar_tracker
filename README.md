@@ -18,3 +18,5 @@ Hacer que se pueda mover manual [calibracion]
 
 # Hacer funciones de conversión del adc al valor de tension del panel y bat
 
+# Hacer que se pueda resetear por bt
+
