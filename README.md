@@ -3,7 +3,7 @@ COMENTARIOS [MAU]:
 
 11/06-12/06 FIN DE SEMANA RE-LOCO DE PRUEBAS.
 
-Tener en cuenta que si el ADC de la bateria es 0x000 => NO HAY BATERIA CONECTADA. [IDEM PANEL SOLAR].
+Tener en cuenta que si el ADC del panel es 0x000 => NO HAY PANEL SOLAR CONECTADO.
 
 Para configurar el oscilador externo a 8MHz:
 
