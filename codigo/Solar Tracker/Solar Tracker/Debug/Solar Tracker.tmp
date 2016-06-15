@@ -50,11 +50,12 @@
   <MSJ_DISCONNECTED_BATTERY><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\MESSAGES.inc</FILE><LINE>6</LINE></MSJ_DISCONNECTED_BATTERY>
   <MSJ_DISCONNECTED_PANEL><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\MESSAGES.inc</FILE><LINE>7</LINE></MSJ_DISCONNECTED_PANEL>
   <SETUP><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>32</LINE></SETUP>
-  <ISR_INT0><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>84</LINE></ISR_INT0>
+  <ISR_INT0><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>85</LINE></ISR_INT0>
   <ISR_RX_USART_COMPLETA><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\SERIAL_PORT.inc</FILE><LINE>61</LINE></ISR_RX_USART_COMPLETA>
   <ISR_REG_USART_VACIO><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\SERIAL_PORT.inc</FILE><LINE>122</LINE></ISR_REG_USART_VACIO>
-  <ISR_TIMER_1_OV><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>87</LINE></ISR_TIMER_1_OV>
-  <STACK_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>102</LINE></STACK_INIT>
+  <ISR_TIMER_1_OV><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>88</LINE></ISR_TIMER_1_OV>
+  <STACK_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>103</LINE></STACK_INIT>
+  <INT_EXT_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>110</LINE></INT_EXT_INIT>
   <ADC_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\ADC.inc</FILE><LINE>30</LINE></ADC_INIT>
   <PWM_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\PWM.inc</FILE><LINE>12</LINE></PWM_INIT>
   <SERIAL_PORT_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\SERIAL_PORT.inc</FILE><LINE>14</LINE></SERIAL_PORT_INIT>
@@ -62,16 +63,16 @@
   <LIGHT_TURN_OFF><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\LIGHT.inc</FILE><LINE>25</LINE></LIGHT_TURN_OFF>
   <MOTORS_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\MOTORS.inc</FILE><LINE>8</LINE></MOTORS_INIT>
   <BT_DISCONNECT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\SERIAL_PORT.inc</FILE><LINE>109</LINE></BT_DISCONNECT>
-  <MAIN><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>47</LINE></MAIN>
+  <MAIN><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>48</LINE></MAIN>
   <READ_V_BATTERY><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\BATTERY.inc</FILE><LINE>7</LINE></READ_V_BATTERY>
   <CHECK_IF_BATTERY_MINIMUM><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\BATTERY.inc</FILE><LINE>13</LINE></CHECK_IF_BATTERY_MINIMUM>
-  <SLEEP_MODE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>68</LINE></SLEEP_MODE>
+  <SLEEP_MODE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>69</LINE></SLEEP_MODE>
   <INDICATE_BATTERY_OK><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\BATTERY.inc</FILE><LINE>29</LINE></INDICATE_BATTERY_OK>
   <READ_V_SOLAR_PANEL><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\SOLAR_PANEL.inc</FILE><LINE>7</LINE></READ_V_SOLAR_PANEL>
   <CHECK_IF_SOLAR_PANEL_CONNECTED><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\SOLAR_PANEL.inc</FILE><LINE>15</LINE></CHECK_IF_SOLAR_PANEL_CONNECTED>
-  <NO_SOLAR_PANEL_CONNECTED><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>90</LINE></NO_SOLAR_PANEL_CONNECTED>
+  <NO_SOLAR_PANEL_CONNECTED><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>91</LINE></NO_SOLAR_PANEL_CONNECTED>
   <CHECK_IF_SOLAR_PANEL_MINIMUM><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\SOLAR_PANEL.inc</FILE><LINE>24</LINE></CHECK_IF_SOLAR_PANEL_MINIMUM>
-  <AT_NIGHT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>98</LINE></AT_NIGHT>
+  <AT_NIGHT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\Solar Tracker.asm</FILE><LINE>99</LINE></AT_NIGHT>
   <INDICATE_SOLAR_PANEL_OK><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\SOLAR_PANEL.inc</FILE><LINE>35</LINE></INDICATE_SOLAR_PANEL_OK>
   <READ_LDRS><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\LDRS.inc</FILE><LINE>40</LINE></READ_LDRS>
   <ORIENTATE_SOLAR_PANEL><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker\Solar Tracker\SOLAR_PANEL.inc</FILE><LINE>54</LINE></ORIENTATE_SOLAR_PANEL>
