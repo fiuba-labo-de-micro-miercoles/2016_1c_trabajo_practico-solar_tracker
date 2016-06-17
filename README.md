@@ -9,7 +9,7 @@ Hacer que se pueda mover manual [calibracion]
 
 # Hacer que se pueda resetear por bt
 
-# Configurar la int_ext_0 
+# Hacer que ande el SLEEP_MODE
 
 Para configurar el oscilador externo a 8MHz:
 
