@@ -48,18 +48,17 @@ ADC_INIT:
 RET
 
 ;-------------------------------------------------------------------------
-ADC_SELECT_INPUT:	;ADMUX = REFS1 REFS0 ADLAR – MUX3 MUX2 MUX1 MUX0
+ADC_SELECT_INPUT:
+;ADMUX = REFS1 REFS0 ADLAR – MUX3 MUX2 MUX1 MUX0
 ;RECIBE: EL VALOR DEL PIN A SELECCIONAR EN ADC_DATA_L
 ;DEVUELVE: NADA
 	INPUT AUX,ADMUX
 	ANDI AUX,(~(1<<MUX3)|(1<<MUX2)|(1<<MUX1)|(1<<MUX0))
 	OR AUX,ADC_DATA_L ;NO HAY QUE HACER SHIFT
 	OUTPUT ADMUX,AUX
-
 RET
 
 ;-------------------------------------------------------------------------
-
 ADC_SIMPLE_CONVERSION:
 ;RECIBE: -
 ;DEVUELVE: RESULTADO DE LA CONVERSION EN ADC_DATA_H:ADC_DATA_L
@@ -75,6 +74,7 @@ L2:	INPUT ADC_DATA_L,ADCSRA
 
 	INPUT ADC_DATA_L,ADCL
 	INPUT ADC_DATA_H,ADCH
+
 RET
 
 /************************** EJEMPLO! ***********************************

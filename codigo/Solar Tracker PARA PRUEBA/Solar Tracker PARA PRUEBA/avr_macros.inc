@@ -139,4 +139,25 @@ division:
 	CLR AUX
 	OUTPUT @0,AUX
 .endm
+
+.macro ADDI
+;PROTOTYPE ADDI: REG,CTE
+;RECIBE: REG,CTE
+;DEVUELVE: Suma de cte al registro
+	LDI AUX,@1
+	ADD @0,AUX
+.endm
+
+.macro ADDP
+;PROTOTYPE ADDP: POINTER,REG
+;RECIBE: POINTER,REG
+;DEVUELVE: Pointer en posición inicial + AUX
+	PUSH @1
+	ADD @0L,@1
+	BRVC NO_POINTER_OV
+	INC @0H
+	SUB @1,@0L
+	MOV @1,@0L
+NO_POINTER_OV: NOP
+.endm
 ;-----------------------------------------------------------------------------------
