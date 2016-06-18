@@ -1,20 +1,20 @@
 
-AVRASM ver. 2.1.57  C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm Fri Jun 17 22:44:50 2016
+AVRASM ver. 2.1.57  C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm Sat Jun 18 00:08:31 2016
 
 [builtin](2): Including file 'C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m88def.inc'
 C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(8): Including file 'C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\m88def.inc'
 C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(9): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar_Tracker.inc'
 C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(10): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\avr_macros.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(188): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\ADC.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(189): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\PWM.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(190): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SERIAL_PORT.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(191): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(192): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LIGHT.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(193): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\BATTERY.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(194): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(195): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LDRS.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(196): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc'
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(197): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(187): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\ADC.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(188): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\PWM.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(189): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SERIAL_PORT.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(190): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(191): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LIGHT.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(192): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\BATTERY.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(193): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(194): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LDRS.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(195): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc'
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(196): Including file 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc'
                  
                  /*
                  
@@ -1094,14 +1094,15 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  .EQU	PIN_BATTERY_LED_OK			=	PD4
                  .EQU	PIN_BATTERY_LED_LOW			=	PD7
                  
-                 .EQU	MIN_BATTERY_VALUE			=	50		;{0,255} RESULTADO DEL ADC QUE HACE IR A BAJO CONSUMO EL EQUIPO POR NO TENER SUFICIENTE TENSION
+                 .EQU	MIN_BATTERY_VALUE			=	170		;{0,255} RESULTADO DEL ADC QUE HACE IR A BAJO CONSUMO EL EQUIPO POR NO TENER SUFICIENTE TENSION
+                 										;YA ESTA AJUSTADO! 10.6v
                  ;-----------------------------------------------------------------------------------
                  
                  ;-------------------------------HEADER DEL PANEL SOLAR------------------------------
                  .EQU	PIN_SOLAR_PANEL_LED_OK		=	PC1
                  .EQU	PIN_SOLAR_PANEL_LED_LOW		=	PC0
                  
-                 .EQU	MIN_SOLAR_PANEL_VALUE		=	10		;{0,255} RESULTADO DEL ADC QUE DECIDE SI ES DE DIA O NOCHE.
+                 .EQU	MIN_SOLAR_PANEL_VALUE		=	50		;{0,255} RESULTADO DEL ADC QUE DECIDE SI ES DE DIA O NOCHE.
                  
 000140           VPANEL_DATA_ASCII: .BYTE 3	;REVISAR Y CAPAZ PONER 6 [DECENA,UNIDAD,'.',DECIMAL,'V','0']
                  ;-----------------------------------------------------------------------------------
@@ -1333,16 +1334,16 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
 000000 c019      RJMP SETUP	
                  
                  .ORG	INT0addr
-000001 c051      RJMP	ISR_INT0
+000001 c04e      RJMP	ISR_INT0
                  
                  .ORG	URXCaddr		; USART, Rx Complete
-000012 c0c5      RJMP	ISR_RX_USART_COMPLETA
+000012 c0d4      RJMP	ISR_RX_USART_COMPLETA
                  	
                  .ORG	UDREaddr		; USART Data Register Empty
-000013 c0e9      RJMP	ISR_REG_USART_VACIO
+000013 c0f8      RJMP	ISR_REG_USART_VACIO
                  
                  .ORG	OVF1addr
-00000d c046      RJMP	ISR_TIMER_1_OV
+00000d c043      RJMP	ISR_TIMER_1_OV
                  
                  ;-------------------------------SETUP--------------------------------------------
                  .ORG	INT_VECTORS_SIZE
@@ -1352,185 +1353,147 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
 00001c e004      	LDI	AUX,HIGH(RAMEND)
 00001d bf0e      	OUT SPH,AUX
                  
-                 ;	RCALL BT_DISCONNECT		;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO ESTA CONECTADO A BT.
+00001e d04d      	RCALL TIMER_INIT
+00001f d0e8      	RCALL BT_DISCONNECT		;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO ESTA CONECTADO A BT.
                  ;	RCALL INT_EXT_INIT
-                 ;	RCALL BATTERY_INIT
-00001e d180      	RCALL SOLAR_PANEL_INIT
-00001f d04d      	RCALL ADC_INIT			;TIENE QUE ESTAR EN "ADC.inc"
+000020 d172      	RCALL BATTERY_INIT
+000021 d18e      	RCALL SOLAR_PANEL_INIT
+000022 d059      	RCALL ADC_INIT			;TIENE QUE ESTAR EN "ADC.inc"
                  ;	RCALL PWM_INIT			;TIENE QUE ESTAR EN "PWM.inc"
-                 ;	RCALL SERIAL_PORT_INIT	;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
-000020 9478      	SEI
-000021 d147      	RCALL	DELAY_500ms
+000023 d09f      	RCALL SERIAL_PORT_INIT	;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
+000024 9478      	SEI
+000025 d152      	RCALL	DELAY_500ms
                  
-000022 c006      RJMP PRUEBA
+000026 c006      RJMP PRUEBA
                  
                  
-000023 d090      	RCALL SERIAL_PORT_INIT	;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
-000024 d245      	RCALL LDRS_INIT
-000025 d156      	RCALL LIGHT_TURN_OFF	;TIENE QUE ESTAR EN "LIGHT.inc"
-000026 d2f8      	RCALL MOTORS_INIT
-000027 9478      	SEI
-000028 c000      	RJMP PRUEBA
+000027 d09b      	RCALL SERIAL_PORT_INIT	;TIENE QUE ESTAR EN "SERIAL_PORT.inc"
+000028 d24d      	RCALL LDRS_INIT
+000029 d161      	RCALL LIGHT_TURN_OFF	;TIENE QUE ESTAR EN "LIGHT.inc"
+00002a d300      	RCALL MOTORS_INIT
+00002b 9478      	SEI
+00002c c000      	RJMP PRUEBA
                  ;--------------------------------------------------------------------------------
                  PRUEBA:
-                 /*	LDI	ADC_DATA_L,ADC_SOLAR_PANEL
-                 	RCALL ADC_SELECT_INPUT
-                 	RCALL ADC_SIMPLE_CONVERSION
+00002d d14a      		RCALL DELAY_500ms
                  
-                 		CPI ADC_DATA_H,0x00		
-                 		BREQ LED1
-                 		CPI ADC_DATA_H,0x01		
-                 		BREQ LED2
-                 		CPI ADC_DATA_H,0x02		
-                 		BREQ LED3
-                 		CPI ADC_DATA_H,0x03		
-                 		BREQ LED4	
+                 /*		CPI		ADC_DATA_H,0x00
+                 		BREQ	LED1
+                 		CPI		ADC_DATA_H,0x01
+                 		BREQ	LED2
+                 		CPI		ADC_DATA_H,0x02
+                 		BREQ	LED3
+                 		CPI		ADC_DATA_H,0x03
+                 		BREQ	LED4
                  */
-                +
-                +
-                +.if DDRD < 0x40
-000029 b10a     +in AUX , DDRD
-                +.else 
-                +lds AUX , DDRD
-                 	INPUT AUX,DDRD
-00002a 6008      	ORI AUX,(1<<DDD3)
-                +
-                +
-                +.if DDRD < 0x40
-00002b b90a     +out DDRD , AUX
-                +.else 
-                +sts DDRD , AUX
-                 	OUTPUT DDRD,AUX
-                 
-                +
-                +
-                +.if PORTD < 0x40
-00002c b10b     +in AUX , PORTD
-                +.else 
-                +lds AUX , PORTD
-                 	INPUT AUX,PORTD
-00002d 6008      	ORI AUX,(1<<PD3)
-                +
-                +
-                +.if PORTD < 0x40
-00002e b90b     +out PORTD , AUX
-                +.else 
-                +sts PORTD , AUX
-                 	OUTPUT PORTD,AUX
-                 
-00002f cff9      RJMP PRUEBA
+00002e cffe      RJMP PRUEBA
                  
                  LED1:
-000030 9840      		CBI PORTC,0
-000031 d137      		RCALL DELAY_500ms
-000032 9a40      		SBI PORTC,0
-000033 d135      		RCALL DELAY_500ms
-000034 cff4      		RJMP PRUEBA
+00002f 9840      		CBI PORTC,0
+000030 d147      		RCALL DELAY_500ms
+000031 9a40      		SBI PORTC,0
+000032 d145      		RCALL DELAY_500ms
+000033 cff9      		RJMP PRUEBA
                  LED2:
-000035 9841      		CBI PORTC,1
-000036 d132      		RCALL DELAY_500ms
-000037 9a41      		SBI PORTC,1
-000038 d130      		RCALL DELAY_500ms
-000039 cfef      		RJMP PRUEBA
+000034 9841      		CBI PORTC,1
+000035 d142      		RCALL DELAY_500ms
+000036 9a41      		SBI PORTC,1
+000037 d140      		RCALL DELAY_500ms
+000038 cff4      		RJMP PRUEBA
                  LED3:
-00003a 985f      		CBI PORTD,7
-00003b d12d      		RCALL DELAY_500ms
-00003c 9a5f      		SBI PORTD,7
-00003d d12b      		RCALL DELAY_500ms
-00003e cfea      		RJMP PRUEBA
+000039 985f      		CBI PORTD,7
+00003a d13d      		RCALL DELAY_500ms
+00003b 9a5f      		SBI PORTD,7
+00003c d13b      		RCALL DELAY_500ms
+00003d cfef      		RJMP PRUEBA
                  LED4:
-00003f 985c      		CBI PORTD,4
-000040 d128      		RCALL DELAY_500ms
-000041 9a5c      		SBI PORTD,4
-000042 d126      		RCALL DELAY_500ms
-000043 cfe5      		RJMP PRUEBA
-                 /*		RCALL	READ_V_SOLAR_PANEL				;PARA VER SI ES DE DIA O NOCHE, MIDO LA TENSION DEL PANEL SOLAR.
-                 		RCALL	CHECK_IF_SOLAR_PANEL_CONNECTED	;[CARRY=1]: HAY PANEL. [CARRY=0]: NO HAY PANEL.
-                 		BRCC	NO_SOLAR_PANEL_CONNECTED
-                 		RCALL	CHECK_IF_SOLAR_PANEL_MINIMUM	;[CARRY=1]: ES DE DIA. [CARRY=0]: ES DE NOCHE.
-                 		BRCC	AT_NIGHT
-                 */
+00003e 985c      		CBI PORTD,4
+00003f d138      		RCALL DELAY_500ms
+000040 9a5c      		SBI PORTD,4
+000041 d136      		RCALL DELAY_500ms
+000042 cfea      		RJMP PRUEBA
                  
                  ;-------------------------------PROGRAMA_PRINCIPAL-------------------------------
                  MAIN:	
                  	;MEDIR BATERIA 
-000044 d144      		RCALL	READ_V_BATTERY					;MIDO LA BATERIA
-000045 d147      		RCALL	CHECK_IF_BATTERY_MINIMUM		;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
-000046 f458      		BRCC	SLEEP_MODE
-000047 d151      		RCALL	INDICATE_BATTERY_OK
+000043 d155      		RCALL	READ_V_BATTERY					;MIDO LA BATERIA
+000044 d158      		RCALL	CHECK_IF_BATTERY_MINIMUM		;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
+000045 f048      		BRCS	SLEEP_MODE
+000046 d163      		RCALL	INDICATE_BATTERY_OK
                  	;¿DIA O NOCHE?
-000048 d15b      		RCALL	READ_V_SOLAR_PANEL				;PARA VER SI ES DE DIA O NOCHE, MIDO LA TENSION DEL PANEL SOLAR.
-000049 d15e      		RCALL	CHECK_IF_SOLAR_PANEL_CONNECTED	;[CARRY=1]: HAY PANEL. [CARRY=0]: NO HAY PANEL.
-00004a f450      		BRCC	NO_SOLAR_PANEL_CONNECTED
-00004b d161      		RCALL	CHECK_IF_SOLAR_PANEL_MINIMUM	;[CARRY=1]: ES DE DIA. [CARRY=0]: ES DE NOCHE.
-00004c f480      		BRCC	AT_NIGHT
+000047 d16d      		RCALL	READ_V_SOLAR_PANEL				;PARA VER SI ES DE DIA O NOCHE, MIDO LA TENSION DEL PANEL SOLAR.
+000048 d170      		RCALL	CHECK_IF_SOLAR_PANEL_MINIMUM	;[CARRY=1]: SOLAR_PANEL LOW. [CARRY=0]: SOLAR_PANEL OK
+000049 f080      		BRCS	AT_NIGHT
                  ;SI ESTOY ACA YA TENGO BATERIA SUFICIENTE, ES DE DIA.
-00004d d12e      		RCALL	LIGHT_TURN_OFF
-00004e d163      		RCALL	INDICATE_SOLAR_PANEL_OK
+00004a d15a      		RCALL	INDICATE_BATTERY_LOW			;RCALL	LIGHT_TURN_OFF
+00004b d17a      		RCALL	INDICATE_SOLAR_PANEL_OK
                  ;PRENDER EL TIMER, LA INTERRUPCION DEL ADC MANDAR A SLEEP.
-00004f d24d      		RCALL	READ_LDRS						;LEE LOS LDR'S Y LOS MANDA A RAM.
-000050 f408      		BRCC	SLEEP_MODE						;[CARRY=1]: HIZO PROMEDIO, NO SE VA A SLEEP. [CARRY=0]: NO HIZO PROMEDIO, SE VA A SLEEP.
-000051 d16e      		RCALL	ORIENTATE_SOLAR_PANEL			;HAY QUE RESOLVER ESTO TODAVIA.
+00004c d25c      		RCALL	READ_LDRS						;LEE LOS LDR'S Y LOS MANDA A RAM.
+00004d f408      		BRCC	SLEEP_MODE						;[CARRY=1]: HIZO PROMEDIO, NO SE VA A SLEEP. [CARRY=0]: NO HIZO PROMEDIO, SE VA A SLEEP.
+00004e d17d      		RCALL	ORIENTATE_SOLAR_PANEL			;HAY QUE RESOLVER ESTO TODAVIA.
                  
-                 ;HACE UN LOOP CON LOS VALORES MEDIDOS Y MOVER A OJO.		
-                 SLEEP_MODE:
+                 
                  ;HAY QUE HACER COSAS ANTES DE IR A SLEEP, COMO APAGAR EL ADC Y NO SE QUE MAS [COMO EL PWM DE LOS MOTORES]
-                 ;SALIR DE SLEEP: EN UN TIEMPO t [TIEMPO ENTRE MEDICION Y MEDICION].
+                 SLEEP_MODE:
                  /*		INPUT AUX,SMCR
-                 		ANDI AUX,(~(1<<SM2)|(1<<SM1)|(1<<SM0)|(1<<SE))
+                 		ANDI AUX,((~((1<<SM2)|(1<<SM1)|(1<<SM0)|(1<<SE))))
                  		ORI AUX,((0<<SM2)|(0<<SM1)|(0<<SM0)|(1<<SE))	;SETEO EL MODO IDLE.
                  		OUTPUT SMCR,AUX
                  		SLEEP
                  		NOP
-                 		NOP
+                 		INPUT AUX,SMCR
                  		ANDI AUX,(~(1<<SE))								;CUANDO SALGO DE SLEEP, PONGO SE=0.
+                 		ORI AUX,(0<<SE)
                  		OUTPUT SMCR,AUX
-                 */
-000052 cfd6      RJMP PRUEBA
+                 		RJMP MAIN
+00004f cfdd      */RJMP PRUEBA
                  ;-----------------------------------------------------------------------------------
                  
                  ;------------------------------MAIN_FUNCTIONS---------------------------------------
                  ISR_INT0:
-000053 9518      RETI
+000050 9518      RETI
                  
                  ISR_TIMER_1_OV:
-000054 9518      RETI
+000051 9518      RETI
                  
                  NO_SOLAR_PANEL_CONNECTED:
                 +
                 +
                 +.if BT_FLAG < 0x40
                 +in AUX , BT_FLAG
-000055 9100 0169+.else 
+000052 9100 0169+.else 
                 +lds AUX , BT_FLAG
                  	INPUT AUX,BT_FLAG
-000057 2300      	TST AUX
-000058 f7c9      	BRNE SLEEP_MODE			;SI NO HAY CONEXION BT, NO MANDA NADA
+000054 2300      	TST AUX
+000055 f7c9      	BRNE SLEEP_MODE			;SI NO HAY CONEXION BT, NO MANDA NADA
                 +
-000059 e1e6     +ldi ZL , LOW ( ( MSJ_DISCONNECTED_PANEL * 2 ) )
-00005a e0f7     +ldi ZH , HIGH ( ( MSJ_DISCONNECTED_PANEL * 2 ) )
+000056 e2ee     +ldi ZL , LOW ( ( MSJ_DISCONNECTED_PANEL * 2 ) )
+000057 e0f7     +ldi ZH , HIGH ( ( MSJ_DISCONNECTED_PANEL * 2 ) )
                  	LDIW	Z,(MSJ_DISCONNECTED_PANEL*2)
-00005b d0c2      	RCALL TRANSMITIR_MENSAJE
-00005c cff5      	RJMP SLEEP_MODE
+000058 d0d4      	RCALL TRANSMITIR_MENSAJE
+000059 cff5      	RJMP SLEEP_MODE
                  
                  AT_NIGHT:
-00005d d116      	RCALL LIGHT_TURN_ON
-00005e cff3      	RJMP SLEEP_MODE
+                 ;	RCALL LIGHT_TURN_ON
+00005a d14f      	RCALL INDICATE_BATTERY_OK
+00005b d165      	RCALL INDICATE_SOLAR_PANEL_LOW
+00005c d11b      	RCALL DELAY_500ms 
+00005d cff1      	RJMP SLEEP_MODE
                  
                  INT_EXT_INIT:
                  		;SETEO EL PIN INT0 (PD2) COMO ENTRADA.
                 +
                 +
                 +.if DDRD < 0x40
-00005f b10a     +in AUX , DDRD
+00005e b10a     +in AUX , DDRD
                 +.else 
                 +lds AUX , DDRD
                  		INPUT	AUX,DDRD
-000060 7f0b      		ANDI	AUX,(~(1<<PD2))
+00005f 7f0b      		ANDI	AUX,(~(1<<PD2))
                 +
                 +
                 +.if DDRD < 0x40
-000061 b90a     +out DDRD , AUX
+000060 b90a     +out DDRD , AUX
                 +.else 
                 +sts DDRD , AUX
                  		OUTPUT	DDRD,AUX
@@ -1540,16 +1503,16 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if EICRA < 0x40
                 +in AUX , EICRA
-000062 9100 0069+.else 
+000061 9100 0069+.else 
                 +lds AUX , EICRA
                  		INPUT	AUX,EICRA
-000064 7f0c      		ANDI	AUX,(~((1<<ISC00)|(1<<ISC01)))
-000065 6001      		ORI		AUX,((1<<ISC00)|(0<<ISC01))		
+000063 7f0c      		ANDI	AUX,(~((1<<ISC00)|(1<<ISC01)))
+000064 6001      		ORI		AUX,((1<<ISC00)|(0<<ISC01))		
                 +
                 +
                 +.if EICRA < 0x40
                 +out EICRA , AUX
-000066 9300 0069+.else 
+000065 9300 0069+.else 
                 +sts EICRA , AUX
                  		OUTPUT	EICRA,AUX
                  	
@@ -1557,20 +1520,63 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if EIMSK < 0x40
-000068 b30d     +in AUX , EIMSK
+000067 b30d     +in AUX , EIMSK
                 +.else 
                 +lds AUX , EIMSK
                  		INPUT	AUX,EIMSK
-000069 7f0c      		ANDI	AUX,~((1<<INT0)|(1<<INT1))		
-00006a 6001      		ORI		AUX,((1<<INT0)|(0<<INT1))
+000068 7f0c      		ANDI	AUX,~((1<<INT0)|(1<<INT1))		
+000069 6001      		ORI		AUX,((1<<INT0)|(0<<INT1))
                 +
                 +
                 +.if EIMSK < 0x40
-00006b bb0d     +out EIMSK , AUX
+00006a bb0d     +out EIMSK , AUX
                 +.else 
                 +sts EIMSK , AUX
                  		OUTPUT	EIMSK,AUX
-00006c 9508      RET
+00006b 9508      RET
+                 
+                 TIMER_INIT:
+00006c ee0e      			LDI	AUX,0xEE		;Pongo como valor inicial del timer 34286 para que cuando haga overflow haya contado (8E6)/256
+                +
+                +
+                +.if TCNT1L < 0x40
+                +out TCNT1L , AUX
+00006d 9300 0084+.else 
+                +sts TCNT1L , AUX
+                 			OUTPUT TCNT1L,AUX
+00006f e805      			LDI AUX,0x85
+                +
+                +
+                +.if TCNT1H < 0x40
+                +out TCNT1H , AUX
+000070 9300 0085+.else 
+                +sts TCNT1H , AUX
+                 			OUTPUT TCNT1H,AUX
+000072 e004      			LDI AUX,(1<<CS12)|(0<<CS11)|(0<<CS10)		;Seteo el prescaler a 256
+                +
+                +
+                +.if TCCR1B < 0x40
+                +out TCCR1B , AUX
+000073 9300 0081+.else 
+                +sts TCCR1B , AUX
+                 			OUTPUT TCCR1B,AUX
+000075 e000      			LDI AUX,0
+                +
+                +
+                +.if TCCR1A < 0x40
+                +out TCCR1A , AUX
+000076 9300 0080+.else 
+                +sts TCCR1A , AUX
+                 			OUTPUT TCCR1A,AUX
+000078 e001      			LDI AUX,(1<<TOIE1)
+                +
+                +
+                +.if TIMSK1 < 0x40
+                +out TIMSK1 , AUX
+000079 9300 006f+.else 
+                +sts TIMSK1 , AUX
+                 			OUTPUT TIMSK1,AUX
+00007b 9508      RET
                  
                  .include "ADC.inc"
                  
@@ -1605,22 +1611,22 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  ADC_INIT:
                  ;ADMUX = REFS1 REFS0 ADLAR – MUX3 MUX2 MUX1 MUX0
                  ;INTERNAL VREF=VCC Y EL DATO AJUSTADO A ¡IZQUIERDA! [ADCH:ADCL]. SE SELECCIONA POR DEFECTO EL CANAL ADC1 [LDR DE LA PLACA DE CdR MODIF]
-00006d e434      	LDI ADC_DATA_L,((0<<REFS1)|(1<<REFS0)|(0<<ADLAR)|(0<<MUX3)|(1<<MUX2)|(0<<MUX1)|(0<<MUX0))
+00007c e634      	LDI ADC_DATA_L,((0<<REFS1)|(1<<REFS0)|(1<<ADLAR)|(0<<MUX3)|(1<<MUX2)|(0<<MUX1)|(0<<MUX0))
                 +
                 +
                 +.if ADMUX < 0x40
                 +out ADMUX , ADC_DATA_L
-00006e 9330 007c+.else 
+00007d 9330 007c+.else 
                 +sts ADMUX , ADC_DATA_L
                  	OUTPUT ADMUX,ADC_DATA_L
                  ;ADCSRA = ADEN ADSC ADATE ADIF ADIE ADPS2 ADPS1 ADPS0		
                  ;SE HABILITA EL ADC, AUTO TRIGGER OFF, FLAG INTERRUPCION EN CERO, PRESCALER DIV POR 64 [trabaja en aprox 100Khz]
-000070 e836      	LDI ADC_DATA_L,((1<<ADEN)|(0<<ADSC)|(0<<ADATE)|(0<<ADIF)|(0<<ADIE)|(1<<ADPS2)|(1<<ADPS1)|(0<<ADPS0))
+00007f e836      	LDI ADC_DATA_L,((1<<ADEN)|(0<<ADSC)|(0<<ADATE)|(0<<ADIF)|(0<<ADIE)|(1<<ADPS2)|(1<<ADPS1)|(0<<ADPS0))
                 +
                 +
                 +.if ADCSRA < 0x40
                 +out ADCSRA , ADC_DATA_L
-000071 9330 007a+.else 
+000080 9330 007a+.else 
                 +sts ADCSRA , ADC_DATA_L
                  	OUTPUT ADCSRA,ADC_DATA_L
                  
@@ -1630,15 +1636,15 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  
                  ;SE DESHABILITA LA PARTE DIGITAL INTERNA DEL PIN A UTILIZAR
                  ;HABILITO SOLO LOS LDRS
-000073 e33c      	LDI ADC_DATA_L,((1<<ADC2D)|(1<<ADC3D)|(1<<ADC4D)|(1<<ADC5D))
+000082 e33c      	LDI ADC_DATA_L,((1<<ADC2D)|(1<<ADC3D)|(1<<ADC4D)|(1<<ADC5D))
                 +
                 +
                 +.if DIDR0 < 0x40
                 +out DIDR0 , ADC_DATA_L
-000074 9330 007e+.else 
+000083 9330 007e+.else 
                 +sts DIDR0 , ADC_DATA_L
                  	OUTPUT DIDR0,ADC_DATA_L
-000076 9508      RET
+000085 9508      RET
                  
                  ;-------------------------------------------------------------------------
                  ADC_SELECT_INPUT:
@@ -1649,20 +1655,20 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if ADMUX < 0x40
                 +in AUX , ADMUX
-000077 9100 007c+.else 
+000086 9100 007c+.else 
                 +lds AUX , ADMUX
                  	INPUT AUX,ADMUX
-000079 7f00      	ANDI AUX,(~((1<<MUX3)|(1<<MUX2)|(1<<MUX1)|(1<<MUX0)))
-00007a 2b03      	OR AUX,ADC_DATA_L;NO HAY QUE HACER SHIFT
+000088 7f00      	ANDI AUX,(~((1<<MUX3)|(1<<MUX2)|(1<<MUX1)|(1<<MUX0)))
+000089 2b03      	OR AUX,ADC_DATA_L;NO HAY QUE HACER SHIFT
                 +
                 +
                 +.if ADMUX < 0x40
                 +out ADMUX , AUX
-00007b 9300 007c+.else 
+00008a 9300 007c+.else 
                 +sts ADMUX , AUX
                  	OUTPUT ADMUX,AUX
                  
-00007d 9508      RET
+00008c 9508      RET
                  
                  ;-------------------------------------------------------------------------
                  ADC_SIMPLE_CONVERSION:
@@ -1673,32 +1679,32 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if ADCSRA < 0x40
                 +in AUX , ADCSRA
-00007e 9100 007a+.else 
+00008d 9100 007a+.else 
                 +lds AUX , ADCSRA
                  	INPUT AUX,ADCSRA
-000080 6c00      	ORI AUX,((1<<ADEN)|(1<<ADSC))
+00008f 6c00      	ORI AUX,((1<<ADEN)|(1<<ADSC))
                 +
                 +
                 +.if ADCSRA < 0x40
                 +out ADCSRA , AUX
-000081 9300 007a+.else 
+000090 9300 007a+.else 
                 +sts ADCSRA , AUX
                  	OUTPUT ADCSRA,AUX
                 +
                 +
                 +.if ADCSRA < 0x40
                 +in AUX , ADCSRA
-000083 9100 007a+.else 
+000092 9100 007a+.else 
                 +lds AUX , ADCSRA
                  L2:	INPUT AUX,ADCSRA
-000085 fd06      	SBRC AUX,ADSC
-000086 cffc      	RJMP L2
-000087 770f      	ANDI AUX,(~(1<<ADEN))
+000094 fd06      	SBRC AUX,ADSC
+000095 cffc      	RJMP L2
+000096 770f      	ANDI AUX,(~(1<<ADEN))
                 +
                 +
                 +.if ADCSRA < 0x40
                 +out ADCSRA , AUX
-000088 9300 007a+.else 
+000097 9300 007a+.else 
                 +sts ADCSRA , AUX
                  	OUTPUT ADCSRA,AUX
                  
@@ -1706,18 +1712,18 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if ADCL < 0x40
                 +in ADC_DATA_L , ADCL
-00008a 9130 0078+.else 
+000099 9130 0078+.else 
                 +lds ADC_DATA_L , ADCL
                  	INPUT ADC_DATA_L,ADCL
                 +
                 +
                 +.if ADCH < 0x40
                 +in ADC_DATA_H , ADCH
-00008c 9140 0079+.else 
+00009b 9140 0079+.else 
                 +lds ADC_DATA_H , ADCH
                  	INPUT ADC_DATA_H,ADCH
                  
-00008e 9508      RET
+00009d 9508      RET
                  
                  /************************** EJEMPLO! ***********************************
                  EJEMPLO_CONVERSOR:
@@ -1757,27 +1763,27 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  ;*****************************************************
                  .CSEG
                  PWM_INIT:
-00008f d002      	RCALL PWM_INIT_0
+00009e d002      	RCALL PWM_INIT_0
                  	;RCALL PWM_INIT_1
-000090 d012      	RCALL PWM_INIT_2
+00009f d012      	RCALL PWM_INIT_2
                  ;COMENTO LA FUNCION ANTERIOR PORQUE VAMOS A USAR MOTORES DE CONTINUA PUESTOS EN OC1A Y OC1B QUE SON LOS DEL PUERTO B SOLAMENTE.
-000091 9508      RET
+0000a0 9508      RET
                  
                  PWM_INIT_0:
                  ;Se inicializan como salida los pines de PWM
                 +
                 +
                 +.if DDRB < 0x40
-000092 b154     +in PWM_DATA , DDRB
+0000a1 b154     +in PWM_DATA , DDRB
                 +.else 
                 +lds PWM_DATA , DDRB
                  	INPUT PWM_DATA,DDRB
-000093 7f59      	ANDI PWM_DATA,(~((1<<DDB1)|(1<<DDB2)))	;Mascara para tocar solo B1 Y B2
-000094 6056      	ORI PWM_DATA,((1<<DDB1)|(1<<DDB2))
+0000a2 7f59      	ANDI PWM_DATA,(~((1<<DDB1)|(1<<DDB2)))	;Mascara para tocar solo B1 Y B2
+0000a3 6056      	ORI PWM_DATA,((1<<DDB1)|(1<<DDB2))
                 +
                 +
                 +.if DDRB < 0x40
-000095 b954     +out DDRB , PWM_DATA
+0000a4 b954     +out DDRB , PWM_DATA
                 +.else 
                 +sts DDRB , PWM_DATA
                  	OUTPUT DDRB,PWM_DATA
@@ -1787,16 +1793,16 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if TCCR0A < 0x40
-000096 b554     +in PWM_DATA , TCCR0A
+0000a5 b554     +in PWM_DATA , TCCR0A
                 +.else 
                 +lds PWM_DATA , TCCR0A
                  	INPUT PWM_DATA,TCCR0A	;Timer/counter control register A
-000097 705c      	ANDI PWM_DATA,(~((1<<WGM01)|(1<<WGM00)|(1<<COM0A1)|(1<<COM0A0)|(1<<COM0B1)|(1<<COM0B0)))
-000098 6a53      	ORI PWM_DATA,((1<<WGM01)|(1<<WGM00)|(1<<COM0A1)|(0<<COM0A0)|(1<<COM0B1)|(0<<COM0B0))	;fast PWM, non-inverting
+0000a6 705c      	ANDI PWM_DATA,(~((1<<WGM01)|(1<<WGM00)|(1<<COM0A1)|(1<<COM0A0)|(1<<COM0B1)|(1<<COM0B0)))
+0000a7 6a53      	ORI PWM_DATA,((1<<WGM01)|(1<<WGM00)|(1<<COM0A1)|(0<<COM0A0)|(1<<COM0B1)|(0<<COM0B0))	;fast PWM, non-inverting
                 +
                 +
                 +.if TCCR0A < 0x40
-000099 bd54     +out TCCR0A , PWM_DATA
+0000a8 bd54     +out TCCR0A , PWM_DATA
                 +.else 
                 +sts TCCR0A , PWM_DATA
                  	OUTPUT TCCR0A,PWM_DATA
@@ -1804,17 +1810,17 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if TCCR0B < 0x40
-00009a b555     +in PWM_DATA , TCCR0B
+0000a9 b555     +in PWM_DATA , TCCR0B
                 +.else 
                 +lds PWM_DATA , TCCR0B
                  	INPUT PWM_DATA,TCCR0B	;Timer/counter control register B
                  	;hacer mascara de forma tal que los bits 0, 1, 2 no se toquen
-00009b 7f58      	ANDI PWM_DATA,(~((1<<CS00)|(1<<CS01)|(1<<CS02)))
-00009c 6052      	ORI PWM_DATA,((0<<CS00)|(1<<CS01)|(0<<CS02))	;Ver tabla prescalers al final del archivo
+0000aa 7f58      	ANDI PWM_DATA,(~((1<<CS00)|(1<<CS01)|(1<<CS02)))
+0000ab 6052      	ORI PWM_DATA,((0<<CS00)|(1<<CS01)|(0<<CS02))	;Ver tabla prescalers al final del archivo
                 +
                 +
                 +.if TCCR0B < 0x40
-00009d bd55     +out TCCR0B , PWM_DATA
+0000ac bd55     +out TCCR0B , PWM_DATA
                 +.else 
                 +sts TCCR0B , PWM_DATA
                  	OUTPUT TCCR0B,PWM_DATA
@@ -1823,11 +1829,11 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +
-00009e 2700     +CLR AUX
+0000ad 2700     +CLR AUX
                 +
                 +
                 +.if MOTOR_AZIMUT < 0x40
-00009f bd07     +out MOTOR_AZIMUT , AUX
+0000ae bd07     +out MOTOR_AZIMUT , AUX
                 +.else 
                 +sts MOTOR_AZIMUT , AUX
                 +OUTPUT MOTOR_AZIMUT , AUX
@@ -1836,16 +1842,16 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +
-0000a0 2700     +CLR AUX
+0000af 2700     +CLR AUX
                 +
                 +
                 +.if MOTOR_ELEVATION < 0x40
-0000a1 bd08     +out MOTOR_ELEVATION , AUX
+0000b0 bd08     +out MOTOR_ELEVATION , AUX
                 +.else 
                 +sts MOTOR_ELEVATION , AUX
                 +OUTPUT MOTOR_ELEVATION , AUX
                  	RPWM MOTOR_ELEVATION
-0000a2 9508      RET
+0000b1 9508      RET
                  
                  ;*****************************************************
                  /*
@@ -1879,16 +1885,16 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if DDRD < 0x40
-0000a3 b15a     +in PWM_DATA , DDRD
+0000b2 b15a     +in PWM_DATA , DDRD
                 +.else 
                 +lds PWM_DATA , DDRD
                  	INPUT PWM_DATA,DDRD
-0000a4 7f57      	ANDI PWM_DATA,(~(1<<DDD3))	;Mascara para tocar solo D3
-0000a5 6058      	ORI PWM_DATA,((1<<DDD3))
+0000b3 7f57      	ANDI PWM_DATA,(~(1<<DDD3))	;Mascara para tocar solo D3
+0000b4 6058      	ORI PWM_DATA,((1<<DDD3))
                 +
                 +
                 +.if DDRD < 0x40
-0000a6 b95a     +out DDRD , PWM_DATA
+0000b5 b95a     +out DDRD , PWM_DATA
                 +.else 
                 +sts DDRD , PWM_DATA
                  	OUTPUT DDRD,PWM_DATA
@@ -1899,16 +1905,16 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if TCCR2A < 0x40
                 +in PWM_DATA , TCCR2A
-0000a7 9150 00b0+.else 
+0000b6 9150 00b0+.else 
                 +lds PWM_DATA , TCCR2A
                  	INPUT PWM_DATA,TCCR2A	;Timer/counter control register A
-0000a9 7c5c      	ANDI PWM_DATA,(~((1<<COM2B1)|(1<<COM2B0)|(1<<WGM20)|(1<<WGM21)))
-0000aa 6253      	ORI PWM_DATA,((1<<COM2B1)|(0<<COM2B0)|(1<<WGM20)|(1<<WGM21))	;fast PWM, non-inverting
+0000b8 7c5c      	ANDI PWM_DATA,(~((1<<COM2B1)|(1<<COM2B0)|(1<<WGM20)|(1<<WGM21)))
+0000b9 6253      	ORI PWM_DATA,((1<<COM2B1)|(0<<COM2B0)|(1<<WGM20)|(1<<WGM21))	;fast PWM, non-inverting
                 +
                 +
                 +.if TCCR2A < 0x40
                 +out TCCR2A , PWM_DATA
-0000ab 9350 00b0+.else 
+0000ba 9350 00b0+.else 
                 +sts TCCR2A , PWM_DATA
                  	OUTPUT TCCR2A,PWM_DATA
                  ;Se inicializa el prescaler del PWM
@@ -1916,20 +1922,20 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if TCCR2B < 0x40
                 +in PWM_DATA , TCCR2B
-0000ad 9150 00b1+.else 
+0000bc 9150 00b1+.else 
                 +lds PWM_DATA , TCCR2B
                  	INPUT PWM_DATA,TCCR2B	;Timer/counter control register B
                  	;hacer mascara de forma tal que los bits 0, 1, 2 no se toquen
-0000af 7f58      	ANDI PWM_DATA,(~((1<<CS20)|(1<<CS21)|(1<<CS22)))
-0000b0 6052      	ORI PWM_DATA,((0<<CS20)|(1<<CS21)|(0<<CS22))	;Ver tabla prescalers al final del archivo
+0000be 7f58      	ANDI PWM_DATA,(~((1<<CS20)|(1<<CS21)|(1<<CS22)))
+0000bf 6052      	ORI PWM_DATA,((0<<CS20)|(1<<CS21)|(0<<CS22))	;Ver tabla prescalers al final del archivo
                 +
                 +
                 +.if TCCR2B < 0x40
                 +out TCCR2B , PWM_DATA
-0000b1 9350 00b1+.else 
+0000c0 9350 00b1+.else 
                 +sts TCCR2B , PWM_DATA
                  	OUTPUT TCCR2B,PWM_DATA
-0000b3 9508      RET
+0000c2 9508      RET
                  
                  
                  ;*****************************************************
@@ -1975,90 +1981,90 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  .CSEG
                  
                  SERIAL_PORT_INIT:
-0000b4 930f      		PUSH	AUX
-0000b5 931f      		PUSH	AUX1
+0000c3 930f      		PUSH	AUX
+0000c4 931f      		PUSH	AUX1
                 +
-0000b6 93af     +push XL
-0000b7 93bf     +push XH
+0000c5 93af     +push XL
+0000c6 93bf     +push XH
                  		PUSHW	X
                  	
-0000b8 e000      		LDI		AUX,HIGH(BAUD_RATE)
+0000c7 e000      		LDI		AUX,HIGH(BAUD_RATE)
                 +
                 +
                 +.if UBRR0H < 0x40
                 +out UBRR0H , AUX
-0000b9 9300 00c5+.else 
+0000c8 9300 00c5+.else 
                 +sts UBRR0H , AUX
                  		OUTPUT		UBRR0H,AUX	; Velocidad de transmisión
-0000bb e607      		LDI		AUX,LOW(BAUD_RATE)
+0000ca e607      		LDI		AUX,LOW(BAUD_RATE)
                 +
                 +
                 +.if UBRR0L < 0x40
                 +out UBRR0L , AUX
-0000bc 9300 00c4+.else 
+0000cb 9300 00c4+.else 
                 +sts UBRR0L , AUX
                  		OUTPUT		UBRR0L,AUX	
                  		
-0000be e002      		LDI		AUX,1<<U2X0		; Modo asinc., doble velocidad
+0000cd e002      		LDI		AUX,1<<U2X0		; Modo asinc., doble velocidad
                 +
                 +
                 +.if UCSR0A < 0x40
                 +out UCSR0A , AUX
-0000bf 9300 00c0+.else 
+0000ce 9300 00c0+.else 
                 +sts UCSR0A , AUX
                  		OUTPUT		UCSR0A,AUX	
                  
                  		; Trama: 8 bits de datos, sin paridad y 1 bit de stop, 
-0000c1 e006      		LDI		AUX,(0<<UPM01)|(0<<UPM00)|(0<<USBS0)|(1<<UCSZ01)|(1<<UCSZ00)
+0000d0 e006      		LDI		AUX,(0<<UPM01)|(0<<UPM00)|(0<<USBS0)|(1<<UCSZ01)|(1<<UCSZ00)
                 +
                 +
                 +.if UCSR0C < 0x40
                 +out UCSR0C , AUX
-0000c2 9300 00c2+.else 
+0000d1 9300 00c2+.else 
                 +sts UCSR0C , AUX
                  		OUTPUT		UCSR0C,AUX
                  
                  
                  		; Configura los terminales de TX y RX; y habilita
                  		; 	únicamente la int. de recepción
-0000c4 e908      		LDI		AUX,(1<<RXCIE0)|(1<<RXEN0)|(1<<TXEN0)|(0<<UDRIE0)
+0000d3 e908      		LDI		AUX,(1<<RXCIE0)|(1<<RXEN0)|(1<<TXEN0)|(0<<UDRIE0)
                 +
                 +
                 +.if UCSR0B < 0x40
                 +out UCSR0B , AUX
-0000c5 9300 00c1+.else 
+0000d4 9300 00c1+.else 
                 +sts UCSR0B , AUX
                  		OUTPUT		UCSR0B,AUX
                  
                 +
-0000c7 e000     +ldi AUX , LOW ( TX_BUF )
-0000c8 2e80     +mov PTR_TX_L , AUX
+0000d6 e000     +ldi AUX , LOW ( TX_BUF )
+0000d7 2e80     +mov PTR_TX_L , AUX
                  		MOVI	PTR_TX_L,LOW(TX_BUF)	; inicializa puntero al 
                 +
-0000c9 e001     +ldi AUX , HIGH ( TX_BUF )
-0000ca 2e90     +mov PTR_TX_H , AUX
+0000d8 e001     +ldi AUX , HIGH ( TX_BUF )
+0000d9 2e90     +mov PTR_TX_H , AUX
                  		MOVI	PTR_TX_H,HIGH(TX_BUF)	; buffer de transmisión.
                  	
                 +
-0000cb e0a0     +ldi XL , LOW ( TX_BUF )
-0000cc e0b1     +ldi XH , HIGH ( TX_BUF )
+0000da e0a0     +ldi XL , LOW ( TX_BUF )
+0000db e0b1     +ldi XH , HIGH ( TX_BUF )
                  		LDIW	X,TX_BUF				; limpia BUF_SIZE posiciones 
-0000cd e410      		LDI		AUX1, BUF_SIZE			; del buffer de transmisión
-0000ce 2700      		CLR		AUX
+0000dc e410      		LDI		AUX1, BUF_SIZE			; del buffer de transmisión
+0000dd 2700      		CLR		AUX
                  loop_limpia:
-0000cf 930d      		ST		X+,AUX
-0000d0 951a      		DEC		AUX1
-0000d1 f7e9      		BRNE	loop_limpia
+0000de 930d      		ST		X+,AUX
+0000df 951a      		DEC		AUX1
+0000e0 f7e9      		BRNE	loop_limpia
                  					
-0000d2 24aa      		CLR		BYTES_A_TX		; nada pendiente de transmisión
+0000e1 24aa      		CLR		BYTES_A_TX		; nada pendiente de transmisión
                  
                 +
-0000d3 91bf     +pop XH
-0000d4 91af     +pop XL
+0000e2 91bf     +pop XH
+0000e3 91af     +pop XL
                  		POPW	X
-0000d5 911f      		POP		AUX1
-0000d6 910f      		POP		AUX
-0000d7 9508      RET
+0000e4 911f      		POP		AUX1
+0000e5 910f      		POP		AUX
+0000e6 9508      RET
                  
                  ;-------------------------------------------------------------------------
                  ; RECEPCION: Interrumpe cada vez que se recibe un byte x RS232.
@@ -2075,70 +2081,70 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if UDR0 < 0x40
                 +in AUX , UDR0
-0000d8 9100 00c6+.else 
+0000e7 9100 00c6+.else 
                 +lds AUX , UDR0
                  		INPUT AUX,UDR0
                  
-0000da 3301      		CPI AUX,BT_COMMAND_PROJECT_NAME
-0000db f059      		BREQ CALL_PROJECT_NAME
+0000e9 3301      		CPI AUX,BT_COMMAND_PROJECT_NAME
+0000ea f059      		BREQ CALL_PROJECT_NAME
                  
-0000dc 3302      		CPI AUX,BT_COMMAND_V_BAT
-0000dd f069      		BREQ CALL_V_BAT
+0000eb 3302      		CPI AUX,BT_COMMAND_V_BAT
+0000ec f069      		BREQ CALL_V_BAT
                  
-0000de 3303      		CPI AUX,BT_COMMAND_V_PANEL
-0000df f079      		BREQ CALL_V_PANEL
+0000ed 3303      		CPI AUX,BT_COMMAND_V_PANEL
+0000ee f079      		BREQ CALL_V_PANEL
                  
-0000e0 3304      		CPI AUX,BT_COMMAND_LIGHT_TURN_ON
-0000e1 f089      		BREQ _LIGHT_TURN_ON
+0000ef 3304      		CPI AUX,BT_COMMAND_LIGHT_TURN_ON
+0000f0 f089      		BREQ _LIGHT_TURN_ON
                  
-0000e2 3305      		CPI AUX,BT_COMMAND_LIGHT_TURN_OFF
-0000e3 f089      		BREQ _LIGHT_TURN_OFF
+0000f1 3305      		CPI AUX,BT_COMMAND_LIGHT_TURN_OFF
+0000f2 f089      		BREQ _LIGHT_TURN_OFF
                  
-0000e4 3306      		CPI AUX,BT_COMMAND_DISCONNECT
-0000e5 f089      		BREQ _BT_DISCONNECT
+0000f3 3306      		CPI AUX,BT_COMMAND_DISCONNECT
+0000f4 f089      		BREQ _BT_DISCONNECT
                  
-0000e6 9518      SIGO:  	RETI 
+0000f5 9518      SIGO:  	RETI 
                  
                  CALL_PROJECT_NAME:
                 +
-0000e7 e9e4     +ldi ZL , LOW ( ( MSJ_PROJECT_NAME * 2 ) )
-0000e8 e0f6     +ldi ZH , HIGH ( ( MSJ_PROJECT_NAME * 2 ) )
+0000f6 eaec     +ldi ZL , LOW ( ( MSJ_PROJECT_NAME * 2 ) )
+0000f7 e0f6     +ldi ZH , HIGH ( ( MSJ_PROJECT_NAME * 2 ) )
                  		LDIW	Z,(MSJ_PROJECT_NAME*2)
-0000e9 d034      		RCALL TRANSMITIR_MENSAJE
-0000ea cffb      		RJMP SIGO
+0000f8 d034      		RCALL TRANSMITIR_MENSAJE
+0000f9 cffb      		RJMP SIGO
                  CALL_V_BAT:
                 +
-0000eb ebea     +ldi ZL , LOW ( ( MSJ_V_BAT * 2 ) )
-0000ec e0f6     +ldi ZH , HIGH ( ( MSJ_V_BAT * 2 ) )
+0000fa ede2     +ldi ZL , LOW ( ( MSJ_V_BAT * 2 ) )
+0000fb e0f6     +ldi ZH , HIGH ( ( MSJ_V_BAT * 2 ) )
                  		LDIW	Z,(MSJ_V_BAT*2)
-0000ed d030      		RCALL TRANSMITIR_MENSAJE
-0000ee cff7      		RJMP SIGO
+0000fc d030      		RCALL TRANSMITIR_MENSAJE
+0000fd cff7      		RJMP SIGO
                  CALL_V_PANEL:
                 +
-0000ef edea     +ldi ZL , LOW ( ( MSJ_V_PANEL * 2 ) )
-0000f0 e0f6     +ldi ZH , HIGH ( ( MSJ_V_PANEL * 2 ) )
+0000fe efe2     +ldi ZL , LOW ( ( MSJ_V_PANEL * 2 ) )
+0000ff e0f6     +ldi ZH , HIGH ( ( MSJ_V_PANEL * 2 ) )
                  		LDIW	Z,(MSJ_V_PANEL*2)
-0000f1 d02c      		RCALL TRANSMITIR_MENSAJE
-0000f2 cff3      		RJMP SIGO
+000100 d02c      		RCALL TRANSMITIR_MENSAJE
+000101 cff3      		RJMP SIGO
                  _LIGHT_TURN_ON:
-0000f3 d080      		RCALL LIGHT_TURN_ON
-0000f4 cff1      		RJMP SIGO
+000102 d080      		RCALL LIGHT_TURN_ON
+000103 cff1      		RJMP SIGO
                  _LIGHT_TURN_OFF:
-0000f5 d086      		RCALL LIGHT_TURN_OFF
-0000f6 cfef      		RJMP SIGO
+000104 d086      		RCALL LIGHT_TURN_OFF
+000105 cfef      		RJMP SIGO
                  _BT_DISCONNECT:
-0000f7 d001      		RCALL BT_DISCONNECT
-0000f8 cfed      		RJMP SIGO
+000106 d001      		RCALL BT_DISCONNECT
+000107 cfed      		RJMP SIGO
                  BT_DISCONNECT:
-0000f9 2700      		CLR AUX
+000108 2700      		CLR AUX
                 +
                 +
                 +.if BT_FLAG < 0x40
                 +out BT_FLAG , AUX
-0000fa 9300 0169+.else 
+000109 9300 0169+.else 
                 +sts BT_FLAG , AUX
                  		OUTPUT BT_FLAG,AUX
-0000fc 9508      RET
+00010b 9508      RET
                  
                  ;------------------------------------------------------------------------
                  ; TRANSMISION: interrumpe cada vez que puede transmitir un byte.
@@ -2149,45 +2155,45 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  ; Devuelve: PTR_TX_H:PTR_TX_L, y BYTES_A_TX.
                  ;------------------------------------------------------------------------
                  ISR_REG_USART_VACIO:		; UDR está vacío
-0000fd 930f      		PUSH	AUX
-0000fe 931f      		PUSH	AUX1
+00010c 930f      		PUSH	AUX
+00010d 931f      		PUSH	AUX1
                 +
-0000ff b70f     +in AUX , SREG
-000100 930f     +push AUX
+00010e b70f     +in AUX , SREG
+00010f 930f     +push AUX
                  		PUSHI	SREG
                 +
-000101 93af     +push XL
-000102 93bf     +push XH
+000110 93af     +push XL
+000111 93bf     +push XH
                  		PUSHW	X
                  
                  
-000103 20aa      		TST		BYTES_A_TX	; hay datos pendientes de transmisión?
-000104 f069      		BREQ	FIN_TRANSMISION
+000112 20aa      		TST		BYTES_A_TX	; hay datos pendientes de transmisión?
+000113 f069      		BREQ	FIN_TRANSMISION
                  
-000105 01d4      		MOVW	XL,PTR_TX_L	; Recupera puntero al próximo byte a tx.
-000106 910d      		LD		AUX,X+		; lee byte del buffer y apunta al
+000114 01d4      		MOVW	XL,PTR_TX_L	; Recupera puntero al próximo byte a tx.
+000115 910d      		LD		AUX,X+		; lee byte del buffer y apunta al
                 +
                 +
                 +.if UDR0 < 0x40
                 +out UDR0 , AUX
-000107 9300 00c6+.else 
+000116 9300 00c6+.else 
                 +sts UDR0 , AUX
                  		OUTPUT		UDR0,AUX		; sgte. dato a transmitir (en la próxima int.)
                  
-000109 34a0      		CPI		XL,LOW(TX_BUF+BUF_SIZE)
-00010a f020      		BRLO	SALVA_PTR_TX
-00010b 30b1      		CPI		XH,HIGH(TX_BUF+BUF_SIZE)
-00010c f010      		BRLO	SALVA_PTR_TX
+000118 34a0      		CPI		XL,LOW(TX_BUF+BUF_SIZE)
+000119 f020      		BRLO	SALVA_PTR_TX
+00011a 30b1      		CPI		XH,HIGH(TX_BUF+BUF_SIZE)
+00011b f010      		BRLO	SALVA_PTR_TX
                 +
-00010d e0a0     +ldi XL , LOW ( TX_BUF )
-00010e e0b1     +ldi XH , HIGH ( TX_BUF )
+00011c e0a0     +ldi XL , LOW ( TX_BUF )
+00011d e0b1     +ldi XH , HIGH ( TX_BUF )
                  		LDIW	X,TX_BUF	; ptr_tx=ptr_tx+1, (módulo BUF_SIZE)
                  
                  SALVA_PTR_TX:
-00010f 014d      		MOVW	PTR_TX_L,XL	; preserva puntero a sgte. dato
+00011e 014d      		MOVW	PTR_TX_L,XL	; preserva puntero a sgte. dato
                  
-000110 94aa      		DEC		BYTES_A_TX	; Descuenta el nro. de bytes a tx. en 1
-000111 f429      		BRNE	SIGUE_TX	; si quedan datos que transmitir
+00011f 94aa      		DEC		BYTES_A_TX	; Descuenta el nro. de bytes a tx. en 1
+000120 f429      		BRNE	SIGUE_TX	; si quedan datos que transmitir
                  							;	vuelve en la próxima int.
                  ;REVISAR ESTE GRUPO DE INSTRUCCIONES
                  FIN_TRANSMISION:			; si no hay nada que enviar,
@@ -2195,31 +2201,31 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if UCSR0B < 0x40
                 +in AUX , UCSR0B
-000112 9100 00c1+.else 
+000121 9100 00c1+.else 
                 +lds AUX , UCSR0B
                  		INPUT	AUX,UCSR0B
-000114 7d0f      		CBR		AUX,(1<<UDRIE0)
+000123 7d0f      		CBR		AUX,(1<<UDRIE0)
                 +
                 +
                 +.if UCSR0B < 0x40
                 +out UCSR0B , AUX
-000115 9300 00c1+.else 
+000124 9300 00c1+.else 
                 +sts UCSR0B , AUX
                  		OUTPUT	UCSR0B,AUX
                  		;se deshabilita la interrupción.
                  
                  sigue_tx:
                 +
-000117 91bf     +pop XH
-000118 91af     +pop XL
+000126 91bf     +pop XH
+000127 91af     +pop XL
                  		POPW	X
                 +
-000119 910f     +pop AUX
-00011a bf0f     +out SREG , AUX
+000128 910f     +pop AUX
+000129 bf0f     +out SREG , AUX
                  		POPI	SREG
-00011b 911f      		POP		AUX1
-00011c 910f      		POP		AUX
-00011d 9518      		RETI
+00012a 911f      		POP		AUX1
+00012b 910f      		POP		AUX
+00012c 9518      		RETI
                  
                  ;-------------------------------------------------------------------------
                  ; TRANSMITIR_MENSAJE: transmite el mensaje almacenado en memoria flash a partir
@@ -2230,65 +2236,65 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  ;-------------------------------------------------------------------------
                  TRANSMITIR_MENSAJE:
                 +
-00011e 93ef     +push ZL
-00011f 93ff     +push ZH
+00012d 93ef     +push ZL
+00012e 93ff     +push ZH
                  		PUSHW	Z
                 +
-000120 93af     +push XL
-000121 93bf     +push XH
+00012f 93af     +push XL
+000130 93bf     +push XH
                  		PUSHW	X
-000122 930f      		PUSH	AUX
+000131 930f      		PUSH	AUX
                  
                  ;		LDIW	Z,(MSJ_V_BAT*2)
-000123 01d4      		MOVW	XL,PTR_TX_L
+000132 01d4      		MOVW	XL,PTR_TX_L
                  
                  LOOP_TRANSMITIR_MENSAJE:
-000124 9105      		LPM		AUX,Z+
-000125 2300      		TST		AUX
-000126 f049      		BREQ	FIN_TRANSMITIR_MENSAJE
+000133 9105      		LPM		AUX,Z+
+000134 2300      		TST		AUX
+000135 f049      		BREQ	FIN_TRANSMITIR_MENSAJE
                  
-000127 930d      		ST		X+,AUX
-000128 94a3      		INC		BYTES_A_TX
+000136 930d      		ST		X+,AUX
+000137 94a3      		INC		BYTES_A_TX
                  
-000129 34a0      		CPI		XL,LOW(TX_BUF+BUF_SIZE)
-00012a f3c8      		BRLO	LOOP_TRANSMITIR_MENSAJE
-00012b 30b1      		CPI		XH,HIGH(TX_BUF+BUF_SIZE)
-00012c f3b8      		BRLO	LOOP_TRANSMITIR_MENSAJE
+000138 34a0      		CPI		XL,LOW(TX_BUF+BUF_SIZE)
+000139 f3c8      		BRLO	LOOP_TRANSMITIR_MENSAJE
+00013a 30b1      		CPI		XH,HIGH(TX_BUF+BUF_SIZE)
+00013b f3b8      		BRLO	LOOP_TRANSMITIR_MENSAJE
                 +
-00012d e0a0     +ldi XL , LOW ( TX_BUF )
-00012e e0b1     +ldi XH , HIGH ( TX_BUF )
+00013c e0a0     +ldi XL , LOW ( TX_BUF )
+00013d e0b1     +ldi XH , HIGH ( TX_BUF )
                  		LDIW	X,TX_BUF	; ptr_tx++ módulo BUF_SIZE
                  
-00012f cff4      		RJMP	LOOP_TRANSMITIR_MENSAJE
+00013e cff4      		RJMP	LOOP_TRANSMITIR_MENSAJE
                  	
                  FIN_TRANSMITIR_MENSAJE:
                 +
                 +
                 +.if UCSR0B < 0x40
                 +in AUX , UCSR0B
-000130 9100 00c1+.else 
+00013f 9100 00c1+.else 
                 +lds AUX , UCSR0B
                  		INPUT	AUX,UCSR0B
                  
-000132 6200      		SBR		AUX,(1<<UDRIE0)
+000141 6200      		SBR		AUX,(1<<UDRIE0)
                 +
                 +
                 +.if UCSR0B < 0x40
                 +out UCSR0B , AUX
-000133 9300 00c1+.else 
+000142 9300 00c1+.else 
                 +sts UCSR0B , AUX
                  		OUTPUT	UCSR0B,AUX
                  
-000135 910f      		POP		AUX
+000144 910f      		POP		AUX
                 +
-000136 91bf     +pop XH
-000137 91af     +pop XL
+000145 91bf     +pop XH
+000146 91af     +pop XL
                  		POPW	X
                 +
-000138 91ff     +pop ZH
-000139 91ef     +pop ZL
+000147 91ff     +pop ZH
+000148 91ef     +pop ZL
                  		POPW	Z
-00013a 9508      		RET
+000149 9508      		RET
                  
                  ;-------------------------------------------------------------------------
                  ; fin del código
@@ -2296,65 +2302,65 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  
                  TRANSMITIR_DATO:
                 +
-00013b 93ef     +push ZL
-00013c 93ff     +push ZH
+00014a 93ef     +push ZL
+00014b 93ff     +push ZH
                  		PUSHW	Z
                 +
-00013d 93af     +push XL
-00013e 93bf     +push XH
+00014c 93af     +push XL
+00014d 93bf     +push XH
                  		PUSHW	X
-00013f 930f      		PUSH	AUX
+00014e 930f      		PUSH	AUX
                  
-000140 01d4      		MOVW	XL,PTR_TX_L
+00014f 01d4      		MOVW	XL,PTR_TX_L
                  
                  LOOP_TRANSMITIR_DATO:
-000141 9105      		LPM		AUX,Z+
-000142 2300      		TST		AUX
-000143 f049      		BREQ	FIN_TRANSMITIR_DATO
+000150 9105      		LPM		AUX,Z+
+000151 2300      		TST		AUX
+000152 f049      		BREQ	FIN_TRANSMITIR_DATO
                  
-000144 930d      		ST		X+,AUX
-000145 94a3      		INC		BYTES_A_TX
+000153 930d      		ST		X+,AUX
+000154 94a3      		INC		BYTES_A_TX
                  
-000146 34a0      		CPI		XL,LOW(TX_BUF+BUF_SIZE)
-000147 f3c8      		BRLO	LOOP_TRANSMITIR_DATO
-000148 30b1      		CPI		XH,HIGH(TX_BUF+BUF_SIZE)
-000149 f3b8      		BRLO	LOOP_TRANSMITIR_DATO
+000155 34a0      		CPI		XL,LOW(TX_BUF+BUF_SIZE)
+000156 f3c8      		BRLO	LOOP_TRANSMITIR_DATO
+000157 30b1      		CPI		XH,HIGH(TX_BUF+BUF_SIZE)
+000158 f3b8      		BRLO	LOOP_TRANSMITIR_DATO
                 +
-00014a e0a0     +ldi XL , LOW ( TX_BUF )
-00014b e0b1     +ldi XH , HIGH ( TX_BUF )
+000159 e0a0     +ldi XL , LOW ( TX_BUF )
+00015a e0b1     +ldi XH , HIGH ( TX_BUF )
                  		LDIW	X,TX_BUF	; ptr_tx++ módulo BUF_SIZE
                  
-00014c cff4      		RJMP	LOOP_TRANSMITIR_DATO
+00015b cff4      		RJMP	LOOP_TRANSMITIR_DATO
                  	
                  FIN_TRANSMITIR_DATO:
                 +
                 +
                 +.if UCSR0B < 0x40
                 +in AUX , UCSR0B
-00014d 9100 00c1+.else 
+00015c 9100 00c1+.else 
                 +lds AUX , UCSR0B
                  		INPUT	AUX,UCSR0B
                  
-00014f 6200      		SBR		AUX,(1<<UDRIE0)
+00015e 6200      		SBR		AUX,(1<<UDRIE0)
                 +
                 +
                 +.if UCSR0B < 0x40
                 +out UCSR0B , AUX
-000150 9300 00c1+.else 
+00015f 9300 00c1+.else 
                 +sts UCSR0B , AUX
                  		OUTPUT	UCSR0B,AUX
                  
-000152 910f      		POP		AUX
+000161 910f      		POP		AUX
                 +
-000153 91bf     +pop XH
-000154 91af     +pop XL
+000162 91bf     +pop XH
+000163 91af     +pop XL
                  		POPW	X
                 +
-000155 91ff     +pop ZH
-000156 91ef     +pop ZL
+000164 91ff     +pop ZH
+000165 91ef     +pop ZL
                  		POPW	Z
                  .include "DELAY.inc"
-000157 9508      
+000166 9508      
                  ;		Para crear los delays, no te hagas el crack y
                  ;		usá el bocho de alguien que ya lo pensó:
                  ;		http://www.bretmulvey.com/avrdelay.html
@@ -2365,47 +2371,47 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  .CSEG
                  DELAY_50ms:
                  
-000158 932f      	PUSH R18
-000159 933f      	PUSH R19
-00015a 934f      	PUSH R20
+000167 932f      	PUSH R18
+000168 933f      	PUSH R19
+000169 934f      	PUSH R20
                  
-00015b e023          ldi  r18, 3
-00015c e038          ldi  r19, 8
-00015d e748          ldi  r20, 120
-00015e 954a      L1: dec  r20
-00015f f7f1          brne L1
-000160 953a          dec  r19
-000161 f7e1          brne L1
-000162 952a          dec  r18
-000163 f7d1          brne L1
+00016a e023          ldi  r18, 3
+00016b e038          ldi  r19, 8
+00016c e748          ldi  r20, 120
+00016d 954a      L1: dec  r20
+00016e f7f1          brne L1
+00016f 953a          dec  r19
+000170 f7e1          brne L1
+000171 952a          dec  r18
+000172 f7d1          brne L1
                  
-000164 914f      	POP R20
-000165 913f      	POP R19
-000166 912f      	POP R18
-000167 9508      RET
+000173 914f      	POP R20
+000174 913f      	POP R19
+000175 912f      	POP R18
+000176 9508      RET
                  
                  DELAY_LO_QUE_SE_ME_ANTOJE:
                  
                  ;ABRI EL PROGRAMA Y LISTO.
                  ;HACER PUSH Y POP DE LOS REGS QUE SE USEN
                  
-000168 9508      RET
+000177 9508      RET
                  
                  DELAY_500ms:
                  
-000169 e125          ldi  r18, 21
-00016a e43b          ldi  r19, 75
-00016b eb4f          ldi  r20, 191
-00016c 954a      L3: dec  r20
-00016d f7f1          brne L3
-00016e 953a          dec  r19
-00016f f7e1          brne L3
-000170 952a          dec  r18
-000171 f7d1          brne L3
-000172 0000          nop
+000178 e125          ldi  r18, 21
+000179 e43b          ldi  r19, 75
+00017a eb4f          ldi  r20, 191
+00017b 954a      L3: dec  r20
+00017c f7f1          brne L3
+00017d 953a          dec  r19
+00017e f7e1          brne L3
+00017f 952a          dec  r18
+000180 f7d1          brne L3
+000181 0000          nop
                  
                  .include "LIGHT.inc"
-000173 9508      
+000182 9508      
                  *	LIGHT.inc [COMO SI FUERA UN OBJETO]
                  *
                  *  Created: 01/06/2016 13:10:11 p.m.
@@ -2419,13 +2425,13 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if BT_FLAG < 0x40
                 +in AUX , BT_FLAG
-000174 9100 0169+.else 
+000183 9100 0169+.else 
                 +lds AUX , BT_FLAG
                  	INPUT AUX,BT_FLAG
-000176 3f0f      	CPI AUX,0xFF						;[FLAG=0xFF]: ESTA CONECTADO A BT. 
-000177 f019      	BREQ ORDEN_BT_NO_HACER_NADA			;[FLAG=0x00]: NO ESTA CONECTADO A BT.
+000185 3f0f      	CPI AUX,0xFF						;[FLAG=0xFF]: ESTA CONECTADO A BT. 
+000186 f019      	BREQ ORDEN_BT_NO_HACER_NADA			;[FLAG=0x00]: NO ESTA CONECTADO A BT.
                  
-000178 ef0f      	SER AUX
+000187 ef0f      	SER AUX
                 +
                 +
                 +
@@ -2434,7 +2440,7 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if LIGHT < 0x40
                 +out LIGHT , AUX
-000179 9300 00b4+.else 
+000188 9300 00b4+.else 
                 +sts LIGHT , AUX
                 +OUTPUT LIGHT , AUX
                  	SPWM LIGHT,AUX
@@ -2444,7 +2450,7 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  	OUTPUT PORTD,AUX*/
                  
                  ORDEN_BT_NO_HACER_NADA:
-00017b 9508      RET
+00018a 9508      RET
                  
                  LIGHT_TURN_OFF:
                  
@@ -2452,13 +2458,13 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if BT_FLAG < 0x40
                 +in AUX , BT_FLAG
-00017c 9100 0169+.else 
+00018b 9100 0169+.else 
                 +lds AUX , BT_FLAG
                  	INPUT AUX,BT_FLAG
-00017e 3f0f      	CPI AUX,0xFF						;[FLAG=0xFF]: ESTA CONECTADO A BT. 
-00017f f3d9      	BREQ ORDEN_BT_NO_HACER_NADA			;[FLAG=0x00]: NO ESTA CONECTADO A BT.
+00018d 3f0f      	CPI AUX,0xFF						;[FLAG=0xFF]: ESTA CONECTADO A BT. 
+00018e f3d9      	BREQ ORDEN_BT_NO_HACER_NADA			;[FLAG=0x00]: NO ESTA CONECTADO A BT.
                  
-000180 2700      	CLR AUX
+00018f 2700      	CLR AUX
                 +
                 +
                 +
@@ -2467,7 +2473,7 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if LIGHT < 0x40
                 +out LIGHT , AUX
-000181 9300 00b4+.else 
+000190 9300 00b4+.else 
                 +sts LIGHT , AUX
                 +OUTPUT LIGHT , AUX
                  	SPWM LIGHT,AUX
@@ -2477,7 +2483,7 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  	OUTPUT PORTD,AUX*/
                  
                  .include "BATTERY.inc"
-000183 9508      
+000192 9508      
                  ;
                  ;							BATTERY.inc
                  ;
@@ -2487,80 +2493,81 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if DDRD < 0x40
-000184 b10a     +in AUX , DDRD
+000193 b10a     +in AUX , DDRD
                 +.else 
                 +lds AUX , DDRD
                  	INPUT AUX,DDRD
-000185 760f      	ANDI AUX,(~((1<<DDD4)|(1<<DDD7)))	;Mascara para tocar solo D3
-000186 6900      	ORI AUX,((1<<DDD4)|(1<<DDD7))
+000194 760f      	ANDI AUX,(~((1<<DDD4)|(1<<DDD7)))	;Mascara para tocar solo D3
+000195 6900      	ORI AUX,((1<<DDD4)|(1<<DDD7))
                 +
                 +
                 +.if DDRD < 0x40
-000187 b90a     +out DDRD , AUX
+000196 b90a     +out DDRD , AUX
                 +.else 
                 +sts DDRD , AUX
                  	OUTPUT DDRD,AUX
-                 ;	RCALL INDICATE_BATTERY_LOW
-000188 9508      RET
+000197 d00d      	RCALL INDICATE_BATTERY_LOW
+000198 9508      RET
                  
                  READ_V_BATTERY:
-000189 e036      		LDI ADC_DATA_L,ADC_BATTERY			;ELIJO EL PIN DE LA BATERÍA
-00018a deec      		RCALL ADC_SELECT_INPUT				;LLAMO LA FUNCION PARA SELECCIONAR LA BATERIA
-00018b def2      		RCALL ADC_SIMPLE_CONVERSION			;LLAMO LA FUNCION PARA MEDIR
-00018c 9508      RET
+000199 e036      		LDI ADC_DATA_L,ADC_BATTERY			;ELIJO EL PIN DE LA BATERÍA
+00019a deeb      		RCALL ADC_SELECT_INPUT				;LLAMO LA FUNCION PARA SELECCIONAR LA BATERIA
+00019b def1      		RCALL ADC_SIMPLE_CONVERSION			;LLAMO LA FUNCION PARA MEDIR
+00019c 9508      RET
                  
                  CHECK_IF_BATTERY_MINIMUM:
-00018d 3342      	CPI		ADC_DATA_H,MIN_BATTERY_VALUE	;COMPARAR PARA VER SI HAY SUFICIENTE BATERIA PARA OPERAR
-00018e f010      	BRCS	_INDICATE_BATTERY_LOW						;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
-00018f d009      	RCALL INDICATE_BATTERY_OK
-                 
+00019d 9488      	CLC
+00019e 3a4a      	CPI		ADC_DATA_H,MIN_BATTERY_VALUE	;COMPARAR PARA VER SI HAY SUFICIENTE BATERIA PARA OPERAR
+00019f f010      	BRCS	_INDICATE_BATTERY_LOW						;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
+0001a0 d009      	RCALL INDICATE_BATTERY_OK
+                 	
                  RETURN_INDICATE_BATTERY_LOW:
-000190 9508      RET
+0001a1 9508      RET
                  
                  _INDICATE_BATTERY_LOW:
-000191 d001      	RCALL INDICATE_BATTERY_LOW
-000192 cffd      RJMP RETURN_INDICATE_BATTERY_LOW
+0001a2 d002      	RCALL INDICATE_BATTERY_LOW
+0001a3 9408      	SEC										;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
+0001a4 cffc      RJMP RETURN_INDICATE_BATTERY_LOW
                  
                  INDICATE_BATTERY_LOW:
                 +
                 +
                 +.if PORTD < 0x40
-000193 b10b     +in AUX , PORTD
+0001a5 b10b     +in AUX , PORTD
                 +.else 
                 +lds AUX , PORTD
                  	INPUT	AUX,PORTD
-000194 760f      	ANDI	AUX,(~((1<<PIN_BATTERY_LED_OK)|(1<<PIN_BATTERY_LED_LOW)))
-000195 6100      	ORI		AUX,((1<<PIN_BATTERY_LED_OK)|(0<<PIN_BATTERY_LED_LOW))		;PRENDE POR CERO.
+0001a6 760f      	ANDI	AUX,(~((1<<PIN_BATTERY_LED_OK)|(1<<PIN_BATTERY_LED_LOW)))
+0001a7 6100      	ORI		AUX,((1<<PIN_BATTERY_LED_OK)|(0<<PIN_BATTERY_LED_LOW))		;PRENDE POR CERO.
                 +
                 +
                 +.if PORTD < 0x40
-000196 b90b     +out PORTD , AUX
+0001a8 b90b     +out PORTD , AUX
                 +.else 
                 +sts PORTD , AUX
                  	OUTPUT	PORTD,AUX
-000197 9408      	SEC										;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
-000198 9508      RET
+0001a9 9508      RET
                  
                  INDICATE_BATTERY_OK:
                 +
                 +
                 +.if PORTD < 0x40
-000199 b10b     +in AUX , PORTD
+0001aa b10b     +in AUX , PORTD
                 +.else 
                 +lds AUX , PORTD
                  	INPUT	AUX,PORTD
-00019a 760f      	ANDI	AUX,(~((1<<PIN_BATTERY_LED_OK)|(1<<PIN_BATTERY_LED_LOW)))
-00019b 6800      	ORI		AUX,((0<<PIN_BATTERY_LED_OK)|(1<<PIN_BATTERY_LED_LOW))		;PRENDE POR CERO.
+0001ab 760f      	ANDI	AUX,(~((1<<PIN_BATTERY_LED_OK)|(1<<PIN_BATTERY_LED_LOW)))
+0001ac 6800      	ORI		AUX,((0<<PIN_BATTERY_LED_OK)|(1<<PIN_BATTERY_LED_LOW))		;PRENDE POR CERO.
                 +
                 +
                 +.if PORTD < 0x40
-00019c b90b     +out PORTD , AUX
+0001ad b90b     +out PORTD , AUX
                 +.else 
                 +sts PORTD , AUX
                  	OUTPUT	PORTD,AUX
-00019d 9488      	CLC										;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
+0001ae 9488      	CLC										;[CARRY=1]: BATTERY LOW. [CARRY=0]: BATTERY OK
                  .include "SOLAR_PANEL.inc"
-00019e 9508      
+0001af 9508      
                  ;
                  ;							SOLAR_PANEL.inc
                  ;				
@@ -2571,136 +2578,129 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if DDRC < 0x40
-00019f b107     +in AUX , DDRC
+0001b0 b107     +in AUX , DDRC
                 +.else 
                 +lds AUX , DDRC
                  	INPUT AUX,DDRC
-0001a0 7f0c      	ANDI AUX,(~((1<<DDC0)|(1<<DDC1)))	;Mascara para tocar los leds del panel solar
-0001a1 6003      	ORI AUX,((1<<DDC0)|(1<<DDC1))
+0001b1 7f0c      	ANDI AUX,(~((1<<DDC0)|(1<<DDC1)))	;Mascara para tocar los leds del panel solar
+0001b2 6003      	ORI AUX,((1<<DDC0)|(1<<DDC1))
                 +
                 +
                 +.if DDRC < 0x40
-0001a2 b907     +out DDRC , AUX
+0001b3 b907     +out DDRC , AUX
                 +.else 
                 +sts DDRC , AUX
                  	OUTPUT DDRC,AUX
-                 ;	RCALL INDICATE_SOLAR_PANEL_LOW
-0001a3 9508      RET
+                 	;RCALL INDICATE_SOLAR_PANEL_LOW
+0001b4 9508      RET
                  
                  READ_V_SOLAR_PANEL:
                  ;RECIBE: NADA
                  ;DEVUELVE: TENSION DEL PANEL EN ADC_DATA_H
-0001a4 e037      	LDI ADC_DATA_L,ADC_SOLAR_PANEL			;ELIJO EL PIN DEL PANEL SOLAR
-0001a5 ded1      	RCALL ADC_SELECT_INPUT					;LLAMO LA FUNCION PARA SELECCIONAR EL PANEL SOLAR
-0001a6 ded7      	RCALL ADC_SIMPLE_CONVERSION				;LLAMO LA FUNCION PARA MEDIR
-0001a7 9508      RET
-                 
-                 CHECK_IF_SOLAR_PANEL_CONNECTED:
-                 
-0001a8 9408      	SEC
-0001a9 2344      	TST ADC_DATA_H
-0001aa f009      	BREQ HAY_PANEL_CONECTADO
-0001ab 9488      	CLC
-                 HAY_PANEL_CONECTADO:
-0001ac 9508      RET
+0001b5 e037      	LDI ADC_DATA_L,ADC_SOLAR_PANEL			;ELIJO EL PIN DEL PANEL SOLAR
+0001b6 decf      	RCALL ADC_SELECT_INPUT					;LLAMO LA FUNCION PARA SELECCIONAR EL PANEL SOLAR
+0001b7 ded5      	RCALL ADC_SIMPLE_CONVERSION				;LLAMO LA FUNCION PARA MEDIR
+0001b8 9508      RET
                  
                  CHECK_IF_SOLAR_PANEL_MINIMUM:
-                 ;RECIBE: TENSION DEL PANEL EN ADC_DATA_H
-                 ;DEVUELVE: [CARRY=1]: SOLAR_PANEL LOW. [CARRY=0]: SOLAR_PANEL OK
-0001ad 9488      	CLC
-0001ae 304a      	CPI ADC_DATA_H,MIN_SOLAR_PANEL_VALUE	;COMPARAR PARA VER SI ES DE DIA O NOCHE
-0001af f040      	BRCS _INDICATE_SOLAR_PANEL_LOW			;[CARRY=1]: SOLAR_PANEL LOW. [CARRY=0]: SOLAR_PANEL OK
-0001b0 d001      	RCALL INDICATE_SOLAR_PANEL_OK
-                 
+0001b9 9488      	CLC
+0001ba 3342      	CPI		ADC_DATA_H,MIN_SOLAR_PANEL_VALUE	;COMPARAR PARA VER SI HAY SUFICIENTE BATERIA PARA OPERAR
+0001bb f010      	BRCS	_INDICATE_SOLAR_PANEL_LOW						;[CARRY=1]: SOLAR_PANEL LOW. [CARRY=0]: SOLAR_PANEL OK
+0001bc d009      	RCALL INDICATE_SOLAR_PANEL_OK
+                 	
                  RETURN_INDICATE_SOLAR_PANEL_LOW:
-0001b1 9508      RET
+0001bd 9508      RET
+                 
+                 _INDICATE_SOLAR_PANEL_LOW:
+0001be d002      	RCALL INDICATE_SOLAR_PANEL_LOW
+0001bf 9408      	SEC										;[CARRY=1]: SOLAR_PANEL LOW. [CARRY=0]: SOLAR_PANEL OK
+0001c0 cffc      RJMP RETURN_INDICATE_SOLAR_PANEL_LOW
+                 
+                 INDICATE_SOLAR_PANEL_LOW:
+                +
+                +
+                +.if PORTC < 0x40
+0001c1 b108     +in AUX , PORTC
+                +.else 
+                +lds AUX , PORTC
+                 	INPUT	AUX,PORTC
+0001c2 7f0c      	ANDI	AUX,(~((1<<PIN_SOLAR_PANEL_LED_OK)|(1<<PIN_SOLAR_PANEL_LED_LOW)))
+0001c3 6002      	ORI		AUX,((1<<PIN_SOLAR_PANEL_LED_OK)|(0<<PIN_SOLAR_PANEL_LED_LOW))		;PRENDE POR CERO.
+                +
+                +
+                +.if PORTC < 0x40
+0001c4 b908     +out PORTC , AUX
+                +.else 
+                +sts PORTC , AUX
+                 	OUTPUT	PORTC,AUX
+0001c5 9508      RET
                  
                  INDICATE_SOLAR_PANEL_OK:
                 +
                 +
                 +.if PORTC < 0x40
-0001b2 b108     +in AUX , PORTC
+0001c6 b108     +in AUX , PORTC
                 +.else 
                 +lds AUX , PORTC
                  	INPUT	AUX,PORTC
-0001b3 7f0c      	ANDI	AUX,(~((1<<PIN_SOLAR_PANEL_LED_OK)|(1<<PIN_SOLAR_PANEL_LED_LOW)))
-0001b4 6001      	ORI		AUX,((0<<PIN_SOLAR_PANEL_LED_OK)|(1<<PIN_SOLAR_PANEL_LED_LOW))		;PRENDE POR CERO.
+0001c7 7f0c      	ANDI	AUX,(~((1<<PIN_SOLAR_PANEL_LED_OK)|(1<<PIN_SOLAR_PANEL_LED_LOW)))
+0001c8 6001      	ORI		AUX,((0<<PIN_SOLAR_PANEL_LED_OK)|(1<<PIN_SOLAR_PANEL_LED_LOW))		;PRENDE POR CERO.
                 +
                 +
                 +.if PORTC < 0x40
-0001b5 b908     +out PORTC , AUX
+0001c9 b908     +out PORTC , AUX
                 +.else 
                 +sts PORTC , AUX
                  	OUTPUT	PORTC,AUX
-0001b6 9408      	SEC										;[CARRY=1]: ES DE DIA. [CARRY=0]: ES DE NOCHE.
-0001b7 9508      RET
+0001ca 9488      	CLC										;[CARRY=1]: SOLAR_PANEL LOW. [CARRY=0]: SOLAR_PANEL OK
+0001cb 9508      RET
+                 
+                 /*
+                 CHECK_IF_SOLAR_PANEL_CONNECTED:
+                 	SEC
+                 	TST ADC_DATA_H
+                 	BREQ HAY_PANEL_CONECTADO
+                 	CLC
+                 HAY_PANEL_CONECTADO:
+                 RET
+                 
+                 CHECK_IF_SOLAR_PANEL_MINIMUM:
+                 ;RECIBE: TENSION DEL PANEL EN ADC_DATA_H
+                 ;DEVUELVE: [CARRY=1]: SOLAR_PANEL LOW. [CARRY=0]: SOLAR_PANEL OK
+                 	CLC
+                 	CPI ADC_DATA_H,MIN_SOLAR_PANEL_VALUE	;COMPARAR PARA VER SI ES DE DIA O NOCHE
+                 	BRCS _INDICATE_SOLAR_PANEL_LOW			;[CARRY=1]: SOLAR_PANEL LOW. [CARRY=0]: SOLAR_PANEL OK
+                 	RCALL INDICATE_SOLAR_PANEL_OK
+                 
+                 RETURN_INDICATE_SOLAR_PANEL_LOW:
+                 RET
+                 
+                 INDICATE_SOLAR_PANEL_OK:
+                 	INPUT	AUX,PORTC
+                 	ANDI	AUX,(~((1<<PIN_SOLAR_PANEL_LED_OK)|(1<<PIN_SOLAR_PANEL_LED_LOW)))
+                 	ORI		AUX,((0<<PIN_SOLAR_PANEL_LED_OK)|(1<<PIN_SOLAR_PANEL_LED_LOW))		;PRENDE POR CERO.
+                 	OUTPUT	PORTC,AUX
+                 	SEC										;[CARRY=1]: ES DE DIA. [CARRY=0]: ES DE NOCHE.
+                 RET
                  
                  _INDICATE_SOLAR_PANEL_LOW:
-0001b8 d001      	RCALL INDICATE_SOLAR_PANEL_LOW
-0001b9 cff7      	RJMP RETURN_INDICATE_SOLAR_PANEL_LOW
+                 	RCALL INDICATE_SOLAR_PANEL_LOW
+                 	RJMP RETURN_INDICATE_SOLAR_PANEL_LOW
                  INDICATE_SOLAR_PANEL_LOW:
-                +
-                +
-                +.if PORTC < 0x40
-0001ba b108     +in AUX , PORTC
-                +.else 
-                +lds AUX , PORTC
                  	INPUT	AUX,PORTC
-0001bb 7f0c      	ANDI	AUX,(~((1<<PIN_SOLAR_PANEL_LED_OK)|(1<<PIN_SOLAR_PANEL_LED_LOW)))
-0001bc 6002      	ORI		AUX,((1<<PIN_SOLAR_PANEL_LED_OK)|(0<<PIN_SOLAR_PANEL_LED_LOW))		;PRENDE POR CERO.
-                +
-                +
-                +.if PORTC < 0x40
-0001bd b908     +out PORTC , AUX
-                +.else 
-                +sts PORTC , AUX
+                 	ANDI	AUX,(~((1<<PIN_SOLAR_PANEL_LED_OK)|(1<<PIN_SOLAR_PANEL_LED_LOW)))
+                 	ORI		AUX,((1<<PIN_SOLAR_PANEL_LED_OK)|(0<<PIN_SOLAR_PANEL_LED_LOW))		;PRENDE POR CERO.
                  	OUTPUT	PORTC,AUX
-0001be 9488      	CLC										;[CARRY=1]: ES DE DIA. [CARRY=0]: ES DE NOCHE.
-0001bf 9508      RET
+                 	CLC										;[CARRY=1]: ES DE DIA. [CARRY=0]: ES DE NOCHE.
+                 RET
+                 */
                  
                  ORIENTATE_SOLAR_PANEL:
                  ;YA ESTAN LOS PROMEDIOS DE LOS LDR Y HAY QUE COMPARAR Y MOVER EL PANEL.
                  ;PRIMERO EN ASIMUT, LUEGO EN ELEVACION.
-0001c0 94f8      	CLI	;DESHABILITO LAS INTERRUPCIONES GLOBALES
+0001cc 94f8      	CLI	;DESHABILITO LAS INTERRUPCIONES GLOBALES
                  
                  	;COMPARAR_NO_NE:
-                +
-                +
-                +.if LDR_NO_MEAN < 0x40
-                +in AUX , LDR_NO_MEAN
-0001c1 9100 0163+.else 
-                +lds AUX , LDR_NO_MEAN
-                 		INPUT AUX,LDR_NO_MEAN
-                +
-                +
-                +.if LDR_NE_MEAN < 0x40
-                +in AUX1 , LDR_NE_MEAN
-0001c3 9110 0164+.else 
-                +lds AUX1 , LDR_NE_MEAN
-                 		INPUT AUX1,LDR_NE_MEAN
-0001c5 1701      		CP AUX,AUX1
-                 ;MEJORAR: VER LA RESTA Y MOVER EN FUNCION DE ESO
-0001c6 f100      		BRLO _MOTOR_AZIMUT_LEFT
-                 	RETURN_MOTOR_AZIMUT_LEFT:
-                 
-                +
-                +
-                +.if LDR_NO_MEAN < 0x40
-                +in AUX , LDR_NO_MEAN
-0001c7 9100 0163+.else 
-                +lds AUX , LDR_NO_MEAN
-                 		INPUT AUX,LDR_NO_MEAN
-                +
-                +
-                +.if LDR_NE_MEAN < 0x40
-                +in AUX1 , LDR_NE_MEAN
-0001c9 9110 0164+.else 
-                +lds AUX1 , LDR_NE_MEAN
-                 		INPUT AUX1,LDR_NE_MEAN
-0001cb 1710      		CP AUX1,AUX
-0001cc f0e0      		BRLO _MOTOR_AZIMUT_RIGHT
-                 	RETURN_MOTOR_AZIMUT_RIGHT:
-                 
                 +
                 +
                 +.if LDR_NO_MEAN < 0x40
@@ -2716,10 +2716,10 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +lds AUX1 , LDR_NE_MEAN
                  		INPUT AUX1,LDR_NE_MEAN
 0001d1 1701      		CP AUX,AUX1
-0001d2 f0c1      		BREQ _MOTOR_AZIMUT_OFF
-                 	RETURN_MOTOR_AZIMUT_OFF:
+                 ;MEJORAR: VER LA RESTA Y MOVER EN FUNCION DE ESO
+0001d2 f100      		BRLO _MOTOR_AZIMUT_LEFT
+                 	RETURN_MOTOR_AZIMUT_LEFT:
                  
-                 	;COMPARAR_NO_SO:
                 +
                 +
                 +.if LDR_NO_MEAN < 0x40
@@ -2729,15 +2729,14 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  		INPUT AUX,LDR_NO_MEAN
                 +
                 +
-                +.if LDR_SO_MEAN < 0x40
-                +in AUX1 , LDR_SO_MEAN
-0001d5 9110 0166+.else 
-                +lds AUX1 , LDR_SO_MEAN
-                 		INPUT AUX1,LDR_SO_MEAN
-0001d7 1701      		CP AUX,AUX1
-                 ;MEJORAR: VER LA RESTA Y MOVER EN FUNCION DE ESO
-0001d8 f0a0      		BRLO _MOTOR_ELEVATION_UP
-                 	RETURN_MOTOR_ELEVATION_UP:
+                +.if LDR_NE_MEAN < 0x40
+                +in AUX1 , LDR_NE_MEAN
+0001d5 9110 0164+.else 
+                +lds AUX1 , LDR_NE_MEAN
+                 		INPUT AUX1,LDR_NE_MEAN
+0001d7 1710      		CP AUX1,AUX
+0001d8 f0e0      		BRLO _MOTOR_AZIMUT_RIGHT
+                 	RETURN_MOTOR_AZIMUT_RIGHT:
                  
                 +
                 +
@@ -2748,15 +2747,16 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  		INPUT AUX,LDR_NO_MEAN
                 +
                 +
-                +.if LDR_SO_MEAN < 0x40
-                +in AUX1 , LDR_SO_MEAN
-0001db 9110 0166+.else 
-                +lds AUX1 , LDR_SO_MEAN
-                 		INPUT AUX1,LDR_SO_MEAN
-0001dd 1710      		CP AUX1,AUX
-0001de f080      		BRLO _MOTOR_ELEVATION_DOWN
-                 	RETURN_MOTOR_ELEVATION_DOWN:
+                +.if LDR_NE_MEAN < 0x40
+                +in AUX1 , LDR_NE_MEAN
+0001db 9110 0164+.else 
+                +lds AUX1 , LDR_NE_MEAN
+                 		INPUT AUX1,LDR_NE_MEAN
+0001dd 1701      		CP AUX,AUX1
+0001de f0c1      		BREQ _MOTOR_AZIMUT_OFF
+                 	RETURN_MOTOR_AZIMUT_OFF:
                  
+                 	;COMPARAR_NO_SO:
                 +
                 +
                 +.if LDR_NO_MEAN < 0x40
@@ -2772,231 +2772,268 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +lds AUX1 , LDR_SO_MEAN
                  		INPUT AUX1,LDR_SO_MEAN
 0001e3 1701      		CP AUX,AUX1
-0001e4 f061      		BREQ _MOTOR_ELEVATION_OFF
+                 ;MEJORAR: VER LA RESTA Y MOVER EN FUNCION DE ESO
+0001e4 f0a0      		BRLO _MOTOR_ELEVATION_UP
+                 	RETURN_MOTOR_ELEVATION_UP:
+                 
+                +
+                +
+                +.if LDR_NO_MEAN < 0x40
+                +in AUX , LDR_NO_MEAN
+0001e5 9100 0163+.else 
+                +lds AUX , LDR_NO_MEAN
+                 		INPUT AUX,LDR_NO_MEAN
+                +
+                +
+                +.if LDR_SO_MEAN < 0x40
+                +in AUX1 , LDR_SO_MEAN
+0001e7 9110 0166+.else 
+                +lds AUX1 , LDR_SO_MEAN
+                 		INPUT AUX1,LDR_SO_MEAN
+0001e9 1710      		CP AUX1,AUX
+0001ea f080      		BRLO _MOTOR_ELEVATION_DOWN
+                 	RETURN_MOTOR_ELEVATION_DOWN:
+                 
+                +
+                +
+                +.if LDR_NO_MEAN < 0x40
+                +in AUX , LDR_NO_MEAN
+0001eb 9100 0163+.else 
+                +lds AUX , LDR_NO_MEAN
+                 		INPUT AUX,LDR_NO_MEAN
+                +
+                +
+                +.if LDR_SO_MEAN < 0x40
+                +in AUX1 , LDR_SO_MEAN
+0001ed 9110 0166+.else 
+                +lds AUX1 , LDR_SO_MEAN
+                 		INPUT AUX1,LDR_SO_MEAN
+0001ef 1701      		CP AUX,AUX1
+0001f0 f061      		BREQ _MOTOR_ELEVATION_OFF
                  	RETURN_MOTOR_ELEVATION_OFF:
                  
-0001e5 9478      	SEI	;HABILITO LAS INTERRUPCIONES GLOBALES
-0001e6 9508      RET
+0001f1 9478      	SEI	;HABILITO LAS INTERRUPCIONES GLOBALES
+0001f2 9508      RET
                  
                  _MOTOR_AZIMUT_LEFT:
-0001e7 d13e      RCALL MOTOR_AZIMUT_LEFT
-0001e8 cfde      RJMP RETURN_MOTOR_AZIMUT_LEFT
+0001f3 d13e      RCALL MOTOR_AZIMUT_LEFT
+0001f4 cfde      RJMP RETURN_MOTOR_AZIMUT_LEFT
                  
                  _MOTOR_AZIMUT_RIGHT:
-0001e9 d143      RCALL MOTOR_AZIMUT_RIGHT
-0001ea cfe2      RJMP RETURN_MOTOR_AZIMUT_RIGHT
+0001f5 d143      RCALL MOTOR_AZIMUT_RIGHT
+0001f6 cfe2      RJMP RETURN_MOTOR_AZIMUT_RIGHT
                  
                  _MOTOR_AZIMUT_OFF:
-0001eb d148      RCALL MOTOR_AZIMUT_OFF
-0001ec cfe6      RJMP RETURN_MOTOR_AZIMUT_OFF
+0001f7 d148      RCALL MOTOR_AZIMUT_OFF
+0001f8 cfe6      RJMP RETURN_MOTOR_AZIMUT_OFF
                  
                  _MOTOR_ELEVATION_UP:
-0001ed d14a      RCALL MOTOR_ELEVATION_UP
-0001ee cfea      RJMP RETURN_MOTOR_ELEVATION_UP
+0001f9 d14a      RCALL MOTOR_ELEVATION_UP
+0001fa cfea      RJMP RETURN_MOTOR_ELEVATION_UP
                  
                  _MOTOR_ELEVATION_DOWN:
-0001ef d14f      RCALL MOTOR_ELEVATION_DOWN
-0001f0 cfee      RJMP RETURN_MOTOR_ELEVATION_DOWN
+0001fb d14f      RCALL MOTOR_ELEVATION_DOWN
+0001fc cfee      RJMP RETURN_MOTOR_ELEVATION_DOWN
                  
                  _MOTOR_ELEVATION_OFF:
-0001f1 d154      RCALL MOTOR_ELEVATION_OFF
-0001f2 cff2      RJMP RETURN_MOTOR_ELEVATION_OFF
+0001fd d154      RCALL MOTOR_ELEVATION_OFF
+0001fe cff2      RJMP RETURN_MOTOR_ELEVATION_OFF
                  
                  
                  VPANEL_TO_BT:
                 +
-0001f3 e4a0     +ldi XL , LOW ( VPANEL_DATA_ASCII )
-0001f4 e0b1     +ldi XH , HIGH ( VPANEL_DATA_ASCII )
+0001ff e4a0     +ldi XL , LOW ( VPANEL_DATA_ASCII )
+000200 e0b1     +ldi XH , HIGH ( VPANEL_DATA_ASCII )
                  						LDIW X,VPANEL_DATA_ASCII	;Apunto a la sección de memoria donde se guarda la tensión a panel a transmitir
                 +
-0001f5 e3e4     +ldi ZL , LOW ( VPANEL_FIRST_DIG_TABLE * 2 )
-0001f6 e0f7     +ldi ZH , HIGH ( VPANEL_FIRST_DIG_TABLE * 2 )
+000201 e4ec     +ldi ZL , LOW ( VPANEL_FIRST_DIG_TABLE * 2 )
+000202 e0f7     +ldi ZH , HIGH ( VPANEL_FIRST_DIG_TABLE * 2 )
                  						LDIW Z,VPANEL_FIRST_DIG_TABLE*2
-0001f7 3840      VPANEL_SEC_DIGIT:		CPI ADC_DATA_H,128
-0001f8 f438      						BRSH VPANEL_SEC_DIGIT_ONE
+000203 3840      VPANEL_SEC_DIGIT:		CPI ADC_DATA_H,128
+000204 f438      						BRSH VPANEL_SEC_DIGIT_ONE
                 +
-0001f9 e300     +ldi AUX , 48 + 0
-0001fa 930d     +st X + , AUX
+000205 e300     +ldi AUX , 48 + 0
+000206 930d     +st X + , AUX
                  						STI X+,48+0					;Pongo un 0 ASCII en RAM
-0001fb d007      VPANEL_FIRST_DIGIT:		RCALL VPANEL_FIRST_DIG_CP
+000207 d007      VPANEL_FIRST_DIGIT:		RCALL VPANEL_FIRST_DIG_CP
                 +
-0001fc e3e4     +ldi ZL , LOW ( VPANEL_FIRST_DIG_TABLE * 2 )
-0001fd e0f7     +ldi ZH , HIGH ( VPANEL_FIRST_DIG_TABLE * 2 )
+000208 e4ec     +ldi ZL , LOW ( VPANEL_FIRST_DIG_TABLE * 2 )
+000209 e0f7     +ldi ZH , HIGH ( VPANEL_FIRST_DIG_TABLE * 2 )
                  						LDIW Z,VPANEL_FIRST_DIG_TABLE*2
-0001fe d054      VPANEL_DECIMAL:			RCALL VPANEL_DEC_CP
+00020a d054      VPANEL_DECIMAL:			RCALL VPANEL_DEC_CP
                  
-0001ff 9508      RET
+00020b 9508      RET
                  
                  
                  VPANEL_SEC_DIGIT_ONE:
                 +
-000200 e301     +ldi AUX , 48 + 1
-000201 930d     +st X + , AUX
+00020c e301     +ldi AUX , 48 + 1
+00020d 930d     +st X + , AUX
                  				STI X+,48+1	;Pongo un 1 ASCII en RAM
-000202 cff8      				RJMP VPANEL_FIRST_DIGIT
+00020e cff8      				RJMP VPANEL_FIRST_DIGIT
                  
                  VPANEL_FIRST_DIG_CP:
-000203 304c      						CPI ADC_DATA_H,12
-000204 f130      						BRLO VPANEL_FIRST_DIG_IS_0
-000205 3149      						CPI ADC_DATA_H,25
-000206 f140      						BRLO VPANEL_FIRST_DIG_IS_1
-000207 3246      						CPI ADC_DATA_H,38
-000208 f150      						BRLO VPANEL_FIRST_DIG_IS_2
-000209 3343      						CPI ADC_DATA_H,51
-00020a f160      						BRLO VPANEL_FIRST_DIG_IS_3
-00020b 3440      						CPI ADC_DATA_H,64
-00020c f170      						BRLO VPANEL_FIRST_DIG_IS_4
-00020d 344c      						CPI ADC_DATA_H,76
-00020e f180      						BRLO VPANEL_FIRST_DIG_IS_5
-00020f 3549      						CPI ADC_DATA_H,89
-000210 f190      						BRLO VPANEL_FIRST_DIG_IS_6
-000211 3646      						CPI ADC_DATA_H,102
-000212 f1a0      						BRLO VPANEL_FIRST_DIG_IS_7
-000213 3743      						CPI ADC_DATA_H,115
-000214 f1b0      						BRLO VPANEL_FIRST_DIG_IS_8
-000215 374f      						CPI ADC_DATA_H,127
-000216 f1c0      						BRLO VPANEL_FIRST_DIG_IS_9
-000217 384d      						CPI ADC_DATA_H,141
-000218 f090      						BRLO VPANEL_FIRST_DIG_IS_0
-000219 3949      						CPI ADC_DATA_H,153
-00021a f0a0      						BRLO VPANEL_FIRST_DIG_IS_1
-00021b 3a46      						CPI ADC_DATA_H,166
-00021c f0b0      						BRLO VPANEL_FIRST_DIG_IS_2
-00021d 3b43      						CPI ADC_DATA_H,179
-00021e f0c0      						BRLO VPANEL_FIRST_DIG_IS_3
-00021f 3c40      						CPI ADC_DATA_H,192
-000220 f0d0      						BRLO VPANEL_FIRST_DIG_IS_4
-000221 3c4d      						CPI ADC_DATA_H,205
-000222 f0e0      						BRLO VPANEL_FIRST_DIG_IS_5
-000223 3d49      						CPI ADC_DATA_H,217
-000224 f0f0      						BRLO VPANEL_FIRST_DIG_IS_6
-000225 3e46      						CPI ADC_DATA_H,230
-000226 f100      						BRLO VPANEL_FIRST_DIG_IS_7
-000227 3f43      						CPI ADC_DATA_H,243
-000228 f110      						BRLO VPANEL_FIRST_DIG_IS_8
-000229 c025      						RJMP VPANEL_FIRST_DIG_IS_9
-00022a 9508      END_VPANEL_FIRST_DIG:	RET
+00020f 304c      						CPI ADC_DATA_H,12
+000210 f130      						BRLO VPANEL_FIRST_DIG_IS_0
+000211 3149      						CPI ADC_DATA_H,25
+000212 f140      						BRLO VPANEL_FIRST_DIG_IS_1
+000213 3246      						CPI ADC_DATA_H,38
+000214 f150      						BRLO VPANEL_FIRST_DIG_IS_2
+000215 3343      						CPI ADC_DATA_H,51
+000216 f160      						BRLO VPANEL_FIRST_DIG_IS_3
+000217 3440      						CPI ADC_DATA_H,64
+000218 f170      						BRLO VPANEL_FIRST_DIG_IS_4
+000219 344c      						CPI ADC_DATA_H,76
+00021a f180      						BRLO VPANEL_FIRST_DIG_IS_5
+00021b 3549      						CPI ADC_DATA_H,89
+00021c f190      						BRLO VPANEL_FIRST_DIG_IS_6
+00021d 3646      						CPI ADC_DATA_H,102
+00021e f1a0      						BRLO VPANEL_FIRST_DIG_IS_7
+00021f 3743      						CPI ADC_DATA_H,115
+000220 f1b0      						BRLO VPANEL_FIRST_DIG_IS_8
+000221 374f      						CPI ADC_DATA_H,127
+000222 f1c0      						BRLO VPANEL_FIRST_DIG_IS_9
+000223 384d      						CPI ADC_DATA_H,141
+000224 f090      						BRLO VPANEL_FIRST_DIG_IS_0
+000225 3949      						CPI ADC_DATA_H,153
+000226 f0a0      						BRLO VPANEL_FIRST_DIG_IS_1
+000227 3a46      						CPI ADC_DATA_H,166
+000228 f0b0      						BRLO VPANEL_FIRST_DIG_IS_2
+000229 3b43      						CPI ADC_DATA_H,179
+00022a f0c0      						BRLO VPANEL_FIRST_DIG_IS_3
+00022b 3c40      						CPI ADC_DATA_H,192
+00022c f0d0      						BRLO VPANEL_FIRST_DIG_IS_4
+00022d 3c4d      						CPI ADC_DATA_H,205
+00022e f0e0      						BRLO VPANEL_FIRST_DIG_IS_5
+00022f 3d49      						CPI ADC_DATA_H,217
+000230 f0f0      						BRLO VPANEL_FIRST_DIG_IS_6
+000231 3e46      						CPI ADC_DATA_H,230
+000232 f100      						BRLO VPANEL_FIRST_DIG_IS_7
+000233 3f43      						CPI ADC_DATA_H,243
+000234 f110      						BRLO VPANEL_FIRST_DIG_IS_8
+000235 c025      						RJMP VPANEL_FIRST_DIG_IS_9
+000236 9508      END_VPANEL_FIRST_DIG:	RET
                  
                  VPANEL_FIRST_DIG_IS_0:
                 +
-00022b e300     +ldi AUX , 48 + 0
-00022c 930d     +st X + , AUX
+000237 e300     +ldi AUX , 48 + 0
+000238 930d     +st X + , AUX
                  				STI X+,48+0	;Pongo el 0 ASCII en RAM
-00022d 2700      				CLR AUX
-00022e cffb      				RJMP END_VPANEL_FIRST_DIG
+000239 2700      				CLR AUX
+00023a cffb      				RJMP END_VPANEL_FIRST_DIG
                  
                  VPANEL_FIRST_DIG_IS_1:
                 +
-00022f e301     +ldi AUX , 48 + 1
-000230 930d     +st X + , AUX
+00023b e301     +ldi AUX , 48 + 1
+00023c 930d     +st X + , AUX
                  				STI X+,48+1	;Pongo el 1 ASCII en RAM
-000231 e001      				LDI AUX,1
-000232 cff7      				RJMP END_VPANEL_FIRST_DIG
+00023d e001      				LDI AUX,1
+00023e cff7      				RJMP END_VPANEL_FIRST_DIG
                  
                  VPANEL_FIRST_DIG_IS_2:
                 +
-000233 e302     +ldi AUX , 48 + 2
-000234 930d     +st X + , AUX
+00023f e302     +ldi AUX , 48 + 2
+000240 930d     +st X + , AUX
                  				STI X+,48+2	;Pongo el 2 ASCII en RAM
-000235 e002      				LDI AUX,2
-000236 cff3      				RJMP END_VPANEL_FIRST_DIG
+000241 e002      				LDI AUX,2
+000242 cff3      				RJMP END_VPANEL_FIRST_DIG
                  
                  VPANEL_FIRST_DIG_IS_3:
                 +
-000237 e303     +ldi AUX , 48 + 3
-000238 930d     +st X + , AUX
+000243 e303     +ldi AUX , 48 + 3
+000244 930d     +st X + , AUX
                  				STI X+,48+3	;Pongo el 3 ASCII en RAM
-000239 e003      				LDI AUX,3
-00023a cfef      				RJMP END_VPANEL_FIRST_DIG
+000245 e003      				LDI AUX,3
+000246 cfef      				RJMP END_VPANEL_FIRST_DIG
                  
                  VPANEL_FIRST_DIG_IS_4:
                 +
-00023b e304     +ldi AUX , 48 + 4
-00023c 930d     +st X + , AUX
+000247 e304     +ldi AUX , 48 + 4
+000248 930d     +st X + , AUX
                  				STI X+,48+4	;Pongo el 4 ASCII en RAM
-00023d e004      				LDI AUX,4
-00023e cfeb      				RJMP END_VPANEL_FIRST_DIG
+000249 e004      				LDI AUX,4
+00024a cfeb      				RJMP END_VPANEL_FIRST_DIG
                  
                  VPANEL_FIRST_DIG_IS_5:
                 +
-00023f e305     +ldi AUX , 48 + 5
-000240 930d     +st X + , AUX
+00024b e305     +ldi AUX , 48 + 5
+00024c 930d     +st X + , AUX
                  				STI X+,48+5	;Pongo el 5 ASCII en RAM
-000241 e005      				LDI AUX,5
-000242 cfe7      				RJMP END_VPANEL_FIRST_DIG
+00024d e005      				LDI AUX,5
+00024e cfe7      				RJMP END_VPANEL_FIRST_DIG
                  
                  VPANEL_FIRST_DIG_IS_6:
                 +
-000243 e306     +ldi AUX , 48 + 6
-000244 930d     +st X + , AUX
+00024f e306     +ldi AUX , 48 + 6
+000250 930d     +st X + , AUX
                  				STI X+,48+6	;Pongo el 6 ASCII en RAM
-000245 e006      				LDI AUX,6
-000246 cfe3      				RJMP END_VPANEL_FIRST_DIG
+000251 e006      				LDI AUX,6
+000252 cfe3      				RJMP END_VPANEL_FIRST_DIG
                  
                  VPANEL_FIRST_DIG_IS_7:
                 +
-000247 e307     +ldi AUX , 48 + 7
-000248 930d     +st X + , AUX
+000253 e307     +ldi AUX , 48 + 7
+000254 930d     +st X + , AUX
                  				STI X+,48+7	;Pongo el 7 ASCII en RAM
-000249 e007      				LDI AUX,7
-00024a cfdf      				RJMP END_VPANEL_FIRST_DIG
+000255 e007      				LDI AUX,7
+000256 cfdf      				RJMP END_VPANEL_FIRST_DIG
                  
                  VPANEL_FIRST_DIG_IS_8:
                 +
-00024b e308     +ldi AUX , 48 + 8
-00024c 930d     +st X + , AUX
+000257 e308     +ldi AUX , 48 + 8
+000258 930d     +st X + , AUX
                  				STI X+,48+8	;Pongo el 8 ASCII en RAM
-00024d e008      				LDI AUX,8
-00024e cfdb      				RJMP END_VPANEL_FIRST_DIG
+000259 e008      				LDI AUX,8
+00025a cfdb      				RJMP END_VPANEL_FIRST_DIG
                  
                  VPANEL_FIRST_DIG_IS_9:
                 +
-00024f e309     +ldi AUX , 48 + 9
-000250 930d     +st X + , AUX
+00025b e309     +ldi AUX , 48 + 9
+00025c 930d     +st X + , AUX
                  				STI X+,48+9	;Pongo el 9 ASCII en RAM
-000251 e009      				LDI AUX,9
-000252 cfd7      				RJMP END_VPANEL_FIRST_DIG
+00025d e009      				LDI AUX,9
+00025e cfd7      				RJMP END_VPANEL_FIRST_DIG
                  
                 +
                 +
                 +
                 +
-000253 930f     +PUSH AUX
-000254 0fe0     +ADD ZL , AUX
-000255 f41b     +BRVC NO_POINTER_OV
-000256 95f3     +INC ZH
-000257 1b0e     +SUB AUX , ZL
-000258 2f0e     +MOV AUX , ZL
-000259 0000     +NO_POINTER_OV : NOP
+00025f 930f     +PUSH AUX
+000260 0fe0     +ADD ZL , AUX
+000261 f41b     +BRVC NO_POINTER_OV
+000262 95f3     +INC ZH
+000263 1b0e     +SUB AUX , ZL
+000264 2f0e     +MOV AUX , ZL
+000265 0000     +NO_POINTER_OV : NOP
                  VPANEL_DEC_CP:	ADDP Z,AUX
-00025a 9104      				LPM AUX,Z
-00025b 1b04      				SUB AUX,ADC_DATA_H
+000266 9104      				LPM AUX,Z
+000267 1b04      				SUB AUX,ADC_DATA_H
                 +
-00025c e4e8     +ldi ZL , LOW ( VPANEL_DEC_TABLE * 2 )
-00025d e0f7     +ldi ZH , HIGH ( VPANEL_DEC_TABLE * 2 )
+000268 e6e0     +ldi ZL , LOW ( VPANEL_DEC_TABLE * 2 )
+000269 e0f7     +ldi ZH , HIGH ( VPANEL_DEC_TABLE * 2 )
                  				LDIW Z,VPANEL_DEC_TABLE*2
                 +
                 +
                 +
                 +
-00025e 930f     +PUSH AUX
-00025f 0fe0     +ADD ZL , AUX
-000260 f41b     +BRVC NO_POINTER_OV
-000261 95f3     +INC ZH
-000262 1b0e     +SUB AUX , ZL
-000263 2f0e     +MOV AUX , ZL
-000264 0000     +NO_POINTER_OV : NOP
+00026a 930f     +PUSH AUX
+00026b 0fe0     +ADD ZL , AUX
+00026c f41b     +BRVC NO_POINTER_OV
+00026d 95f3     +INC ZH
+00026e 1b0e     +SUB AUX , ZL
+00026f 2f0e     +MOV AUX , ZL
+000270 0000     +NO_POINTER_OV : NOP
                  				ADDP Z,AUX
-000265 9104      				LPM AUX,Z
+000271 9104      				LPM AUX,Z
                 +
                 +
                 +
                 +
-000266 e300     +LDI AUX , 48
-000267 0f10     +ADD AUX1 , AUX
+000272 e300     +LDI AUX , 48
+000273 0f10     +ADD AUX1 , AUX
                  				ADDI AUX1,48
-000268 931c      				ST X,AUX1	;El ASCII del número en AUX.
-000269 9508      RET
+000274 931c      				ST X,AUX1	;El ASCII del número en AUX.
+000275 9508      RET
                  .include "LDRS.inc"
                  
                  ;
@@ -3006,118 +3043,118 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                  .CSEG
                  
                  LDRS_INIT:
-00026a d01e      		RCALL LDRS_POINTERS_RESET
-00026b 2744      LOOP:	CLR ADC_DATA_H
+000276 d01e      		RCALL LDRS_POINTERS_RESET
+000277 2744      LOOP:	CLR ADC_DATA_H
                 +
                 +
                 +
                 +
                 +
-00026c 2deb     +MOV ZL , LDR_NO_LOW
-00026d 2dfc     +MOV ZH , LDR_NO_HIGH
-00026e 9341     +ST Z + , ADC_DATA_H
-00026f 2ebe     +MOV LDR_NO_LOW , ZL
-000270 2ecf     +MOV LDR_NO_HIGH , ZH
+000278 2deb     +MOV ZL , LDR_NO_LOW
+000279 2dfc     +MOV ZH , LDR_NO_HIGH
+00027a 9341     +ST Z + , ADC_DATA_H
+00027b 2ebe     +MOV LDR_NO_LOW , ZL
+00027c 2ecf     +MOV LDR_NO_HIGH , ZH
                  		SLDR LDR_NO_LOW,LDR_NO_HIGH,ADC_DATA_H
                 +
                 +
                 +
                 +
                 +
-000271 2de2     +MOV ZL , LDR_SO_LOW
-000272 2df3     +MOV ZH , LDR_SO_HIGH
-000273 9341     +ST Z + , ADC_DATA_H
-000274 2e2e     +MOV LDR_SO_LOW , ZL
-000275 2e3f     +MOV LDR_SO_HIGH , ZH
+00027d 2de2     +MOV ZL , LDR_SO_LOW
+00027e 2df3     +MOV ZH , LDR_SO_HIGH
+00027f 9341     +ST Z + , ADC_DATA_H
+000280 2e2e     +MOV LDR_SO_LOW , ZL
+000281 2e3f     +MOV LDR_SO_HIGH , ZH
                  		SLDR LDR_SO_LOW,LDR_SO_HIGH,ADC_DATA_H
                 +
                 +
                 +
                 +
                 +
-000276 2de4     +MOV ZL , LDR_SE_LOW
-000277 2df5     +MOV ZH , LDR_SE_HIGH
-000278 9341     +ST Z + , ADC_DATA_H
-000279 2e4e     +MOV LDR_SE_LOW , ZL
-00027a 2e5f     +MOV LDR_SE_HIGH , ZH
+000282 2de4     +MOV ZL , LDR_SE_LOW
+000283 2df5     +MOV ZH , LDR_SE_HIGH
+000284 9341     +ST Z + , ADC_DATA_H
+000285 2e4e     +MOV LDR_SE_LOW , ZL
+000286 2e5f     +MOV LDR_SE_HIGH , ZH
                  		SLDR LDR_SE_LOW,LDR_SE_HIGH,ADC_DATA_H
                 +
                 +
                 +
                 +
                 +
-00027b 2de6     +MOV ZL , LDR_NE_LOW
-00027c 2df7     +MOV ZH , LDR_NE_HIGH
-00027d 9341     +ST Z + , ADC_DATA_H
-00027e 2e6e     +MOV LDR_NE_LOW , ZL
-00027f 2e7f     +MOV LDR_NE_HIGH , ZH
+000287 2de6     +MOV ZL , LDR_NE_LOW
+000288 2df7     +MOV ZH , LDR_NE_HIGH
+000289 9341     +ST Z + , ADC_DATA_H
+00028a 2e6e     +MOV LDR_NE_LOW , ZL
+00028b 2e7f     +MOV LDR_NE_HIGH , ZH
                  		SLDR LDR_NE_LOW,LDR_NE_HIGH,ADC_DATA_H
                 +
                 +
                 +.if COUNTER < 0x40
                 +in AUX , COUNTER
-000280 9100 0167+.else 
+00028c 9100 0167+.else 
                 +lds AUX , COUNTER
                  		INPUT AUX,COUNTER
-000282 9503      		INC AUX
+00028e 9503      		INC AUX
                 +
                 +
                 +.if COUNTER < 0x40
                 +out COUNTER , AUX
-000283 9300 0167+.else 
+00028f 9300 0167+.else 
                 +sts COUNTER , AUX
                  		OUTPUT COUNTER,AUX
-000285 3008      		CPI AUX,CANT_SAMPLES			;CHEQUEAR QUE NO ESTE HACIENDO UNO DE MENOS
-000286 f320      		BRLO LOOP
-000287 d001      		RCALL LDRS_POINTERS_RESET
-000288 9508      RET
+000291 3008      		CPI AUX,CANT_SAMPLES			;CHEQUEAR QUE NO ESTE HACIENDO UNO DE MENOS
+000292 f320      		BRLO LOOP
+000293 d001      		RCALL LDRS_POINTERS_RESET
+000294 9508      RET
                  
                  LDRS_POINTERS_RESET:
                 +
-000289 e403     +ldi AUX , LOW ( LDR_NO_BUFFER )
-00028a 2eb0     +mov LDR_NO_LOW , AUX
+000295 e403     +ldi AUX , LOW ( LDR_NO_BUFFER )
+000296 2eb0     +mov LDR_NO_LOW , AUX
                  	MOVI LDR_NO_LOW,LOW(LDR_NO_BUFFER)
                 +
-00028b e001     +ldi AUX , HIGH ( LDR_NO_BUFFER )
-00028c 2ec0     +mov LDR_NO_HIGH , AUX
+000297 e001     +ldi AUX , HIGH ( LDR_NO_BUFFER )
+000298 2ec0     +mov LDR_NO_HIGH , AUX
                  	MOVI LDR_NO_HIGH,HIGH(LDR_NO_BUFFER)
                 +
-00028d e50b     +ldi AUX , LOW ( LDR_SO_BUFFER )
-00028e 2e20     +mov LDR_SO_LOW , AUX
+000299 e50b     +ldi AUX , LOW ( LDR_SO_BUFFER )
+00029a 2e20     +mov LDR_SO_LOW , AUX
                  	MOVI LDR_SO_LOW,LOW(LDR_SO_BUFFER)
                 +
-00028f e001     +ldi AUX , HIGH ( LDR_SO_BUFFER )
-000290 2e30     +mov LDR_SO_HIGH , AUX
+00029b e001     +ldi AUX , HIGH ( LDR_SO_BUFFER )
+00029c 2e30     +mov LDR_SO_HIGH , AUX
                  	MOVI LDR_SO_HIGH,HIGH(LDR_SO_BUFFER)
                  
                 +
-000291 e503     +ldi AUX , LOW ( LDR_SE_BUFFER )
-000292 2e40     +mov LDR_SE_LOW , AUX
+00029d e503     +ldi AUX , LOW ( LDR_SE_BUFFER )
+00029e 2e40     +mov LDR_SE_LOW , AUX
                  	MOVI LDR_SE_LOW,LOW(LDR_SE_BUFFER)
                 +
-000293 e001     +ldi AUX , HIGH ( LDR_SE_BUFFER )
-000294 2e50     +mov LDR_SE_HIGH , AUX
+00029f e001     +ldi AUX , HIGH ( LDR_SE_BUFFER )
+0002a0 2e50     +mov LDR_SE_HIGH , AUX
                  	MOVI LDR_SE_HIGH,HIGH(LDR_SE_BUFFER)
                  
                 +
-000295 e40b     +ldi AUX , LOW ( LDR_NE_BUFFER )
-000296 2e60     +mov LDR_NE_LOW , AUX
+0002a1 e40b     +ldi AUX , LOW ( LDR_NE_BUFFER )
+0002a2 2e60     +mov LDR_NE_LOW , AUX
                  	MOVI LDR_NE_LOW,LOW(LDR_NE_BUFFER)
                 +
-000297 e001     +ldi AUX , HIGH ( LDR_NE_BUFFER )
-000298 2e70     +mov LDR_NE_HIGH , AUX
+0002a3 e001     +ldi AUX , HIGH ( LDR_NE_BUFFER )
+0002a4 2e70     +mov LDR_NE_HIGH , AUX
                  	MOVI LDR_NE_HIGH,HIGH(LDR_NE_BUFFER)
                  
                  ;	INPUT AUX,COUNTER
-000299 2700      	CLR AUX
+0002a5 2700      	CLR AUX
                 +
                 +
                 +.if COUNTER < 0x40
                 +out COUNTER , AUX
-00029a 9300 0167+.else 
+0002a6 9300 0167+.else 
                 +sts COUNTER , AUX
                  	OUTPUT COUNTER,AUX
-00029c 9508      RET
+0002a8 9508      RET
                  
                  READ_LDRS:
                  
@@ -3125,240 +3162,240 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +.if COUNTER < 0x40
                 +in AUX , COUNTER
-00029d 9100 0167+.else 
+0002a9 9100 0167+.else 
                 +lds AUX , COUNTER
                  	INPUT AUX,COUNTER			;CHEQUEO QUE SEA MENOR A CANT_SAMPLES. SI ES MAYOR, RESETEO LOS PUNTEROS. [EL BUFFER ESTA LLENO, SACO LA PRIMER MUESTRA].
-00029f 3008      	CPI AUX,CANT_SAMPLES
-0002a0 f0f1      	BREQ _LDRS_POINTERS_RESET
+0002ab 3008      	CPI AUX,CANT_SAMPLES
+0002ac f0f1      	BREQ _LDRS_POINTERS_RESET
                  	LDRS_POINTERS_RESET_RETURN:
                 +
                 +
                 +.if COUNTER < 0x40
                 +in AUX , COUNTER
-0002a1 9100 0167+.else 
+0002ad 9100 0167+.else 
                 +lds AUX , COUNTER
                  	INPUT AUX,COUNTER
-0002a3 9503      	INC AUX
+0002af 9503      	INC AUX
                 +
                 +
                 +.if COUNTER < 0x40
                 +out COUNTER , AUX
-0002a4 9300 0167+.else 
+0002b0 9300 0167+.else 
                 +sts COUNTER , AUX
                  	OUTPUT COUNTER,AUX
                  ;PREGUNTAR COMO SE HACE ESTO BIEN!! CUANDO HACES UNA FUNCION Y QUERES COMPARAR E IR A LA FUNCION.
                  	
-0002a6 d068      	RCALL READ_LDR_NO										;READ_LDR:	DEVUELVE EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
+0002b2 d068      	RCALL READ_LDR_NO										;READ_LDR:	DEVUELVE EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
                 +
                 +
                 +
                 +
                 +
-0002a7 2deb     +MOV ZL , LDR_NO_LOW
-0002a8 2dfc     +MOV ZH , LDR_NO_HIGH
-0002a9 9341     +ST Z + , ADC_DATA_H
-0002aa 2ebe     +MOV LDR_NO_LOW , ZL
-0002ab 2ecf     +MOV LDR_NO_HIGH , ZH
+0002b3 2deb     +MOV ZL , LDR_NO_LOW
+0002b4 2dfc     +MOV ZH , LDR_NO_HIGH
+0002b5 9341     +ST Z + , ADC_DATA_H
+0002b6 2ebe     +MOV LDR_NO_LOW , ZL
+0002b7 2ecf     +MOV LDR_NO_HIGH , ZH
                  	SLDR LDR_NO_LOW,LDR_NO_HIGH,ADC_DATA_H					;STORE_LDR:	UBICA [LDR_XX_LOW,LDR_XX_HIGH] EN UN PUNTERO Y GUARDA ADC_DATA_H
                  
-0002ac d066      	RCALL READ_LDR_SO										;READ_LDR:	DEVUELVE EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
+0002b8 d066      	RCALL READ_LDR_SO										;READ_LDR:	DEVUELVE EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
                 +
                 +
                 +
                 +
                 +
-0002ad 2de2     +MOV ZL , LDR_SO_LOW
-0002ae 2df3     +MOV ZH , LDR_SO_HIGH
-0002af 9341     +ST Z + , ADC_DATA_H
-0002b0 2e2e     +MOV LDR_SO_LOW , ZL
-0002b1 2e3f     +MOV LDR_SO_HIGH , ZH
+0002b9 2de2     +MOV ZL , LDR_SO_LOW
+0002ba 2df3     +MOV ZH , LDR_SO_HIGH
+0002bb 9341     +ST Z + , ADC_DATA_H
+0002bc 2e2e     +MOV LDR_SO_LOW , ZL
+0002bd 2e3f     +MOV LDR_SO_HIGH , ZH
                  	SLDR LDR_SO_LOW,LDR_SO_HIGH,ADC_DATA_H					;STORE_LDR:	UBICA [LDR_XX_LOW,LDR_XX_HIGH] EN UN PUNTERO Y GUARDA ADC_DATA_H
                  
-0002b2 d064      	RCALL READ_LDR_SE										;READ_LDR:	DEVUELVE EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
+0002be d064      	RCALL READ_LDR_SE										;READ_LDR:	DEVUELVE EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
                 +
                 +
                 +
                 +
                 +
-0002b3 2de4     +MOV ZL , LDR_SE_LOW
-0002b4 2df5     +MOV ZH , LDR_SE_HIGH
-0002b5 9341     +ST Z + , ADC_DATA_H
-0002b6 2e4e     +MOV LDR_SE_LOW , ZL
-0002b7 2e5f     +MOV LDR_SE_HIGH , ZH
+0002bf 2de4     +MOV ZL , LDR_SE_LOW
+0002c0 2df5     +MOV ZH , LDR_SE_HIGH
+0002c1 9341     +ST Z + , ADC_DATA_H
+0002c2 2e4e     +MOV LDR_SE_LOW , ZL
+0002c3 2e5f     +MOV LDR_SE_HIGH , ZH
                  	SLDR LDR_SE_LOW,LDR_SE_HIGH,ADC_DATA_H					;STORE_LDR:	UBICA [LDR_XX_LOW,LDR_XX_HIGH] EN UN PUNTERO Y GUARDA ADC_DATA_H
                  
-0002b8 d062      	RCALL READ_LDR_NE										;READ_LDR:	DEVUELVE EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
+0002c4 d062      	RCALL READ_LDR_NE										;READ_LDR:	DEVUELVE EL RESULTADO DE LA CONVERSION EN ADC_DATA_H
                 +
                 +
                 +
                 +
                 +
-0002b9 2de6     +MOV ZL , LDR_NE_LOW
-0002ba 2df7     +MOV ZH , LDR_NE_HIGH
-0002bb 9341     +ST Z + , ADC_DATA_H
-0002bc 2e6e     +MOV LDR_NE_LOW , ZL
-0002bd 2e7f     +MOV LDR_NE_HIGH , ZH
+0002c5 2de6     +MOV ZL , LDR_NE_LOW
+0002c6 2df7     +MOV ZH , LDR_NE_HIGH
+0002c7 9341     +ST Z + , ADC_DATA_H
+0002c8 2e6e     +MOV LDR_NE_LOW , ZL
+0002c9 2e7f     +MOV LDR_NE_HIGH , ZH
                  	SLDR LDR_NE_LOW,LDR_NE_HIGH,ADC_DATA_H					;STORE_LDR:	UBICA [LDR_XX_LOW,LDR_XX_HIGH] EN UN PUNTERO Y GUARDA ADC_DATA_H
-0002be 9508      RET
+0002ca 9508      RET
                  
                  _LDRS_POINTERS_RESET:
-0002bf dfc9      	RCALL LDRS_POINTERS_RESET
-0002c0 cfe0      	RJMP LDRS_POINTERS_RESET_RETURN
+0002cb dfc9      	RCALL LDRS_POINTERS_RESET
+0002cc cfe0      	RJMP LDRS_POINTERS_RESET_RETURN
                  
                  LDRS_MEAN:
                  ;OBS: PARA HACER EL PROMEDIO NO IMPORTA SI NO SE TOMARON CANT_SAMPLES, EL BUFFER ESTA INICIALIZADO CON CERO.
                  
-0002c1 e008      	LDI	AUX,CANT_SAMPLES					;VECTMEAN NECESITA LA CANTIDAD DE LAS MUESTRAS
+0002cd e008      	LDI	AUX,CANT_SAMPLES					;VECTMEAN NECESITA LA CANTIDAD DE LAS MUESTRAS
                  
                 +
-0002c2 e4e3     +ldi ZL , LOW ( LDR_NO_BUFFER )
-0002c3 e0f1     +ldi ZH , HIGH ( LDR_NO_BUFFER )
+0002ce e4e3     +ldi ZL , LOW ( LDR_NO_BUFFER )
+0002cf e0f1     +ldi ZH , HIGH ( LDR_NO_BUFFER )
                  	LDIW Z,LDR_NO_BUFFER					;UBICO EL LDR_NO EN UN PUNTERO.
                 +
-0002c4 930f     +push AUX
-0002c5 9101     +ld AUX , Z +
-0002c6 2711     +clr AUX1
+0002d0 930f     +push AUX
+0002d1 9101     +ld AUX , Z +
+0002d2 2711     +clr AUX1
                 +loop_mean :
-0002c7 9111     +ld AUX1 , Z +
-0002c8 0f01     +add AUX , AUX1
-0002c9 2722     +clr AUX2
-0002ca 1f12     +adc AUX1 , AUX2
-0002cb 950a     +dec AUX
-0002cc f7d1     +brne loop_mean
-0002cd e023     +ldi AUX2 , 3
+0002d3 9111     +ld AUX1 , Z +
+0002d4 0f01     +add AUX , AUX1
+0002d5 2722     +clr AUX2
+0002d6 1f12     +adc AUX1 , AUX2
+0002d7 950a     +dec AUX
+0002d8 f7d1     +brne loop_mean
+0002d9 e023     +ldi AUX2 , 3
                 +division :
-0002ce 0f00     +lsl AUX
-0002cf 1f11     +rol AUX1
-0002d0 952a     +dec AUX2
-0002d1 f7e1     +brne division
-0002d2 910f     +pop AUX
+0002da 0f00     +lsl AUX
+0002db 1f11     +rol AUX1
+0002dc 952a     +dec AUX2
+0002dd f7e1     +brne division
+0002de 910f     +pop AUX
                  	VECTMEAN Z,AUX,AUX1						;CALCULO EL PROMEDIO DE Z DE LARGO "AUX" DEJANDO EL DATO EN "AUX1"
                 +
                 +
                 +.if LDR_NO_MEAN < 0x40
                 +out LDR_NO_MEAN , AUX1
-0002d3 9310 0163+.else 
+0002df 9310 0163+.else 
                 +sts LDR_NO_MEAN , AUX1
                  	OUTPUT LDR_NO_MEAN,AUX1					;GUARDAMOS EN RAM EL PROMEDIO.
                  
                 +
-0002d5 e5eb     +ldi ZL , LOW ( LDR_SO_BUFFER )
-0002d6 e0f1     +ldi ZH , HIGH ( LDR_SO_BUFFER )
+0002e1 e5eb     +ldi ZL , LOW ( LDR_SO_BUFFER )
+0002e2 e0f1     +ldi ZH , HIGH ( LDR_SO_BUFFER )
                  	LDIW Z,LDR_SO_BUFFER					;UBICO EL LDR_SO EN UN PUNTERO.
                 +
-0002d7 930f     +push AUX
-0002d8 9101     +ld AUX , Z +
-0002d9 2711     +clr AUX1
+0002e3 930f     +push AUX
+0002e4 9101     +ld AUX , Z +
+0002e5 2711     +clr AUX1
                 +loop_mean :
-0002da 9111     +ld AUX1 , Z +
-0002db 0f01     +add AUX , AUX1
-0002dc 2722     +clr AUX2
-0002dd 1f12     +adc AUX1 , AUX2
-0002de 950a     +dec AUX
-0002df f7d1     +brne loop_mean
-0002e0 e023     +ldi AUX2 , 3
+0002e6 9111     +ld AUX1 , Z +
+0002e7 0f01     +add AUX , AUX1
+0002e8 2722     +clr AUX2
+0002e9 1f12     +adc AUX1 , AUX2
+0002ea 950a     +dec AUX
+0002eb f7d1     +brne loop_mean
+0002ec e023     +ldi AUX2 , 3
                 +division :
-0002e1 0f00     +lsl AUX
-0002e2 1f11     +rol AUX1
-0002e3 952a     +dec AUX2
-0002e4 f7e1     +brne division
-0002e5 910f     +pop AUX
+0002ed 0f00     +lsl AUX
+0002ee 1f11     +rol AUX1
+0002ef 952a     +dec AUX2
+0002f0 f7e1     +brne division
+0002f1 910f     +pop AUX
                  	VECTMEAN Z,AUX,AUX1						;CALCULO EL PROMEDIO DE Z DE LARGO "AUX" DEJANDO EL DATO EN "AUX1"
                 +
                 +
                 +.if LDR_SO_MEAN < 0x40
                 +out LDR_SO_MEAN , AUX1
-0002e6 9310 0166+.else 
+0002f2 9310 0166+.else 
                 +sts LDR_SO_MEAN , AUX1
                  	OUTPUT LDR_SO_MEAN,AUX1					;GUARDAMOS EN RAM EL PROMEDIO.
                  
                 +
-0002e8 e5e3     +ldi ZL , LOW ( LDR_SE_BUFFER )
-0002e9 e0f1     +ldi ZH , HIGH ( LDR_SE_BUFFER )
+0002f4 e5e3     +ldi ZL , LOW ( LDR_SE_BUFFER )
+0002f5 e0f1     +ldi ZH , HIGH ( LDR_SE_BUFFER )
                  	LDIW Z,LDR_SE_BUFFER					;UBICO EL LDR_NO EN UN PUNTERO.
                 +
-0002ea 930f     +push AUX
-0002eb 9101     +ld AUX , Z +
-0002ec 2711     +clr AUX1
+0002f6 930f     +push AUX
+0002f7 9101     +ld AUX , Z +
+0002f8 2711     +clr AUX1
                 +loop_mean :
-0002ed 9111     +ld AUX1 , Z +
-0002ee 0f01     +add AUX , AUX1
-0002ef 2722     +clr AUX2
-0002f0 1f12     +adc AUX1 , AUX2
-0002f1 950a     +dec AUX
-0002f2 f7d1     +brne loop_mean
-0002f3 e023     +ldi AUX2 , 3
+0002f9 9111     +ld AUX1 , Z +
+0002fa 0f01     +add AUX , AUX1
+0002fb 2722     +clr AUX2
+0002fc 1f12     +adc AUX1 , AUX2
+0002fd 950a     +dec AUX
+0002fe f7d1     +brne loop_mean
+0002ff e023     +ldi AUX2 , 3
                 +division :
-0002f4 0f00     +lsl AUX
-0002f5 1f11     +rol AUX1
-0002f6 952a     +dec AUX2
-0002f7 f7e1     +brne division
-0002f8 910f     +pop AUX
+000300 0f00     +lsl AUX
+000301 1f11     +rol AUX1
+000302 952a     +dec AUX2
+000303 f7e1     +brne division
+000304 910f     +pop AUX
                  	VECTMEAN Z,AUX,AUX1						;CALCULO EL PROMEDIO DE Z DE LARGO "AUX" DEJANDO EL DATO EN "AUX1"
                 +
                 +
                 +.if LDR_SE_MEAN < 0x40
                 +out LDR_SE_MEAN , AUX1
-0002f9 9310 0165+.else 
+000305 9310 0165+.else 
                 +sts LDR_SE_MEAN , AUX1
                  	OUTPUT LDR_SE_MEAN,AUX1					;GUARDAMOS EN RAM EL PROMEDIO.
                  
                 +
-0002fb e4eb     +ldi ZL , LOW ( LDR_NE_BUFFER )
-0002fc e0f1     +ldi ZH , HIGH ( LDR_NE_BUFFER )
+000307 e4eb     +ldi ZL , LOW ( LDR_NE_BUFFER )
+000308 e0f1     +ldi ZH , HIGH ( LDR_NE_BUFFER )
                  	LDIW Z,LDR_NE_BUFFER					;UBICO EL LDR_NO EN UN PUNTERO.
                 +
-0002fd 930f     +push AUX
-0002fe 9101     +ld AUX , Z +
-0002ff 2711     +clr AUX1
+000309 930f     +push AUX
+00030a 9101     +ld AUX , Z +
+00030b 2711     +clr AUX1
                 +loop_mean :
-000300 9111     +ld AUX1 , Z +
-000301 0f01     +add AUX , AUX1
-000302 2722     +clr AUX2
-000303 1f12     +adc AUX1 , AUX2
-000304 950a     +dec AUX
-000305 f7d1     +brne loop_mean
-000306 e023     +ldi AUX2 , 3
+00030c 9111     +ld AUX1 , Z +
+00030d 0f01     +add AUX , AUX1
+00030e 2722     +clr AUX2
+00030f 1f12     +adc AUX1 , AUX2
+000310 950a     +dec AUX
+000311 f7d1     +brne loop_mean
+000312 e023     +ldi AUX2 , 3
                 +division :
-000307 0f00     +lsl AUX
-000308 1f11     +rol AUX1
-000309 952a     +dec AUX2
-00030a f7e1     +brne division
-00030b 910f     +pop AUX
+000313 0f00     +lsl AUX
+000314 1f11     +rol AUX1
+000315 952a     +dec AUX2
+000316 f7e1     +brne division
+000317 910f     +pop AUX
                  	VECTMEAN Z,AUX,AUX1						;CALCULO EL PROMEDIO DE Z DE LARGO "AUX" DEJANDO EL DATO EN "AUX1"
                 +
                 +
                 +.if LDR_NE_MEAN < 0x40
                 +out LDR_NE_MEAN , AUX1
-00030c 9310 0164+.else 
+000318 9310 0164+.else 
                 +sts LDR_NE_MEAN , AUX1
                  	OUTPUT LDR_NE_MEAN,AUX1					;GUARDAMOS EN RAM EL PROMEDIO.
-00030e 9508      RET	
+00031a 9508      RET	
                  
                  READ_LDR_NO:
-00030f e032      	LDI ADC_DATA_L,LDR_NO
-000310 dd66      	RCALL ADC_SELECT_INPUT
-000311 dd6c      	RCALL ADC_SIMPLE_CONVERSION
-000312 9508      RET
+00031b e032      	LDI ADC_DATA_L,LDR_NO
+00031c dd69      	RCALL ADC_SELECT_INPUT
+00031d dd6f      	RCALL ADC_SIMPLE_CONVERSION
+00031e 9508      RET
                  
                  READ_LDR_SO:
-000313 e035      	LDI ADC_DATA_L,LDR_SE
-000314 dd62      	RCALL ADC_SELECT_INPUT
-000315 dd68      	RCALL ADC_SIMPLE_CONVERSION
-000316 9508      RET
+00031f e035      	LDI ADC_DATA_L,LDR_SE
+000320 dd65      	RCALL ADC_SELECT_INPUT
+000321 dd6b      	RCALL ADC_SIMPLE_CONVERSION
+000322 9508      RET
                  
                  READ_LDR_SE:
-000317 e035      	LDI ADC_DATA_L,LDR_SE
-000318 dd5e      	RCALL ADC_SELECT_INPUT
-000319 dd64      	RCALL ADC_SIMPLE_CONVERSION
-00031a 9508      RET
+000323 e035      	LDI ADC_DATA_L,LDR_SE
+000324 dd61      	RCALL ADC_SELECT_INPUT
+000325 dd67      	RCALL ADC_SIMPLE_CONVERSION
+000326 9508      RET
                  
                  READ_LDR_NE:
-00031b e033      	LDI ADC_DATA_L,LDR_NE
-00031c dd5a      	RCALL ADC_SELECT_INPUT
-00031d dd60      	RCALL ADC_SIMPLE_CONVERSION
+000327 e033      	LDI ADC_DATA_L,LDR_NE
+000328 dd5d      	RCALL ADC_SELECT_INPUT
+000329 dd63      	RCALL ADC_SIMPLE_CONVERSION
                  .include "MOTORS.inc"
-00031e 9508      
+00032a 9508      
                  ;
                  ;							MOTORS.inc
                  ;
@@ -3369,22 +3406,22 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if DDRD < 0x40
-00031f b10a     +in AUX , DDRD
+00032b b10a     +in AUX , DDRD
                 +.else 
                 +lds AUX , DDRD
                  	INPUT AUX,DDRD
-000320 790f      	ANDI AUX,(~((1<<DDD5)|(1<<DDD6)))	;Mascara para tocar solo D3
-000321 6600      	ORI AUX,((1<<DDD5)|(1<<DDD6))
+00032c 790f      	ANDI AUX,(~((1<<DDD5)|(1<<DDD6)))	;Mascara para tocar solo D3
+00032d 6600      	ORI AUX,((1<<DDD5)|(1<<DDD6))
                 +
                 +
                 +.if DDRD < 0x40
-000322 b90a     +out DDRD , AUX
+00032e b90a     +out DDRD , AUX
                 +.else 
                 +sts DDRD , AUX
                  	OUTPUT DDRD,AUX
-000323 d010      	RCALL MOTOR_AZIMUT_OFF
-000324 d021      	RCALL MOTOR_ELEVATION_OFF
-000325 9508      RET
+00032f d010      	RCALL MOTOR_AZIMUT_OFF
+000330 d021      	RCALL MOTOR_ELEVATION_OFF
+000331 9508      RET
                  
                  MOTOR_AZIMUT_LEFT:
                  ;SETEO LOS ENABLE
@@ -3392,21 +3429,21 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if PORTB < 0x40
-000326 b105     +in AUX , PORTB
+000332 b105     +in AUX , PORTB
                 +.else 
                 +lds AUX , PORTB
                  	INPUT AUX,PORTB
-000327 7f09      	ANDI AUX,(~((1<<MOTOR_EN_A)|(1<<MOTOR_EN_B)))
-000328 6002      	ORI AUX,((1<<MOTOR_EN_A)|(0<<MOTOR_EN_B))			;CHEQUEAR CUANDO SE CONECTE
+000333 7f09      	ANDI AUX,(~((1<<MOTOR_EN_A)|(1<<MOTOR_EN_B)))
+000334 6002      	ORI AUX,((1<<MOTOR_EN_A)|(0<<MOTOR_EN_B))			;CHEQUEAR CUANDO SE CONECTE
                 +
                 +
                 +.if PORTB < 0x40
-000329 b905     +out PORTB , AUX
+000335 b905     +out PORTB , AUX
                 +.else 
                 +sts PORTB , AUX
                  	OUTPUT PORTB,AUX
                  
-00032a e35c      	LDI PWM_DATA,PWM_AZIMUT_DEFAULT
+000336 e35c      	LDI PWM_DATA,PWM_AZIMUT_DEFAULT
                 +
                 +
                 +
@@ -3414,33 +3451,33 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if MOTOR_AZIMUT < 0x40
-00032b bd57     +out MOTOR_AZIMUT , PWM_DATA
+000337 bd57     +out MOTOR_AZIMUT , PWM_DATA
                 +.else 
                 +sts MOTOR_AZIMUT , PWM_DATA
                 +OUTPUT MOTOR_AZIMUT , PWM_DATA
                  	SPWM MOTOR_AZIMUT,PWM_DATA
-00032c 9508      RET
+000338 9508      RET
                  
                  MOTOR_AZIMUT_RIGHT:
                  
                 +
                 +
                 +.if PORTB < 0x40
-00032d b105     +in AUX , PORTB
+000339 b105     +in AUX , PORTB
                 +.else 
                 +lds AUX , PORTB
                  	INPUT AUX,PORTB
-00032e 7f09      	ANDI AUX,(~((1<<MOTOR_EN_A)|(1<<MOTOR_EN_B)))
-00032f 6004      	ORI AUX,((0<<MOTOR_EN_A)|(1<<MOTOR_EN_B))			;CHEQUEAR CUANDO SE CONECTE
+00033a 7f09      	ANDI AUX,(~((1<<MOTOR_EN_A)|(1<<MOTOR_EN_B)))
+00033b 6004      	ORI AUX,((0<<MOTOR_EN_A)|(1<<MOTOR_EN_B))			;CHEQUEAR CUANDO SE CONECTE
                 +
                 +
                 +.if PORTB < 0x40
-000330 b905     +out PORTB , AUX
+00033c b905     +out PORTB , AUX
                 +.else 
                 +sts PORTB , AUX
                  	OUTPUT PORTB,AUX
                  	
-000331 e35c      	LDI PWM_DATA,PWM_AZIMUT_DEFAULT
+00033d e35c      	LDI PWM_DATA,PWM_AZIMUT_DEFAULT
                 +
                 +
                 +
@@ -3448,50 +3485,50 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if MOTOR_AZIMUT < 0x40
-000332 bd57     +out MOTOR_AZIMUT , PWM_DATA
+00033e bd57     +out MOTOR_AZIMUT , PWM_DATA
                 +.else 
                 +sts MOTOR_AZIMUT , PWM_DATA
                 +OUTPUT MOTOR_AZIMUT , PWM_DATA
                  	SPWM MOTOR_AZIMUT,PWM_DATA
-000333 9508      RET
+00033f 9508      RET
                  
                  MOTOR_AZIMUT_OFF:
-000334 2700      	CLR AUX
+000340 2700      	CLR AUX
                 +
                 +
                 +
                 +
-000335 2700     +CLR AUX
+000341 2700     +CLR AUX
                 +
                 +
                 +.if MOTOR_AZIMUT < 0x40
-000336 bd07     +out MOTOR_AZIMUT , AUX
+000342 bd07     +out MOTOR_AZIMUT , AUX
                 +.else 
                 +sts MOTOR_AZIMUT , AUX
                 +OUTPUT MOTOR_AZIMUT , AUX
                  	RPWM MOTOR_AZIMUT
-000337 9508      RET
+000343 9508      RET
                  
                  MOTOR_ELEVATION_UP:
                  
                 +
                 +
                 +.if PORTB < 0x40
-000338 b105     +in AUX , PORTB
+000344 b105     +in AUX , PORTB
                 +.else 
                 +lds AUX , PORTB
                  	INPUT AUX,PORTB
-000339 7f09      	ANDI AUX,(~((1<<MOTOR_EN_A)|(1<<MOTOR_EN_B)))
-00033a 6002      	ORI AUX,((1<<MOTOR_EN_A)|(0<<MOTOR_EN_B))			;CHEQUEAR CUANDO SE CONECTE
+000345 7f09      	ANDI AUX,(~((1<<MOTOR_EN_A)|(1<<MOTOR_EN_B)))
+000346 6002      	ORI AUX,((1<<MOTOR_EN_A)|(0<<MOTOR_EN_B))			;CHEQUEAR CUANDO SE CONECTE
                 +
                 +
                 +.if PORTB < 0x40
-00033b b905     +out PORTB , AUX
+000347 b905     +out PORTB , AUX
                 +.else 
                 +sts PORTB , AUX
                  	OUTPUT PORTB,AUX
                  	
-00033c e456      	LDI PWM_DATA,PWM_ELEVATION_DEFAULT
+000348 e456      	LDI PWM_DATA,PWM_ELEVATION_DEFAULT
                 +
                 +
                 +
@@ -3499,33 +3536,33 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if MOTOR_ELEVATION < 0x40
-00033d bd58     +out MOTOR_ELEVATION , PWM_DATA
+000349 bd58     +out MOTOR_ELEVATION , PWM_DATA
                 +.else 
                 +sts MOTOR_ELEVATION , PWM_DATA
                 +OUTPUT MOTOR_ELEVATION , PWM_DATA
                  	SPWM MOTOR_ELEVATION,PWM_DATA
-00033e 9508      RET
+00034a 9508      RET
                  
                  MOTOR_ELEVATION_DOWN:
                  
                 +
                 +
                 +.if PORTB < 0x40
-00033f b105     +in AUX , PORTB
+00034b b105     +in AUX , PORTB
                 +.else 
                 +lds AUX , PORTB
                  	INPUT AUX,PORTB
-000340 7f09      	ANDI AUX,(~((1<<MOTOR_EN_A)|(1<<MOTOR_EN_B)))
-000341 6004      	ORI AUX,((0<<MOTOR_EN_A)|(1<<MOTOR_EN_B))			;CHEQUEAR CUANDO SE CONECTE
+00034c 7f09      	ANDI AUX,(~((1<<MOTOR_EN_A)|(1<<MOTOR_EN_B)))
+00034d 6004      	ORI AUX,((0<<MOTOR_EN_A)|(1<<MOTOR_EN_B))			;CHEQUEAR CUANDO SE CONECTE
                 +
                 +
                 +.if PORTB < 0x40
-000342 b905     +out PORTB , AUX
+00034e b905     +out PORTB , AUX
                 +.else 
                 +sts PORTB , AUX
                  	OUTPUT PORTB,AUX
                  	
-000343 e456      	LDI PWM_DATA,PWM_ELEVATION_DEFAULT
+00034f e456      	LDI PWM_DATA,PWM_ELEVATION_DEFAULT
                 +
                 +
                 +
@@ -3533,135 +3570,135 @@ C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker
                 +
                 +
                 +.if MOTOR_ELEVATION < 0x40
-000344 bd58     +out MOTOR_ELEVATION , PWM_DATA
+000350 bd58     +out MOTOR_ELEVATION , PWM_DATA
                 +.else 
                 +sts MOTOR_ELEVATION , PWM_DATA
                 +OUTPUT MOTOR_ELEVATION , PWM_DATA
                  	SPWM MOTOR_ELEVATION,PWM_DATA
-000345 9508      RET
+000351 9508      RET
                  
                  MOTOR_ELEVATION_OFF:
-000346 2700      	CLR AUX
+000352 2700      	CLR AUX
                 +
                 +
                 +
                 +
-000347 2700     +CLR AUX
+000353 2700     +CLR AUX
                 +
                 +
                 +.if MOTOR_ELEVATION < 0x40
-000348 bd08     +out MOTOR_ELEVATION , AUX
+000354 bd08     +out MOTOR_ELEVATION , AUX
                 +.else 
                 +sts MOTOR_ELEVATION , AUX
                 +OUTPUT MOTOR_ELEVATION , AUX
                  	RPWM MOTOR_ELEVATION
-000349 9508      RET
+000355 9508      RET
                  .include "MESSAGES.inc"
                  
                  ;MENSAJES EN ROM
-00034a 4f53
-00034b 414c
-00034c 2052
-00034d 5254
-00034e 4341
-00034f 454b
-000350 0d52
-000351 000a
-000352 4148
-000353 4943
-000354 4e45
-000355 4f44
-000356 4520
-000357 204c
-000358 5546
-000359 5554
-00035a 4f52
-00035b 0a0d
+000356 4f53
+000357 414c
+000358 2052
+000359 5254
+00035a 4341
+00035b 454b
+00035c 0d52
+00035d 000a
+00035e 4148
+00035f 4943
+000360 4e45
+000361 4f44
+000362 4520
+000363 204c
+000364 5546
+000365 5554
+000366 4f52
+000367 0a0d
 C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc(3): warning: .cseg .db misalignment - padding zero byte
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(197): 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc' included form here
-00035c 0000      MSJ_PROJECT_NAME:			.DB	"SOLAR TRACKER",'\r','\n',0,"HACIENDO EL FUTURO",'\r','\n',0
-00035d 414c
-00035e 5420
-00035f 4e45
-000360 4953
-000361 4e4f
-000362 4420
-000363 2045
-000364 414c
-000365 4220
-000366 5441
-000367 5245
-000368 4149
-000369 4520
-00036a 3a53
-00036b 0d20
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(196): 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc' included form here
+000368 0000      MSJ_PROJECT_NAME:			.DB	"SOLAR TRACKER",'\r','\n',0,"HACIENDO EL FUTURO",'\r','\n',0
+000369 414c
+00036a 5420
+00036b 4e45
+00036c 4953
+00036d 4e4f
+00036e 4420
+00036f 2045
+000370 414c
+000371 4220
+000372 5441
+000373 5245
+000374 4149
+000375 4520
+000376 3a53
+000377 0d20
 C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc(4): warning: .cseg .db misalignment - padding zero byte
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(197): 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc' included form here
-00036c 0000      MSJ_V_BAT:					.DB	"LA TENSION DE LA BATERIA ES: ",'\r',0
-00036d 414c
-00036e 5420
-00036f 4e45
-000370 4953
-000371 4e4f
-000372 4420
-000373 4c45
-000374 5020
-000375 4e41
-000376 4c45
-000377 4520
-000378 3a53
-000379 0d20
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(196): 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc' included form here
+000378 0000      MSJ_V_BAT:					.DB	"LA TENSION DE LA BATERIA ES: ",'\r',0
+000379 414c
+00037a 5420
+00037b 4e45
+00037c 4953
+00037d 4e4f
+00037e 4420
+00037f 4c45
+000380 5020
+000381 4e41
+000382 4c45
+000383 4520
+000384 3a53
+000385 0d20
 C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc(5): warning: .cseg .db misalignment - padding zero byte
-C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(197): 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc' included form here
-00037a 0000      MSJ_V_PANEL:				.DB "LA TENSION DEL PANEL ES: ",'\r',0
-00037b 414c
-00037c 4220
-00037d 5441
-00037e 5245
-00037f 4149
-000380 4520
-000381 5453
-000382 2041
-000383 4544
-000384 4353
-000385 4e4f
-000386 4345
-000387 4154
-000388 4144
-000389 0d21
-00038a 000a      MSJ_DISCONNECTED_BATTERY:	.DB "LA BATERIA ESTA DESCONECTADA!",'\r','\n',0
-00038b 4c45
-00038c 5020
-00038d 4e41
-00038e 4c45
-00038f 4520
-000390 5453
-000391 2041
-000392 4544
-000393 4353
-000394 4e4f
-000395 4345
-000396 4154
-000397 4f44
-000398 0d21
-000399 000a      MSJ_DISCONNECTED_PANEL:		.DB "EL PANEL ESTA DESCONECTADO!",'\r','\n',0
+C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm(196): 'C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc' included form here
+000386 0000      MSJ_V_PANEL:				.DB "LA TENSION DEL PANEL ES: ",'\r',0
+000387 414c
+000388 4220
+000389 5441
+00038a 5245
+00038b 4149
+00038c 4520
+00038d 5453
+00038e 2041
+00038f 4544
+000390 4353
+000391 4e4f
+000392 4345
+000393 4154
+000394 4144
+000395 0d21
+000396 000a      MSJ_DISCONNECTED_BATTERY:	.DB "LA BATERIA ESTA DESCONECTADA!",'\r','\n',0
+000397 4c45
+000398 5020
+000399 4e41
+00039a 4c45
+00039b 4520
+00039c 5453
+00039d 2041
+00039e 4544
+00039f 4353
+0003a0 4e4f
+0003a1 4345
+0003a2 4154
+0003a3 4f44
+0003a4 0d21
+0003a5 000a      MSJ_DISCONNECTED_PANEL:		.DB "EL PANEL ESTA DESCONECTADO!",'\r','\n',0
                  
-00039a 190c
-00039b 3326
-00039c 4c40
-00039d 6659
-00039e 7f73
-00039f 998d
-0003a0 b3a6
-0003a1 cdc0
-0003a2 e6d9
-0003a3 fff3      VPANEL_FIRST_DIG_TABLE:	.DB	12,25,38,51,64,76,89,102,115,127,141,153,166,179,192,205,217,230,243,255
-0003a4 0100
-0003a5 0302
-0003a6 0403
-0003a7 0605
-0003a8 0807
-0003a9 0908      VPANEL_DEC_TABLE: .DB 0,1,2,3,3,4,5,6,7,8,8,9
+0003a6 190c
+0003a7 3326
+0003a8 4c40
+0003a9 6659
+0003aa 7f73
+0003ab 998d
+0003ac b3a6
+0003ad cdc0
+0003ae e6d9
+0003af fff3      VPANEL_FIRST_DIG_TABLE:	.DB	12,25,38,51,64,76,89,102,115,127,141,153,166,179,192,205,217,230,243,255
+0003b0 0100
+0003b1 0302
+0003b2 0403
+0003b3 0605
+0003b4 0807
+0003b5 0908      VPANEL_DEC_TABLE: .DB 0,1,2,3,3,4,5,6,7,8,8,9
 
 
 RESOURCE USE INFORMATION
@@ -3681,7 +3718,7 @@ counted separately from r26..r31 here.
 "ATmega88" register use summary:
 r0 :   0 r1 :   0 r2 :   5 r3 :   5 r4 :   5 r5 :   5 r6 :   5 r7 :   5 
 r8 :   5 r9 :   1 r10:   5 r11:   5 r12:   5 r13:   0 r14:   0 r15:   0 
-r16: 261 r17:  44 r18:  22 r19:  20 r20:  40 r21:  32 r22:   0 r23:   0 
+r16: 265 r17:  44 r18:  22 r19:  20 r20:  39 r21:  32 r22:   0 r23:   0 
 r24:   0 r25:   0 r26:  20 r27:  16 r28:   0 r29:   0 r30:  37 r31:  33 
 x  :  17 y  :   0 z  :  20 
 Registers used: 23 out of 35 (65.7%)
@@ -3689,29 +3726,29 @@ Registers used: 23 out of 35 (65.7%)
 "ATmega88" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   4 add   :   7 adiw  :   0 and   :   0 
 andi  :  22 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   4 brcs  :   2 break :   0 breq  :  15 brge  :   0 brhc  :   0 
+brcc  :   1 brcs  :   4 break :   0 breq  :  14 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :  30 brlt  :   0 brmi  :   0 
 brne  :  17 brpl  :   0 brsh  :   1 brtc  :   0 brts  :   0 brvc  :   2 
 brvs  :   0 bset  :   0 bst   :   0 cbi   :   4 cbr   :   1 clc   :   4 
 clh   :   0 cli   :   1 cln   :   0 clr   :  21 cls   :   0 clt   :   0 
 clv   :   0 clz   :   0 com   :   0 cp    :   6 cpc   :   0 cpi   :  38 
 cpse  :   0 dec   :  16 eor   :   0 fmul  :   0 fmuls :   0 fmulsu:   0 
-icall :   0 ijmp  :   0 in    :  20 inc   :   6 ld    :   9 ldd   :   0 
-ldi   :  96 lds   :  30 lpm   :   6 lsl   :   4 lsr   :   0 mov   :  44 
+icall :   0 ijmp  :   0 in    :  18 inc   :   6 ld    :   9 ldd   :   0 
+ldi   : 101 lds   :  30 lpm   :   6 lsl   :   4 lsr   :   0 mov   :  44 
 movw  :   4 mul   :   0 muls  :   0 mulsu :   0 neg   :   0 nop   :   3 
-or    :   1 ori   :  22 out   :  30 pop   :  26 push  :  28 rcall :  68 
+or    :   1 ori   :  20 out   :  28 pop   :  26 push  :  28 rcall :  75 
 ret   :  46 reti  :   4 rjmp  :  45 rol   :   4 ror   :   0 sbc   :   0 
 sbci  :   0 sbi   :   4 sbic  :   0 sbis  :   0 sbiw  :   0 sbr   :   2 
-sbrc  :   1 sbrs  :   0 sec   :   3 seh   :   0 sei   :   3 sen   :   0 
+sbrc  :   1 sbrs  :   0 sec   :   2 seh   :   0 sei   :   3 sen   :   0 
 ser   :   1 ses   :   0 set   :   0 sev   :   0 sez   :   0 sleep :   0 
-spm   :   0 st    :  24 std   :   0 sts   :  28 sub   :   3 subi  :   0 
-swap  :   0 tst   :   5 wdr   :   0 
+spm   :   0 st    :  24 std   :   0 sts   :  33 sub   :   3 subi  :   0 
+swap  :   0 tst   :   4 wdr   :   0 
 Instructions used: 48 out of 111 (43.2%)
 
 "ATmega88" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000754   1642    192   1834    8192  22.4%
+[.cseg] 0x000000 0x00076c   1666    192   1858    8192  22.7%
 [.dseg] 0x000100 0x00016a      0    106    106    1024  10.4%
 [.eseg] 0x000000 0x000000      0      0      0     512   0.0%
 
