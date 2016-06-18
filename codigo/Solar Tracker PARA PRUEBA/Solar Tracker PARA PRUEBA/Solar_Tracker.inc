@@ -51,6 +51,7 @@ TX_BUF:	.BYTE	BUF_SIZE	; buffer de transmisión
 
 .EQU	MIN_BATTERY_VALUE			=	170		;{0,255} RESULTADO DEL ADC QUE HACE IR A BAJO CONSUMO EL EQUIPO POR NO TENER SUFICIENTE TENSION
 										;YA ESTA AJUSTADO! 10.6v
+V_BATTERY_DATA:		.BYTE 8			;[DECENA,UNIDAD,'.',DECIMAL,'V','\r','\n,'0']
 ;-----------------------------------------------------------------------------------
 
 ;-------------------------------HEADER DEL PANEL SOLAR------------------------------
@@ -58,8 +59,8 @@ TX_BUF:	.BYTE	BUF_SIZE	; buffer de transmisión
 .EQU	PIN_SOLAR_PANEL_LED_LOW		=	PC0
 
 .EQU	MIN_SOLAR_PANEL_VALUE		=	50		;{0,255} RESULTADO DEL ADC QUE DECIDE SI ES DE DIA O NOCHE.
-
-VPANEL_DATA_ASCII: .BYTE 3	;REVISAR Y CAPAZ PONER 6 [DECENA,UNIDAD,'.',DECIMAL,'V','0']
+										;FALTA AJUSTAR CON EL SOL! .... O CON LO QUE VAMOS A MOSTRAR!
+V_SOLAR_PANEL_DATA: .BYTE 8			;[DECENA,UNIDAD,'.',DECIMAL,'V','\r','\n,'0']
 ;-----------------------------------------------------------------------------------
 
 ;--------------------REGISTROS DE USO GENERAL SIN IMPORTAR QUE TENGA----------------

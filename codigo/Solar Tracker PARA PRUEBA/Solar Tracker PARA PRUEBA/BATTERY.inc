@@ -4,12 +4,25 @@
 ;
 ;-------------------------------------------------------------------------
 .CSEG
+
 BATTERY_INIT:
 	INPUT AUX,DDRD
 	ANDI AUX,(~((1<<DDD4)|(1<<DDD7)))	;Mascara para tocar solo D3
 	ORI AUX,((1<<DDD4)|(1<<DDD7))
 	OUTPUT DDRD,AUX
 	RCALL INDICATE_BATTERY_LOW
+
+	;INICIALIZO LA INFORMACION DE LA TENSION PARA TRANSMITIR POR BLUETOOTH
+	LDIW X,V_BATTERY_DATA
+	STI	X+,'0'
+	STI	X+,'0'
+	STI	X+,'.'
+	STI	X+,'0'
+	STI	X+,'V'
+	STI X+,'\r'
+	STI X+,'\n'
+	STI	X,0
+
 RET
 
 READ_V_BATTERY:

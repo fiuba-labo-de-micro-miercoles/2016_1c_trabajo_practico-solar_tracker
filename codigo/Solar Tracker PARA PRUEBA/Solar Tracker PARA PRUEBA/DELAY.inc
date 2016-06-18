@@ -7,8 +7,17 @@
 ;
 ;***********************************************************
 .CSEG
-DELAY_50ms:
 
+DELAY_100us:
+    ldi  r18, 2
+    ldi  r19, 9
+L4: dec  r19
+    brne L4
+    dec  r18
+    brne L4
+RET
+
+DELAY_50ms:
 	PUSH R18
 	PUSH R19
 	PUSH R20
@@ -36,7 +45,6 @@ DELAY_LO_QUE_SE_ME_ANTOJE:
 RET
 
 DELAY_500ms:
-
     ldi  r18, 21
     ldi  r19, 75
     ldi  r20, 191
@@ -47,5 +55,4 @@ L3: dec  r20
     dec  r18
     brne L3
     nop
-
 RET
