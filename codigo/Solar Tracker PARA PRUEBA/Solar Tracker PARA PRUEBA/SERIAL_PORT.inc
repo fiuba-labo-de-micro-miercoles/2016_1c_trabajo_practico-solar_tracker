@@ -204,3 +204,37 @@ FIN_TRANSMITIR_MENSAJE:
 ;-------------------------------------------------------------------------
 ; fin del código
 ;-------------------------------------------------------------------------
+
+TRANSMITIR_DATO:
+		PUSHW	Z
+		PUSHW	X
+		PUSH	AUX
+
+		MOVW	XL,PTR_TX_L
+
+LOOP_TRANSMITIR_DATO:
+		LPM		AUX,Z+
+		TST		AUX
+		BREQ	FIN_TRANSMITIR_DATO
+
+		ST		X+,AUX
+		INC		BYTES_A_TX
+
+		CPI		XL,LOW(TX_BUF+BUF_SIZE)
+		BRLO	LOOP_TRANSMITIR_DATO
+		CPI		XH,HIGH(TX_BUF+BUF_SIZE)
+		BRLO	LOOP_TRANSMITIR_DATO
+		LDIW	X,TX_BUF	; ptr_tx++ módulo BUF_SIZE
+
+		RJMP	LOOP_TRANSMITIR_DATO
+	
+FIN_TRANSMITIR_DATO:
+		INPUT	AUX,UCSR0B
+
+		SBR		AUX,(1<<UDRIE0)
+		OUTPUT	UCSR0B,AUX
+
+		POP		AUX
+		POPW	X
+		POPW	Z
+		RET

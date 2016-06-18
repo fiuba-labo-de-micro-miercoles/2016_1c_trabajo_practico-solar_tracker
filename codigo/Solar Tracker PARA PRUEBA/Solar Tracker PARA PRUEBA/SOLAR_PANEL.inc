@@ -1,7 +1,7 @@
 ;-------------------------------------------------------------------------
 ;
 ;							SOLAR_PANEL.inc
-;
+;				
 ;-------------------------------------------------------------------------
 .CSEG
 
@@ -10,7 +10,7 @@ SOLAR_PANEL_INIT:
 	ANDI AUX,(~((1<<DDC0)|(1<<DDC1)))	;Mascara para tocar los leds del panel solar
 	ORI AUX,((1<<DDC0)|(1<<DDC1))
 	OUTPUT DDRC,AUX
-
+;	RCALL INDICATE_SOLAR_PANEL_LOW
 RET
 
 READ_V_SOLAR_PANEL:
