@@ -48,11 +48,11 @@
   <COUNTER><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar_Tracker.inc</FILE><LINE>87</LINE></COUNTER>
   <BT_FLAG><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar_Tracker.inc</FILE><LINE>88</LINE></BT_FLAG>
   <SETUP><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>31</LINE></SETUP>
-  <ISR_INT0><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>145</LINE></ISR_INT0>
+  <ISR_INT0><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>176</LINE></ISR_INT0>
   <ISR_RX_USART_COMPLETA><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SERIAL_PORT.inc</FILE><LINE>61</LINE></ISR_RX_USART_COMPLETA>
   <ISR_REG_USART_VACIO><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SERIAL_PORT.inc</FILE><LINE>129</LINE></ISR_REG_USART_VACIO>
-  <ISR_TIMER_1_OV><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>148</LINE></ISR_TIMER_1_OV>
-  <TIMER_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>185</LINE></TIMER_INIT>
+  <ISR_TIMER_1_OV><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>179</LINE></ISR_TIMER_1_OV>
+  <TIMER_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>216</LINE></TIMER_INIT>
   <BT_DISCONNECT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SERIAL_PORT.inc</FILE><LINE>116</LINE></BT_DISCONNECT>
   <BATTERY_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\BATTERY.inc</FILE><LINE>8</LINE></BATTERY_INIT>
   <SOLAR_PANEL_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>8</LINE></SOLAR_PANEL_INIT>
@@ -65,24 +65,23 @@
   <LIGHT_TURN_OFF><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LIGHT.inc</FILE><LINE>25</LINE></LIGHT_TURN_OFF>
   <LDRS_READ><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LDRS.inc</FILE><LINE>45</LINE></LDRS_READ>
   <LDRS_MEAN><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LDRS.inc</FILE><LINE>72</LINE></LDRS_MEAN>
+  <ORIENTATE_SOLAR_PANEL><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>66</LINE></ORIENTATE_SOLAR_PANEL>
   <MSJ_V_LDRS><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc</FILE><LINE>6</LINE></MSJ_V_LDRS>
   <TRANSMITIR_TENSION><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SERIAL_PORT.inc</FILE><LINE>215</LINE></TRANSMITIR_TENSION>
-  <MOTOR_ELEVATION_SOUTH><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>91</LINE></MOTOR_ELEVATION_SOUTH>
   <DELAY_50ms><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>20</LINE></DELAY_50ms>
-  <MOTORS_OFF><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>114</LINE></MOTORS_OFF>
-  <DELAY_500ms><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>47</LINE></DELAY_500ms>
-  <LED1><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>83</LINE></LED1>
-  <LED2><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>89</LINE></LED2>
-  <LED3><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>95</LINE></LED3>
-  <LED4><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>101</LINE></LED4>
-  <SLEEP_MODE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>129</LINE></SLEEP_MODE>
-  <NO_SOLAR_PANEL_CONNECTED><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>151</LINE></NO_SOLAR_PANEL_CONNECTED>
+  <LED1><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>114</LINE></LED1>
+  <LED2><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>120</LINE></LED2>
+  <LED3><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>126</LINE></LED3>
+  <LED4><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>132</LINE></LED4>
+  <SLEEP_MODE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>160</LINE></SLEEP_MODE>
+  <NO_SOLAR_PANEL_CONNECTED><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>182</LINE></NO_SOLAR_PANEL_CONNECTED>
   <MSJ_DISCONNECTED_PANEL><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc</FILE><LINE>8</LINE></MSJ_DISCONNECTED_PANEL>
   <TRANSMITIR_MENSAJE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SERIAL_PORT.inc</FILE><LINE>176</LINE></TRANSMITIR_MENSAJE>
-  <AT_NIGHT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>159</LINE></AT_NIGHT>
+  <AT_NIGHT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>190</LINE></AT_NIGHT>
   <INDICATE_BATTERY_OK><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\BATTERY.inc</FILE><LINE>55</LINE></INDICATE_BATTERY_OK>
   <INDICATE_SOLAR_PANEL_LOW><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>50</LINE></INDICATE_SOLAR_PANEL_LOW>
-  <INT_EXT_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>166</LINE></INT_EXT_INIT>
+  <DELAY_500ms><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>40</LINE></DELAY_500ms>
+  <INT_EXT_INIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA.asm</FILE><LINE>197</LINE></INT_EXT_INIT>
   <ADC_SELECT_INPUT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\ADC.inc</FILE><LINE>51</LINE></ADC_SELECT_INPUT>
   <ADC_SIMPLE_CONVERSION><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\ADC.inc</FILE><LINE>63</LINE></ADC_SIMPLE_CONVERSION>
   <L2><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\ADC.inc</FILE><LINE>70</LINE></L2>
@@ -110,9 +109,9 @@
   <FIN_TRANSMITIR_DATO><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SERIAL_PORT.inc</FILE><LINE>254</LINE></FIN_TRANSMITIR_DATO>
   <DELAY_100us><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>11</LINE></DELAY_100us>
   <L4><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>14</LINE></L4>
-  <L1><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>28</LINE></L1>
-  <DELAY_LO_QUE_SE_ME_ANTOJE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>40</LINE></DELAY_LO_QUE_SE_ME_ANTOJE>
-  <L3><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>51</LINE></L3>
+  <L1><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>25</LINE></L1>
+  <DELAY_LO_QUE_SE_ME_ANTOJE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>33</LINE></DELAY_LO_QUE_SE_ME_ANTOJE>
+  <L3><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\DELAY.inc</FILE><LINE>44</LINE></L3>
   <ORDEN_BT_NO_HACER_NADA><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LIGHT.inc</FILE><LINE>22</LINE></ORDEN_BT_NO_HACER_NADA>
   <INDICATE_BATTERY_LOW><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\BATTERY.inc</FILE><LINE>48</LINE></INDICATE_BATTERY_LOW>
   <READ_V_BATTERY><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\BATTERY.inc</FILE><LINE>28</LINE></READ_V_BATTERY>
@@ -124,32 +123,34 @@
   <_INDICATE_SOLAR_PANEL_LOW><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>45</LINE></_INDICATE_SOLAR_PANEL_LOW>
   <INDICATE_SOLAR_PANEL_OK><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>57</LINE></INDICATE_SOLAR_PANEL_OK>
   <RETURN_INDICATE_SOLAR_PANEL_LOW><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>42</LINE></RETURN_INDICATE_SOLAR_PANEL_LOW>
-  <ORIENTATE_SOLAR_PANEL><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>66</LINE></ORIENTATE_SOLAR_PANEL>
-  <RETURN_MOTOR_AZIMUT_EAST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>76</LINE></RETURN_MOTOR_AZIMUT_EAST>
-  <RETURN_MOTOR_AZIMUT_WEST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>82</LINE></RETURN_MOTOR_AZIMUT_WEST>
-  <_MOTOR_AZIMUT_EAST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>86</LINE></_MOTOR_AZIMUT_EAST>
+  <NO_SON_F><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>79</LINE></NO_SON_F>
+  <AMBOS_SON_F><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>97</LINE></AMBOS_SON_F>
+  <_MOTOR_AZIMUT_EAST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>102</LINE></_MOTOR_AZIMUT_EAST>
+  <RETURN_MOTOR_AZIMUT_EAST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>87</LINE></RETURN_MOTOR_AZIMUT_EAST>
+  <_MOTOR_AZIMUT_WEST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>115</LINE></_MOTOR_AZIMUT_WEST>
+  <RETURN_MOTOR_AZIMUT_WEST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>95</LINE></RETURN_MOTOR_AZIMUT_WEST>
   <MOTOR_AZIMUT_EAST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>25</LINE></MOTOR_AZIMUT_EAST>
-  <_MOTOR_AZIMUT_WEST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>98</LINE></_MOTOR_AZIMUT_WEST>
+  <MOTORS_OFF><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>147</LINE></MOTORS_OFF>
   <MOTOR_AZIMUT_WEST><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>47</LINE></MOTOR_AZIMUT_WEST>
-  <VPANEL_TO_BT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>151</LINE></VPANEL_TO_BT>
+  <VPANEL_TO_BT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>170</LINE></VPANEL_TO_BT>
   <VPANEL_FIRST_DIG_TABLE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc</FILE><LINE>10</LINE></VPANEL_FIRST_DIG_TABLE>
-  <VPANEL_SEC_DIGIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>154</LINE></VPANEL_SEC_DIGIT>
-  <VPANEL_SEC_DIGIT_ONE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>166</LINE></VPANEL_SEC_DIGIT_ONE>
-  <VPANEL_FIRST_DIGIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>157</LINE></VPANEL_FIRST_DIGIT>
-  <VPANEL_FIRST_DIG_CP><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>170</LINE></VPANEL_FIRST_DIG_CP>
-  <VPANEL_DECIMAL><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>160</LINE></VPANEL_DECIMAL>
-  <VPANEL_DEC_CP><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>262</LINE></VPANEL_DEC_CP>
-  <VPANEL_FIRST_DIG_IS_0><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>212</LINE></VPANEL_FIRST_DIG_IS_0>
-  <VPANEL_FIRST_DIG_IS_1><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>217</LINE></VPANEL_FIRST_DIG_IS_1>
-  <VPANEL_FIRST_DIG_IS_2><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>222</LINE></VPANEL_FIRST_DIG_IS_2>
-  <VPANEL_FIRST_DIG_IS_3><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>227</LINE></VPANEL_FIRST_DIG_IS_3>
-  <VPANEL_FIRST_DIG_IS_4><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>232</LINE></VPANEL_FIRST_DIG_IS_4>
-  <VPANEL_FIRST_DIG_IS_5><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>237</LINE></VPANEL_FIRST_DIG_IS_5>
-  <VPANEL_FIRST_DIG_IS_6><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>242</LINE></VPANEL_FIRST_DIG_IS_6>
-  <VPANEL_FIRST_DIG_IS_7><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>247</LINE></VPANEL_FIRST_DIG_IS_7>
-  <VPANEL_FIRST_DIG_IS_8><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>252</LINE></VPANEL_FIRST_DIG_IS_8>
-  <VPANEL_FIRST_DIG_IS_9><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>257</LINE></VPANEL_FIRST_DIG_IS_9>
-  <END_VPANEL_FIRST_DIG><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>210</LINE></END_VPANEL_FIRST_DIG>
+  <VPANEL_SEC_DIGIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>173</LINE></VPANEL_SEC_DIGIT>
+  <VPANEL_SEC_DIGIT_ONE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>185</LINE></VPANEL_SEC_DIGIT_ONE>
+  <VPANEL_FIRST_DIGIT><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>176</LINE></VPANEL_FIRST_DIGIT>
+  <VPANEL_FIRST_DIG_CP><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>189</LINE></VPANEL_FIRST_DIG_CP>
+  <VPANEL_DECIMAL><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>179</LINE></VPANEL_DECIMAL>
+  <VPANEL_DEC_CP><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>281</LINE></VPANEL_DEC_CP>
+  <VPANEL_FIRST_DIG_IS_0><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>231</LINE></VPANEL_FIRST_DIG_IS_0>
+  <VPANEL_FIRST_DIG_IS_1><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>236</LINE></VPANEL_FIRST_DIG_IS_1>
+  <VPANEL_FIRST_DIG_IS_2><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>241</LINE></VPANEL_FIRST_DIG_IS_2>
+  <VPANEL_FIRST_DIG_IS_3><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>246</LINE></VPANEL_FIRST_DIG_IS_3>
+  <VPANEL_FIRST_DIG_IS_4><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>251</LINE></VPANEL_FIRST_DIG_IS_4>
+  <VPANEL_FIRST_DIG_IS_5><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>256</LINE></VPANEL_FIRST_DIG_IS_5>
+  <VPANEL_FIRST_DIG_IS_6><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>261</LINE></VPANEL_FIRST_DIG_IS_6>
+  <VPANEL_FIRST_DIG_IS_7><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>266</LINE></VPANEL_FIRST_DIG_IS_7>
+  <VPANEL_FIRST_DIG_IS_8><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>271</LINE></VPANEL_FIRST_DIG_IS_8>
+  <VPANEL_FIRST_DIG_IS_9><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>276</LINE></VPANEL_FIRST_DIG_IS_9>
+  <END_VPANEL_FIRST_DIG><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\SOLAR_PANEL.inc</FILE><LINE>229</LINE></END_VPANEL_FIRST_DIG>
   <VPANEL_DEC_TABLE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc</FILE><LINE>11</LINE></VPANEL_DEC_TABLE>
   <LDRS_POINTERS_RESET><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LDRS.inc</FILE><LINE>28</LINE></LDRS_POINTERS_RESET>
   <LOOP><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LDRS.inc</FILE><LINE>10</LINE></LOOP>
@@ -159,7 +160,14 @@
   <READ_LDR_NE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LDRS.inc</FILE><LINE>114</LINE></READ_LDR_NE>
   <READ_LDR_SE><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LDRS.inc</FILE><LINE>108</LINE></READ_LDR_SE>
   <READ_LDR_SO><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\LDRS.inc</FILE><LINE>102</LINE></READ_LDR_SO>
+  <smooth_move><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>92</LINE></smooth_move>
   <MOTOR_ELEVATION_NORTH><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>69</LINE></MOTOR_ELEVATION_NORTH>
+  <_s><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>94</LINE></_s>
+  <nxt><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>101</LINE></nxt>
+  <smooth_brake><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>108</LINE></smooth_brake>
+  <JO><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>111</LINE></JO>
+  <ASDF><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>116</LINE></ASDF>
+  <MOTOR_ELEVATION_SOUTH><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MOTORS.inc</FILE><LINE>123</LINE></MOTOR_ELEVATION_SOUTH>
   <MSJ_DISCONNECTED_BATTERY><FILE>C:\Users\MAU\Desktop\2016_1c_trabajo_practico-solar_tracker\codigo\Solar Tracker PARA PRUEBA\Solar Tracker PARA PRUEBA\MESSAGES.inc</FILE><LINE>7</LINE></MSJ_DISCONNECTED_BATTERY>
  </LABELS>
 </ASSEMBLER_INFO>

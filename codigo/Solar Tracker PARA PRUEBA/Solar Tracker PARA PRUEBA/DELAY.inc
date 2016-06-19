@@ -9,32 +9,25 @@
 .CSEG
 
 DELAY_100us:
-    ldi  r18, 2
-    ldi  r19, 9
-L4: dec  r19
+    ldi  AUX, 2
+    ldi  AUX1, 9
+L4: dec  AUX1
     brne L4
-    dec  r18
+    dec  AUX
     brne L4
 RET
 
 DELAY_50ms:
-	PUSH R18
-	PUSH R19
-	PUSH R20
 
-    ldi  r18, 3
-    ldi  r19, 8
-    ldi  r20, 120
-L1: dec  r20
+    ldi  AUX, 3
+    ldi  AUX1, 8
+    ldi  AUX2, 120
+L1: dec  AUX2
     brne L1
-    dec  r19
+    dec  AUX1
     brne L1
-    dec  r18
+    dec  AUX
     brne L1
-
-	POP R20
-	POP R19
-	POP R18
 RET
 
 DELAY_LO_QUE_SE_ME_ANTOJE:
@@ -45,14 +38,14 @@ DELAY_LO_QUE_SE_ME_ANTOJE:
 RET
 
 DELAY_500ms:
-    ldi  r18, 21
-    ldi  r19, 75
-    ldi  r20, 191
-L3: dec  r20
+    ldi  AUX, 21
+    ldi  AUX1, 75
+    ldi  AUX2, 191
+L3: dec  AUX2
     brne L3
-    dec  r19
+    dec  AUX1
     brne L3
-    dec  r18
+    dec  AUX
     brne L3
     nop
 RET
