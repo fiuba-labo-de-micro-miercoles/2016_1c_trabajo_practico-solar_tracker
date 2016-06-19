@@ -9,6 +9,8 @@ Hacer que se pueda mover manual [calibracion]
 
 # Hacer que se pueda resetear por bt
 
+Para que deje de tirar errores, sacar los cli y sei
+
 Para configurar el oscilador externo a 8MHz:
 
   avrdude -c usbtiny -p m88 -U lfuse:r:-:i -F		
