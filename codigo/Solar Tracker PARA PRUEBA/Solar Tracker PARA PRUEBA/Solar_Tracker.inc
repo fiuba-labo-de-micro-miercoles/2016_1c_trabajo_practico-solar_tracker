@@ -31,7 +31,7 @@
 .EQU	BUF_SIZE					=	 64	;tamaño en bytes del buffer de transmisión
 
 ;SERIE DE COMANDOS DE RECEPCION POR BT
-.EQU	BT_COMMAND_PROJECT_NAME		=	'1'
+.EQU	BT_COMMAND_PROJECT_NAME		=	'q'
 .EQU	BT_COMMAND_V_BAT			=	'2'
 .EQU	BT_COMMAND_V_PANEL			=	'3'
 .EQU	BT_COMMAND_LIGHT_TURN_ON	=	'4'
@@ -51,7 +51,7 @@ TX_BUF:	.BYTE	BUF_SIZE	; buffer de transmisión
 
 .EQU	MIN_BATTERY_VALUE			=	170		;{0,255} RESULTADO DEL ADC QUE HACE IR A BAJO CONSUMO EL EQUIPO POR NO TENER SUFICIENTE TENSION
 										;YA ESTA AJUSTADO! 10.6v
-V_BATTERY_DATA:		.BYTE 8			;[DECENA,UNIDAD,'.',DECIMAL,'V','\r','\n,'0']
+V_BATTERY_DATA:		.BYTE 8			;[DECENA,UNIDAD,'.',DECIMAL,'V','\r','\n,0]
 ;-----------------------------------------------------------------------------------
 
 ;-------------------------------HEADER DEL PANEL SOLAR------------------------------
@@ -60,13 +60,16 @@ V_BATTERY_DATA:		.BYTE 8			;[DECENA,UNIDAD,'.',DECIMAL,'V','\r','\n,'0']
 
 .EQU	MIN_SOLAR_PANEL_VALUE		=	50		;{0,255} RESULTADO DEL ADC QUE DECIDE SI ES DE DIA O NOCHE.
 										;FALTA AJUSTAR CON EL SOL! .... O CON LO QUE VAMOS A MOSTRAR!
-V_SOLAR_PANEL_DATA: .BYTE 8			;[DECENA,UNIDAD,'.',DECIMAL,'V','\r','\n,'0']
+V_SOLAR_PANEL_DATA: .BYTE 8			;[DECENA,UNIDAD,'.',DECIMAL,'V','\r','\n,0]
 ;-----------------------------------------------------------------------------------
 
 ;--------------------REGISTROS DE USO GENERAL SIN IMPORTAR QUE TENGA----------------
 .DEF	AUX							=	R16
 .DEF	AUX1						=	R17
 .DEF	AUX2						=	R18
+.DEF	AUX3						=	R22
+.DEF	AUX4						=	R23
+
 ;-----------------------------------------------------------------------------------
 
 ;------------------------------HEADER DE LDRS---------------------------------------
@@ -80,6 +83,7 @@ LDR_NO_MEAN:						.BYTE 1
 LDR_NE_MEAN:						.BYTE 1
 LDR_SE_MEAN:						.BYTE 1
 LDR_SO_MEAN:						.BYTE 1
+auxiliar_para_probar:				.byte 3			;['\r','\n',0]
 COUNTER:							.BYTE 2
 BT_FLAG:							.BYTE 1				;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO ESTA CONECTADO A BT.
 
@@ -90,25 +94,28 @@ BT_FLAG:							.BYTE 1				;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO EST
 .EQU LDR_SE							=	5	;ADC4
 .EQU LDR_SO							=	4	;ADC5		NO USAR EL ADC5 PARA COMPARAR! FUERA DE ESCALA LA RESISTENCIA DEL LDR
 
-.DEF LDR_NO_LOW						=	R11
-.DEF LDR_NO_HIGH					=	R12
-.DEF LDR_SO_LOW						=	R2
-.DEF LDR_SO_HIGH					=	R3
-.DEF LDR_SE_LOW						=	R4
-.DEF LDR_SE_HIGH					=	R5
-.DEF LDR_NE_LOW						=	R6
-.DEF LDR_NE_HIGH					=	R7
+.DEF LDR_NO_LOW						=	R2
+.DEF LDR_NO_HIGH					=	R3
+.DEF LDR_NE_LOW						=	R4
+.DEF LDR_NE_HIGH					=	R5
+.DEF LDR_SE_LOW						=	R6
+.DEF LDR_SE_HIGH					=	R7
+.DEF LDR_SO_LOW						=	R11
+.DEF LDR_SO_HIGH					=	R12
+
+
 
 ;-----------------------------------------------------------------------------------
 
 ;------------------------------HEADER DEL PWM---------------------------------------
 .DEF PWM_DATA					 	=	R21
 
-.EQU PWM_AZIMUT_DEFAULT				=	60		;{0,255} PARA SETEAR EL PWM
-.EQU PWM_ELEVATION_DEFAULT			=	70		;{0,255} PARA SETEAR EL PWM
+.EQU PWM_AZIMUT_DEFAULT				=	190		;{0,255} PARA SETEAR EL PWM
+.EQU PWM_ELEVATION_DEFAULT			=	190		;{0,255} PARA SETEAR EL PWM
+										;200 ES 10V APROX.
 
-.EQU MOTOR_AZIMUT					=	OCR0A
-.EQU MOTOR_ELEVATION				=	OCR0B
+;.DEF MOTOR_AZIMUT					=	OCR0A
+;.DEF MOTOR_ELEVATION				=	OCR0B
 
 .EQU LIGHT							=	OCR2B
 
@@ -116,7 +123,7 @@ BT_FLAG:							.BYTE 1				;[FLAG=0xFF]: ESTA CONECTADO A BT. [FLAG=0x00]: NO EST
 
 ;------------------------------HEADER DE MOTORES------------------------------------
 
-.EQU MOTOR_EN_A						=	PB1
-.EQU MOTOR_EN_B						=	PB2
+.EQU MOT_1							=	PD5
+.EQU MOT_2							=	PD6
 
 ;-----------------------------------------------------------------------------------

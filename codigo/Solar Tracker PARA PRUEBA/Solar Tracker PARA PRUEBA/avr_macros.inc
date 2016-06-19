@@ -104,24 +104,27 @@
 	LDI @0H,@2
 .endm
 
-.macro	VECTMEAN	;@0,@1,@2	;Calcula la media de un vector @0 de longitud @1 y guarda la media en @2
-		push		@1
-		ld 		AUX,@0+
-		clr		@2
+.macro VECTMEAN	;@0,@1,@2	;Calcula la media de un vector @0 de longitud @1 y guarda la media en @2
+		PUSH		@1
+		LD 		AUX3,@0+
+		CLR		@2
+		DEC		@1
+		CLR		AUX2
 loop_mean:
-		ld		AUX1,@0+
-		add		AUX,AUX1
-		clr		AUX2
-		adc		@2,AUX2
-		dec		@1
-		brne		loop_mean
-		ldi		AUX2,3
+		CLV
+		LD		AUX4,@0+
+		ADD		AUX3,AUX4
+		ADC		@2,AUX2
+		DEC		@1
+		BRNE		loop_mean
+		LDI		AUX2,3
 division:
-		lsl		AUX
-		rol		@2
-		dec		AUX2
-		brne		division
-		pop		@1
+		LSR		@2
+		ROR		AUX3
+		DEC		AUX2
+		BRNE		division
+		MOV		@2,AUX3
+		POP		@1
 .endm
 
 
@@ -144,8 +147,8 @@ division:
 ;PROTOTYPE ADDI: REG,CTE
 ;RECIBE: REG,CTE
 ;DEVUELVE: Suma de cte al registro
-	LDI AUX,@1
-	ADD @0,AUX
+	LDI AUX4,@1
+	ADD @0,AUX4
 .endm
 
 .macro ADDP

@@ -10,18 +10,18 @@
 ;*****************************************************
 .CSEG
 PWM_INIT:
-	RCALL PWM_INIT_0
-	;RCALL PWM_INIT_1
-	RCALL PWM_INIT_2
+;	RCALL PWM_INIT_0
+	RCALL PWM_INIT_1
+;	RCALL PWM_INIT_2
 ;COMENTO LA FUNCION ANTERIOR PORQUE VAMOS A USAR MOTORES DE CONTINUA PUESTOS EN OC1A Y OC1B QUE SON LOS DEL PUERTO B SOLAMENTE.
 RET
 
-PWM_INIT_0:
+/*PWM_INIT_0:
 ;Se inicializan como salida los pines de PWM
-	INPUT PWM_DATA,DDRB
-	ANDI PWM_DATA,(~((1<<DDB1)|(1<<DDB2)))	;Mascara para tocar solo B1 Y B2
-	ORI PWM_DATA,((1<<DDB1)|(1<<DDB2))
-	OUTPUT DDRB,PWM_DATA
+	INPUT PWM_DATA,DDRD
+	ANDI PWM_DATA,(~((1<<DDD5)|(1<<DDD6)))	;Mascara para tocar solo D5 Y D6
+	ORI PWM_DATA,((1<<DDD5)|(1<<DDD6))
+	OUTPUT DDRD,PWM_DATA
 ;Se inicializan como Fast PWM y non-inverting mode
 	;Fast PWM: WGM02=0 (por defecto), WGM01=1 y WGM00=1
 	;Non-inverting mode: COM0A1=1 y COM0A0=0
@@ -36,18 +36,19 @@ PWM_INIT_0:
 	ORI PWM_DATA,((0<<CS00)|(1<<CS01)|(0<<CS02))	;Ver tabla prescalers al final del archivo
 	OUTPUT TCCR0B,PWM_DATA
 ;Se inicializa el pwm en cero
-	RPWM MOTOR_AZIMUT
-	RPWM MOTOR_ELEVATION
+	CLR	AUX
+	OUTPUT	OCR0A,AUX
+	OUTPUT	OCR0B,AUX
 RET
-
+*/
 ;*****************************************************
-/*
+
 PWM_INIT_1:
 ;Se inicializan como salida los pines de PWM
-	INPUT PWM_DATA,DDRD
-	ANDI PWM_DATA,(~((1<<DDD5)|(1<<DDD6)))	;Mascara para tocar solo D5 Y D6
-	ORI PWM_DATA,((1<<DDD5)|(1<<DDD6))
-	OUTPUT DDRD,PWM_DATA
+	INPUT PWM_DATA,DDRB
+	ANDI PWM_DATA,(~((1<<DDB1)|(1<<DDB2)))	;Mascara para tocar solo B1 Y B2
+	ORI PWM_DATA,((1<<DDB1)|(1<<DDB2))
+	OUTPUT DDRB,PWM_DATA
 ;Se inicializan como Fast PWM y non-inverting mode
 	;Fast PWM: WGM02=0 (por defecto), WGM01=1 y WGM00=1
 	;Non-inverting mode: COM0A1=1 y COM0A0=0
@@ -62,11 +63,16 @@ PWM_INIT_1:
 	ANDI PWM_DATA,(~((1<<WGM13)|(1<<WGM12)|(1<<CS10)|(1<<CS11)|(1<<CS12)))
 	ORI PWM_DATA,((0<<WGM13)|(1<<WGM12)|(0<<CS10)|(1<<CS11)|(0<<CS12))	;Prescaler = 8
 	OUTPUT TCCR1B,PWM_DATA
-RET
-*/
-;*****************************************************
 
-PWM_INIT_2:
+	CLR	AUX
+	OUTPUT	OCR1AL,AUX
+	OUTPUT	OCR1BL,AUX
+	OUTPUT	OCR1AH,AUX
+	OUTPUT	OCR1BH,AUX
+RET
+
+;*****************************************************
+/*PWM_INIT_2:
 ;Se inicializan como salida los pines de PWM
 ;Se usa uno solo de los pines (para la luz), el otro es el MOSI, lo dejamos solo para programar
 	INPUT PWM_DATA,DDRD
@@ -87,6 +93,7 @@ PWM_INIT_2:
 	ORI PWM_DATA,((0<<CS20)|(1<<CS21)|(0<<CS22))	;Ver tabla prescalers al final del archivo
 	OUTPUT TCCR2B,PWM_DATA
 RET
+*/
 
 
 ;*****************************************************
