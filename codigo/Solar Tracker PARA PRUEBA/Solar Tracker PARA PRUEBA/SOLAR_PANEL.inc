@@ -107,7 +107,7 @@ _MOTOR_AZIMUT_EAST:
 	RCALL MOTOR_AZIMUT_EAST
 		RCALL DELAY_50ms
 		RCALL DELAY_50ms
-	RCALL MOTORS_OFF
+	RCALL MOTOR_AZIMUT_OFF
 		RCALL DELAY_500ms
 		RCALL DELAY_500ms
 RJMP RETURN_MOTOR_AZIMUT_EAST
@@ -120,7 +120,7 @@ _MOTOR_AZIMUT_WEST:
 	RCALL MOTOR_AZIMUT_WEST
 		RCALL DELAY_50ms
 		RCALL DELAY_50ms
-	RCALL MOTORS_OFF
+	RCALL MOTOR_AZIMUT_OFF
 		RCALL DELAY_500ms
 		RCALL DELAY_500ms
 RJMP RETURN_MOTOR_AZIMUT_WEST
@@ -167,123 +167,56 @@ RJMP RETURN_MOTOR_ELEVATION_NORTH
 	RETURN_MOTOR_ELEVATION_OFF:
 */
 
-VPANEL_TO_BT:
-						LDIW X,V_SOLAR_PANEL_DATA	;Apunto a la sección de memoria donde se guarda la tensión a panel a transmitir
-						LDIW Z,VPANEL_FIRST_DIG_TABLE*2
-VPANEL_SEC_DIGIT:		CPI ADC_DATA_H,128
-						BRSH VPANEL_SEC_DIGIT_ONE
-						STI X+,48+0					;Pongo un 0 ASCII en RAM ¿ES LO MISMO QUE STI X+,'0'???
-VPANEL_FIRST_DIGIT:		RCALL VPANEL_FIRST_DIG_CP
-						;STI X+,'.'					;Pongo un '.' ASCII en RAM
-						LDIW Z,VPANEL_FIRST_DIG_TABLE*2
-VPANEL_DECIMAL:			RCALL VPANEL_DEC_CP
-						;STI X+,'V'					;Pongo un '.' ASCII en RAM
-						;STI X,0					;Pongo un '0' en RAM COMO FIN DE LA CADENA
-RET
 
+VPANEL_TO_ASCII:
+				LDIW X,V_SOLAR_PANEL_DATA	;Apunto X a la sección de memoria donde se guarda la tensión a panel a transmitir
+				LDIW Z,VPANEL_DIG_TABLE*2	;Apunto Z a la sección de ROM donde se delimita cada unidad
+VPANEL_DIG:		LDI AUX3,18					;Cargo en AUX3 la cantidad de lecturas a la tabla
+				CLR AUX1					;Acá se guardará el x1
+				CLR AUX2					;Acá se guardará el x10
+LOOP_DIG_PANEL:			
+				RCALL SET_VPANEL_DIG		;Busco el número
+				INC AUX1					;Incremento para ver si es el siguiente en el prox ciclo
+				CPI AUX1,10					;Veo si superé 10 para ver si tengo que poner el x10 en 1
+				BRLO LOWER_THAN_10_DIG_PANEL;Si no superé 10, sigo el ciclo
+				CLR AUX1					;Si es 10, x1 es 0
+				INC AUX2					;Si es 10, x10 es 1
+LOWER_THAN_10_DIG_PANEL:	DEC AUX3		;Decremento para ver si vuelvo a recomenzar el ciclo
+				BRNE LOOP_DIG_PANEL			;Si no se completaron todos los ciclos, vuelvo a hacerlo
+				STI X+,48+1					;Si se completaron todos los ciclos, el x10 es 1
+				STI X+,48+9					;Si se completaron todos los ciclos, el x1 es 9
+V_PANEL_DEC:	LDIW Z,VPANEL_DIG_TABLE*2	;Vuelvo a apuntar Z al comienzo de la tabla donde están los números que delimitan cada unidad
+				SUBI AUX1,48				;Lo vuelvo a convertir en número no ASCII
+				SUBI AUX2,48
+				LDI AUX3,10					;Cargo 10 en AUX3 para multiplicar el x10 por 10 y poder sumarselo al x1
+				MUL AUX2,AUX3				;Multiplico el x10 por 10
+				MOV AUX2,R0					;Paso el resultado de R0 a AUX2
+				ADD AUX1,AUX2				;Sumo x1 y x10 para tener el número completo
+				ADDP Z,AUX1					;Le sumo al puntero Z la cantidad de posiciones que se tiene que mover en la tabla para ver el número máximo que puede tener esa unidad
+				LPM AUX1,Z					;Cargo el número delimitador
+				SUB AUX1,ADC_DATA_H			;Le resto al delimitador el número que medí
+				LDI AUX3,15
+				SUB AUX3,AUX1
+				LDIW Z,VPANEL_DEC_TABLE*2	;Apunto a Z a la tabla de decimales
+				ADDP Z,AUX3					;Le sumo la cantidad de posiciones que se tiene que mover en la tabla
+				LPM AUX,Z					;Cargo el número que se tiene como valor decimal
+				ADDI AUX,48					;Le sumo 48 para convertirlo en ASCII
+				STI	X+,'.'
+				ST X+,AUX					;Guardo el número en ASCII en el vector en RAM
+				STI	X+,'V'
+				STI	X+,'\r'
+				STI	X+,'\n'
+				STI	X+,0
+RET		
 
-VPANEL_SEC_DIGIT_ONE:
-				STI X+,48+1	;Pongo un 1 ASCII en RAM
-				RJMP VPANEL_FIRST_DIGIT
-
-VPANEL_FIRST_DIG_CP:
-						CPI ADC_DATA_H,12
-						BRLO VPANEL_FIRST_DIG_IS_0
-						CPI ADC_DATA_H,25
-						BRLO VPANEL_FIRST_DIG_IS_1
-						CPI ADC_DATA_H,38
-						BRLO VPANEL_FIRST_DIG_IS_2
-						CPI ADC_DATA_H,51
-						BRLO VPANEL_FIRST_DIG_IS_3
-						CPI ADC_DATA_H,64
-						BRLO VPANEL_FIRST_DIG_IS_4
-						CPI ADC_DATA_H,76
-						BRLO VPANEL_FIRST_DIG_IS_5
-						CPI ADC_DATA_H,89
-						BRLO VPANEL_FIRST_DIG_IS_6
-						CPI ADC_DATA_H,102
-						BRLO VPANEL_FIRST_DIG_IS_7
-						CPI ADC_DATA_H,115
-						BRLO VPANEL_FIRST_DIG_IS_8
-						CPI ADC_DATA_H,127
-						BRLO VPANEL_FIRST_DIG_IS_9
-						CPI ADC_DATA_H,141
-						BRLO VPANEL_FIRST_DIG_IS_0
-						CPI ADC_DATA_H,153
-						BRLO VPANEL_FIRST_DIG_IS_1
-						CPI ADC_DATA_H,166
-						BRLO VPANEL_FIRST_DIG_IS_2
-						CPI ADC_DATA_H,179
-						BRLO VPANEL_FIRST_DIG_IS_3
-						CPI ADC_DATA_H,192
-						BRLO VPANEL_FIRST_DIG_IS_4
-						CPI ADC_DATA_H,205
-						BRLO VPANEL_FIRST_DIG_IS_5
-						CPI ADC_DATA_H,217
-						BRLO VPANEL_FIRST_DIG_IS_6
-						CPI ADC_DATA_H,230
-						BRLO VPANEL_FIRST_DIG_IS_7
-						CPI ADC_DATA_H,243
-						BRLO VPANEL_FIRST_DIG_IS_8
-						RJMP VPANEL_FIRST_DIG_IS_9
-END_VPANEL_FIRST_DIG:	RET
-
-VPANEL_FIRST_DIG_IS_0:
-				STI X+,48+0	;Pongo el 0 ASCII en RAM
-				CLR AUX						
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_FIRST_DIG_IS_1:
-				STI X+,48+1	;Pongo el 1 ASCII en RAM
-				LDI AUX,1									;	¿PQ LDI DESPS DE STI????????
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_FIRST_DIG_IS_2:
-				STI X+,48+2	;Pongo el 2 ASCII en RAM
-				LDI AUX,2
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_FIRST_DIG_IS_3:
-				STI X+,48+3	;Pongo el 3 ASCII en RAM
-				LDI AUX,3
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_FIRST_DIG_IS_4:
-				STI X+,48+4	;Pongo el 4 ASCII en RAM
-				LDI AUX,4
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_FIRST_DIG_IS_5:
-				STI X+,48+5	;Pongo el 5 ASCII en RAM
-				LDI AUX,5
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_FIRST_DIG_IS_6:
-				STI X+,48+6	;Pongo el 6 ASCII en RAM
-				LDI AUX,6
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_FIRST_DIG_IS_7:
-				STI X+,48+7	;Pongo el 7 ASCII en RAM
-				LDI AUX,7
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_FIRST_DIG_IS_8:
-				STI X+,48+8	;Pongo el 8 ASCII en RAM
-				LDI AUX,8
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_FIRST_DIG_IS_9:
-				STI X+,48+9	;Pongo el 9 ASCII en RAM
-				LDI AUX,9
-				RJMP END_VPANEL_FIRST_DIG
-
-VPANEL_DEC_CP:	ADDP Z,AUX
-				LPM AUX,Z
-				SUB AUX,ADC_DATA_H
-				LDIW Z,VPANEL_DEC_TABLE*2
-				ADDP Z,AUX
-				LPM AUX,Z
-				ADDI AUX1,48
-				ST X,AUX1	;El ASCII del número en AUX.
-RET
+SET_VPANEL_DIG:
+					LPM AUX,Z+				;Leo de tabla en ROM
+					INC AUX					;Incremento lo leído porque se usará BRSH
+					CP ADC_DATA_H,AUX		;Veo si el número es menor al de la tabla a ver si encontramos el valor
+					BRSH END_SET_VPANEL_DIG	;Si es mayor o igual, sigo buscando
+											;ESTO NO ES LO QUE QUERES HACER
+					ADDI AUX1,48			;Le sumo 48 al número porque los números en ASCII comienzan a partir de 48
+					ADDI AUX2,48
+					ST X+,AUX2				;Guardo el x10
+					ST X+,AUX1				;Guardo el x1
+END_SET_VPANEL_DIG:	RET

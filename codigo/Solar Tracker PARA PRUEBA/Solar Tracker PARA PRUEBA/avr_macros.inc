@@ -75,8 +75,8 @@
 .endm
 
 .macro	sti		;@0,@1	; Guarda una constante de modo indirecto
-		ldi		AUX,@1	; Usa: variable auxiliar "t0" y un puntero
-		st		@0,AUX	; [3 ciclos, 2 words] @0={X, Y, Z}
+		ldi		AUX4,@1	; Usa: variable auxiliar "t0" y un puntero
+		st		@0,AUX4	; [3 ciclos, 2 words] @0={X, Y, Z}
 .endm
 
 .macro	stsi	;@0,@1	; Guarda una constante en SRAM

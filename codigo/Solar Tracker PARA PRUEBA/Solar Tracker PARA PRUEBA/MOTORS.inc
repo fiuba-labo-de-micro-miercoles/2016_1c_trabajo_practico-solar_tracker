@@ -89,36 +89,7 @@ MOTOR_ELEVATION_NORTH:
 	;OUTPUT	OCR1BL,AUX1
 RET
 
-smooth_move:
-	clr aux4
-_s:	inc aux4
-	OUTPUT	OCR1AL,AUX4
-	RCALL DELAY_100us
-	cpi aux4,150
-	brsh nxt
-	rcall delay_100us
-	rcall delay_100us
-nxt:
-	rcall delay_100us
-	rcall delay_100us
-	cp aux4,AUX3
-	brlo _s
-ret
 
-smooth_brake:
-	INPUT AUX4,OCR1AL
-
-JO:	OUTPUT	OCR1AL,AUX4
-	cpI aux4,140
-	brSH	ASDF
-	RCALL DELAY_100us
-	RCALL DELAY_100us
-ASDF:	RCALL DELAY_100us
-	RCALL DELAY_100us
-	RCALL DELAY_100us
-	dec aux4
-	brne JO
-ret
 
 MOTOR_ELEVATION_SOUTH:
 ;SETEO MOT_1 Y MOT_2
@@ -144,7 +115,7 @@ MOTOR_ELEVATION_SOUTH:
 
 RET
 
-MOTORS_OFF:
+MOTOR_AZIMUT_OFF:
 ;SETEO MOT_1 Y MOT_2
 ;SETEO LOS ENABLE
 ;SETEO EL PWM
@@ -157,13 +128,88 @@ MOTORS_OFF:
 	ANDI AUX,(~((1<<MOT_1)|(1<<MOT_2)))
 	OUTPUT PORTD,AUX
 
-	rcall smooth_brake
+	INPUT AUX4,OCR1BL
+
+brake_AZIMUT:
+	OUTPUT	OCR1BL,AUX4
+	cpI aux4,140
+	brSH	ASDF
+	RCALL DELAY_100us
+	RCALL DELAY_100us
+ASDF:	RCALL DELAY_100us
+	RCALL DELAY_100us
+	RCALL DELAY_100us
+	dec aux4
+	brne brake_AZIMUT
 
 	CLR	AUX
 	OUTPUT	OCR1AL,AUX
 	OUTPUT	OCR1AH,AUX
+RET
+
+MOTOR_ELEVATION_OFF:
+;SETEO MOT_1 Y MOT_2
+;SETEO LOS ENABLE
+;SETEO EL PWM
+	INPUT PWM_DATA,TCCR1A	;Timer/counter control register A
+	ANDI PWM_DATA,(~((1<<COM1A1)|(1<<COM1B1)|(1<<COM1A0)|(1<<COM1B0)|(1<<WGM10)|(1<<WGM11)))
+	ORI PWM_DATA,((1<<WGM10)|(0<<WGM11))	;fast PWM, non-inverting
+	OUTPUT TCCR1A,PWM_DATA
+
+	INPUT AUX,PORTD
+	ANDI AUX,(~((1<<MOT_1)|(1<<MOT_2)))
+	OUTPUT PORTD,AUX
+
+	INPUT AUX4,OCR1AL
+
+brake_elevation:
+	OUTPUT	OCR1AL,AUX4
+	cpI aux4,140
+	brSH	ASF
+	RCALL DELAY_100us
+	RCALL DELAY_100us
+ASF:	RCALL DELAY_100us
+	RCALL DELAY_100us
+	RCALL DELAY_100us
+	dec aux4
+	brne brake_elevation
+
+	CLR	AUX
 	OUTPUT	OCR1BL,AUX
 	OUTPUT	OCR1BH,AUX
 
-
 RET
+
+
+smooth_move:
+	clr aux4
+_s:	inc aux4
+	OUTPUT	OCR1AL,AUX4
+	OUTPUT	OCR1BL,AUX4
+	RCALL DELAY_100us
+	cpi aux4,150
+	brsh nxt
+	rcall delay_100us
+	rcall delay_100us
+nxt:
+	rcall delay_100us
+	rcall delay_100us
+	cp aux4,AUX3
+	brlo _s
+ret
+
+/*
+smooth_brake:
+	OUTPUT	OCR1AL,AUX4
+	OUTPUT	OCR1BL,AUX4
+	cpI aux4,140
+	brSH	ASDF
+	RCALL DELAY_100us
+	RCALL DELAY_100us
+ASDF:	RCALL DELAY_100us
+	RCALL DELAY_100us
+	RCALL DELAY_100us
+	dec aux4
+	brne smooth_brake
+ret
+*/
