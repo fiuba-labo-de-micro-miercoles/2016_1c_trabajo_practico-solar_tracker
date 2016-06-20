@@ -155,7 +155,6 @@ division:
 ;PROTOTYPE ADDP: POINTER,REG
 ;RECIBE: POINTER,REG
 ;DEVUELVE: Pointer en posición inicial + AUX
-	PUSH @1
 	ADD @0L,@1
 	BRVC NO_POINTER_OV
 	INC @0H

@@ -62,11 +62,9 @@ RET
 
 
 VBATTERY_TO_ASCII:
-;			rcall indicate_solar_panel_ok
-;			rcall delay_500ms
 
 					LDIW X,V_BATTERY_DATA
-VBATTERY_DIG:		LDIW Z,VBATTERY_DIG_TABLE*2
+VBATTERY_DIG:		LDIW Z,(VBATTERY_DIG_TABLE*2)
 					CLR AUX1
 					CLR AUX2
 LOOP_DIG_BATTERY:			
@@ -100,35 +98,20 @@ V_BATTERY_DEC:		LDIW Z,(VBATTERY_DIG_TABLE*2)
 					SUB AUX3,AUX1					
 					ADDI AUX3,48		;SE TRANSFORMA EN ASCII
 					CPI AUX3,':'
-					BREQ ajuste_9
+					BREQ ajuste_9_bat
 
-		vuelvo_9:	ST X+,AUX3	;El ASCII del número en AUX.
+vuelvo_9_bat:		ST X+,AUX3	;El ASCII del número en AUX.
 					STI	X+,'V'
 					STI X+,'\r'
 					STI X+,'\n'
 					STI	X,0
-
+					CLT
 RET	
 
-ajuste_9:
+ajuste_9_bat:
 		ldi aux3,'9'
-		rjmp vuelvo_9
+		rjmp vuelvo_9_bat
 		
-/*
-					LDI AUX3,11
-					SUB AUX3,AUX1
-					LDIW Z,(VBATTERY_DEC_TABLE*2)
-					ADDP Z,AUX3
-					LPM AUX,Z
-					ADDI AUX,48
-					STI	X+,'.'
-					ST X+,AUX	;El ASCII del número en AUX.
-					STI	X+,'V'
-					STI X+,'\r'
-					STI X+,'\n'
-					STI	X,0
-RET		
-*/
 SET_VBATTERY_DIG:
 					LPM AUX,Z+
 					INC AUX
@@ -140,7 +123,6 @@ SET_VBATTERY_DIG:
 					ST X+,AUX1
 					SET
 END_SET_VBATTERY_DIG:	RET
-
 
 
 

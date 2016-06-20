@@ -73,10 +73,10 @@ ORIENTATE_SOLAR_PANEL:
 	ANDI	AUX,0xF0
 	ANDI	AUX1,0xF0
 	CPI		AUX,0xF0
-	BRNE	NO_SON_F
+	BRNE	NO_SON_F_AZIMUT
 	SUB		AUX,AUX1
-	BREQ	AMBOS_SON_F
-NO_SON_F:
+	BREQ	AMBOS_SON_F_AZIMUT
+NO_SON_F_AZIMUT:
 	;COMPARAR_NO_NE:
 		INPUT AUX,LDR_NO_MEAN
 		INPUT AUX1,LDR_NE_MEAN
@@ -93,11 +93,39 @@ NO_SON_F:
 		CP AUX1,AUX
 		BRLO _MOTOR_AZIMUT_WEST
 	RETURN_MOTOR_AZIMUT_WEST:
+AMBOS_SON_F_AZIMUT:
 
-AMBOS_SON_F:
+;--------------------ACA NOS MOVEMOS CON NORTE Y SUR
 
+	INPUT AUX,LDR_NO_MEAN
+	INPUT AUX1,LDR_SO_MEAN
+	ANDI	AUX,0xF0
+	ANDI	AUX1,0xF0
+	CPI		AUX,0xF0
+	BRNE	NO_SON_F_ELEVATION
+	SUB		AUX,AUX1
+	BREQ	AMBOS_SON_F_ELEVATION
+NO_SON_F_ELEVATION:
+	;COMPARAR_NO_SO:
+		INPUT AUX,LDR_NO_MEAN
+		INPUT AUX1,LDR_SO_MEAN
+		ANDI	AUX,0xF0
+		ANDI	AUX1,0xF0
+		CP AUX,AUX1
+		BRLO _MOTOR_ELEVATION_NORTH
+	RETURN_MOTOR_ELEVATION_NORTH:
+
+		INPUT AUX,LDR_NO_MEAN
+		INPUT AUX1,LDR_SO_MEAN
+		ANDI	AUX,0xF0
+		ANDI	AUX1,0xF0
+		CP AUX1,AUX
+		BRLO _MOTOR_ELEVATION_SOUTH
+	RETURN_MOTOR_ELEVATION_SOUTH:
+AMBOS_SON_F_ELEVATION:
 
 RET
+
 
 _MOTOR_AZIMUT_EAST:
 	SUB AUX,AUX1
@@ -107,9 +135,10 @@ _MOTOR_AZIMUT_EAST:
 	RCALL MOTOR_AZIMUT_EAST
 		RCALL DELAY_50ms
 		RCALL DELAY_50ms
+		RCALL DELAY_50ms
+		RCALL DELAY_50ms
 	RCALL MOTOR_AZIMUT_OFF
-		RCALL DELAY_500ms
-		RCALL DELAY_500ms
+	;	RCALL DELAY_500ms
 RJMP RETURN_MOTOR_AZIMUT_EAST
 
 _MOTOR_AZIMUT_WEST:
@@ -120,72 +149,58 @@ _MOTOR_AZIMUT_WEST:
 	RCALL MOTOR_AZIMUT_WEST
 		RCALL DELAY_50ms
 		RCALL DELAY_50ms
+		RCALL DELAY_50ms
+		RCALL DELAY_50ms
 	RCALL MOTOR_AZIMUT_OFF
-		RCALL DELAY_500ms
-		RCALL DELAY_500ms
 RJMP RETURN_MOTOR_AZIMUT_WEST
 
-/*
-_MOTOR_AZIMUT_OFF:
-RCALL MOTORS_OFF
-RJMP RETURN_MOTORS_OFF
 
 _MOTOR_ELEVATION_SOUTH:
-RCALL MOTOR_ELEVATION_SOUTH
+	SUB AUX1,AUX
+	ORI	AUX1,0xAF
+	MOV	AUX3,AUX1
+
+	RCALL MOTOR_ELEVATION_SOUTH
+		RCALL DELAY_50ms
+		RCALL DELAY_50ms
+		RCALL DELAY_50ms
+		RCALL DELAY_50ms
+	RCALL MOTOR_ELEVATION_OFF
 RJMP RETURN_MOTOR_ELEVATION_SOUTH
 
 _MOTOR_ELEVATION_NORTH:
-RCALL MOTOR_ELEVATION_NORTH
+	SUB AUX1,AUX
+	ORI	AUX1,0xAF
+	MOV	AUX3,AUX1
+
+	RCALL MOTOR_ELEVATION_NORTH
+		RCALL DELAY_50ms
+		RCALL DELAY_50ms
+		RCALL DELAY_50ms
+		RCALL DELAY_50ms
+	RCALL MOTOR_ELEVATION_OFF
 RJMP RETURN_MOTOR_ELEVATION_NORTH
-*/
 
-/*
-		INPUT AUX,LDR_NO_MEAN
-		INPUT AUX1,LDR_NE_MEAN
-		CP AUX,AUX1
-		BREQ _MOTOR_AZIMUT_OFF
-	RETURN_MOTORS_OFF:
 
-	;COMPARAR_NO_SO:
-		INPUT AUX,LDR_NO_MEAN
-		INPUT AUX1,LDR_SO_MEAN
-		CP AUX,AUX1
-;MEJORAR: VER LA RESTA Y MOVER EN FUNCION DE ESO
-		BRLO _MOTOR_ELEVATION_UP
-	RETURN_MOTOR_ELEVATION_UP:
-
-		INPUT AUX,LDR_NO_MEAN
-		INPUT AUX1,LDR_SO_MEAN
-		CP AUX1,AUX
-		BRLO _MOTOR_ELEVATION_DOWN
-	RETURN_MOTOR_ELEVATION_DOWN:
-
-		INPUT AUX,LDR_NO_MEAN
-		INPUT AUX1,LDR_SO_MEAN
-		CP AUX,AUX1
-		BREQ _MOTOR_ELEVATION_OFF
-	RETURN_MOTOR_ELEVATION_OFF:
-*/
 
 
 VPANEL_TO_ASCII:
 				LDIW X,V_SOLAR_PANEL_DATA	;Apunto X a la sección de memoria donde se guarda la tensión a panel a transmitir
-				LDIW Z,VPANEL_DIG_TABLE*2	;Apunto Z a la sección de ROM donde se delimita cada unidad
-VPANEL_DIG:		LDI AUX3,18					;Cargo en AUX3 la cantidad de lecturas a la tabla
-				CLR AUX1					;Acá se guardará el x1
+				LDIW Z,(VPANEL_DIG_TABLE*2)	;Apunto Z a la sección de ROM donde se delimita cada unidad
+VPANEL_DIG:		CLR AUX1					;Acá se guardará el x1
 				CLR AUX2					;Acá se guardará el x10
 LOOP_DIG_PANEL:			
 				RCALL SET_VPANEL_DIG		;Busco el número
+				BRTS V_PANEL_DEC
 				INC AUX1					;Incremento para ver si es el siguiente en el prox ciclo
 				CPI AUX1,10					;Veo si superé 10 para ver si tengo que poner el x10 en 1
 				BRLO LOWER_THAN_10_DIG_PANEL;Si no superé 10, sigo el ciclo
 				CLR AUX1					;Si es 10, x1 es 0
 				INC AUX2					;Si es 10, x10 es 1
-LOWER_THAN_10_DIG_PANEL:	DEC AUX3		;Decremento para ver si vuelvo a recomenzar el ciclo
-				BRNE LOOP_DIG_PANEL			;Si no se completaron todos los ciclos, vuelvo a hacerlo
+LOWER_THAN_10_DIG_PANEL:	BRTC LOOP_DIG_PANEL
 				STI X+,48+1					;Si se completaron todos los ciclos, el x10 es 1
 				STI X+,48+9					;Si se completaron todos los ciclos, el x1 es 9
-V_PANEL_DEC:	LDIW Z,VPANEL_DIG_TABLE*2	;Vuelvo a apuntar Z al comienzo de la tabla donde están los números que delimitan cada unidad
+V_PANEL_DEC:	LDIW Z,(VPANEL_DIG_TABLE*2)	;Vuelvo a apuntar Z al comienzo de la tabla donde están los números que delimitan cada unidad
 				SUBI AUX1,48				;Lo vuelvo a convertir en número no ASCII
 				SUBI AUX2,48
 				LDI AUX3,10					;Cargo 10 en AUX3 para multiplicar el x10 por 10 y poder sumarselo al x1
@@ -195,19 +210,24 @@ V_PANEL_DEC:	LDIW Z,VPANEL_DIG_TABLE*2	;Vuelvo a apuntar Z al comienzo de la tab
 				ADDP Z,AUX1					;Le sumo al puntero Z la cantidad de posiciones que se tiene que mover en la tabla para ver el número máximo que puede tener esa unidad
 				LPM AUX1,Z					;Cargo el número delimitador
 				SUB AUX1,ADC_DATA_H			;Le resto al delimitador el número que medí
-				LDI AUX3,15
-				SUB AUX3,AUX1
-				LDIW Z,VPANEL_DEC_TABLE*2	;Apunto a Z a la tabla de decimales
-				ADDP Z,AUX3					;Le sumo la cantidad de posiciones que se tiene que mover en la tabla
-				LPM AUX,Z					;Cargo el número que se tiene como valor decimal
-				ADDI AUX,48					;Le sumo 48 para convertirlo en ASCII
 				STI	X+,'.'
-				ST X+,AUX					;Guardo el número en ASCII en el vector en RAM
+				SUB AUX3,AUX1					
+				ADDI AUX3,49		;SE TRANSFORMA EN ASCII
+				CPI AUX3,':'
+				BREQ ajuste_9_panel
+
+vuelvo_9_panel:	ST X+,AUX3	;El ASCII del número en AUX.
 				STI	X+,'V'
-				STI	X+,'\r'
-				STI	X+,'\n'
-				STI	X+,0
-RET		
+				STI X+,'\r'
+				STI X+,'\n'
+				STI	X,0
+				CLT
+RET
+
+ajuste_9_panel:
+				ldi aux3,'9'
+				rjmp vuelvo_9_panel
+	
 
 SET_VPANEL_DIG:
 					LPM AUX,Z+				;Leo de tabla en ROM
@@ -219,4 +239,5 @@ SET_VPANEL_DIG:
 					ADDI AUX2,48
 					ST X+,AUX2				;Guardo el x10
 					ST X+,AUX1				;Guardo el x1
+					SET
 END_SET_VPANEL_DIG:	RET
