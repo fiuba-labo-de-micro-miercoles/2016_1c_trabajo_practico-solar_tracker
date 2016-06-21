@@ -72,7 +72,7 @@ PWM_INIT_1:
 RET
 
 ;*****************************************************
-/*PWM_INIT_2:
+PWM_INIT_2:
 ;Se inicializan como salida los pines de PWM
 ;Se usa uno solo de los pines (para la luz), el otro es el MOSI, lo dejamos solo para programar
 	INPUT PWM_DATA,DDRD
@@ -92,8 +92,12 @@ RET
 	ANDI PWM_DATA,(~((1<<CS20)|(1<<CS21)|(1<<CS22)))
 	ORI PWM_DATA,((0<<CS20)|(1<<CS21)|(0<<CS22))	;Ver tabla prescalers al final del archivo
 	OUTPUT TCCR2B,PWM_DATA
+
+	CLR	AUX
+	OUTPUT	OCR2B,AUX
+
 RET
-*/
+
 
 
 ;*****************************************************

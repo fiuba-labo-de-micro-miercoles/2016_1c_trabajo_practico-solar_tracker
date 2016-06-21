@@ -11,7 +11,6 @@ SOLAR_PANEL_INIT:
 	ORI AUX,((1<<DDC0)|(1<<DDC1))
 	OUTPUT DDRC,AUX
 	RCALL INDICATE_SOLAR_PANEL_LOW
-
 	;INICIALIZO LA INFORMACION DE LA TENSION PARA TRANSMITIR POR BLUETOOTH
 	LDIW X,V_SOLAR_PANEL_DATA
 	STI	X+,'0'
@@ -24,6 +23,7 @@ SOLAR_PANEL_INIT:
 	STI	X,0
 
 RET
+;-------------------------------------------------------------------------
 
 READ_V_SOLAR_PANEL:
 ;RECIBE: NADA
@@ -61,9 +61,10 @@ INDICATE_SOLAR_PANEL_OK:
 	OUTPUT	PORTC,AUX
 	CLC										;[CARRY=1]: SOLAR_PANEL LOW. [CARRY=0]: SOLAR_PANEL OK
 RET
-
+;-------------------------------------------------------------------------
 
 ORIENTATE_SOLAR_PANEL:
+		RCALL PWM_INIT							;TIENE QUE ESTAR EN "PWM.inc"
 ;YA ESTAN LOS PROMEDIOS DE LOS LDR Y HAY QUE COMPARAR Y MOVER EL PANEL.
 ;PRIMERO EN ASIMUT, LUEGO EN ELEVACION.
 ;EL SOL SALE DEL ESTE Y SE PONE EN EL OESTE.
@@ -123,9 +124,8 @@ NO_SON_F_ELEVATION:
 		BRLO _MOTOR_ELEVATION_SOUTH
 	RETURN_MOTOR_ELEVATION_SOUTH:
 AMBOS_SON_F_ELEVATION:
-
 RET
-
+;-------------------------------------------------------------------------
 
 _MOTOR_AZIMUT_EAST:
 	SUB AUX,AUX1
@@ -180,13 +180,11 @@ _MOTOR_ELEVATION_NORTH:
 		RCALL DELAY_50ms
 	RCALL MOTOR_ELEVATION_OFF
 RJMP RETURN_MOTOR_ELEVATION_NORTH
-
-
-
+;-------------------------------------------------------------------------
 
 VPANEL_TO_ASCII:
 				LDIW X,V_SOLAR_PANEL_DATA	;Apunto X a la sección de memoria donde se guarda la tensión a panel a transmitir
-				LDIW Z,(VPANEL_DIG_TABLE*2)	;Apunto Z a la sección de ROM donde se delimita cada unidad
+				LDIW Z,VPANEL_DIG_TABLE*2	;Apunto Z a la sección de ROM donde se delimita cada unidad
 VPANEL_DIG:		CLR AUX1					;Acá se guardará el x1
 				CLR AUX2					;Acá se guardará el x10
 LOOP_DIG_PANEL:			
@@ -200,7 +198,7 @@ LOOP_DIG_PANEL:
 LOWER_THAN_10_DIG_PANEL:	BRTC LOOP_DIG_PANEL
 				STI X+,48+1					;Si se completaron todos los ciclos, el x10 es 1
 				STI X+,48+9					;Si se completaron todos los ciclos, el x1 es 9
-V_PANEL_DEC:	LDIW Z,(VPANEL_DIG_TABLE*2)	;Vuelvo a apuntar Z al comienzo de la tabla donde están los números que delimitan cada unidad
+V_PANEL_DEC:	LDIW Z,VPANEL_DIG_TABLE*2	;Vuelvo a apuntar Z al comienzo de la tabla donde están los números que delimitan cada unidad
 				SUBI AUX1,48				;Lo vuelvo a convertir en número no ASCII
 				SUBI AUX2,48
 				LDI AUX3,10					;Cargo 10 en AUX3 para multiplicar el x10 por 10 y poder sumarselo al x1
@@ -211,10 +209,11 @@ V_PANEL_DEC:	LDIW Z,(VPANEL_DIG_TABLE*2)	;Vuelvo a apuntar Z al comienzo de la t
 				LPM AUX1,Z					;Cargo el número delimitador
 				SUB AUX1,ADC_DATA_H			;Le resto al delimitador el número que medí
 				STI	X+,'.'
+				ldi	aux2,210		;MULTIPLICAR POR 160/256. DIVIDIR POR 256 ES QUEDARME CON LA PARTE ALTA
+				MUL	AUX1,AUX2
+				MOV	AUX1,R1
 				SUB AUX3,AUX1					
-				ADDI AUX3,49		;SE TRANSFORMA EN ASCII
-				CPI AUX3,':'
-				BREQ ajuste_9_panel
+				ADDI AUX3,48-1		;SE TRANSFORMA EN ASCII
 
 vuelvo_9_panel:	ST X+,AUX3	;El ASCII del número en AUX.
 				STI	X+,'V'
@@ -228,7 +227,6 @@ ajuste_9_panel:
 				ldi aux3,'9'
 				rjmp vuelvo_9_panel
 	
-
 SET_VPANEL_DIG:
 					LPM AUX,Z+				;Leo de tabla en ROM
 					INC AUX					;Incremento lo leído porque se usará BRSH
