@@ -11,8 +11,8 @@
 .CSEG
 PWM_INIT:
 ;	RCALL PWM_INIT_0
-	RCALL PWM_INIT_1
-;	RCALL PWM_INIT_2
+	RCALL PWM_SOLAR_PANEL_INIT
+	RCALL PWM_LIGHT_INIT
 ;COMENTO LA FUNCION ANTERIOR PORQUE VAMOS A USAR MOTORES DE CONTINUA PUESTOS EN OC1A Y OC1B QUE SON LOS DEL PUERTO B SOLAMENTE.
 RET
 
@@ -43,7 +43,7 @@ RET
 */
 ;*****************************************************
 
-PWM_INIT_1:
+PWM_SOLAR_PANEL_INIT:
 ;Se inicializan como salida los pines de PWM
 	INPUT PWM_DATA,DDRB
 	ANDI PWM_DATA,(~((1<<DDB1)|(1<<DDB2)))	;Mascara para tocar solo B1 Y B2
@@ -72,7 +72,7 @@ PWM_INIT_1:
 RET
 
 ;*****************************************************
-PWM_INIT_2:
+PWM_LIGHT_INIT:
 ;Se inicializan como salida los pines de PWM
 ;Se usa uno solo de los pines (para la luz), el otro es el MOSI, lo dejamos solo para programar
 	INPUT PWM_DATA,DDRD
