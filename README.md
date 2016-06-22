@@ -2,7 +2,7 @@
 
 # ¡GRACIAS A LOS QUE HICIERON POSIBLE ESTE PROYECTO!
 
-Mejoras: tomar promedio en los ldr's para luego mover.
+¡IMPORTANTE!: CHEQUEAR QUE HAGA BIEN EL PROMEDIO DE LAS MUESTRAS EN LA FUNCION ORIENTATE_SOLAR_PANEL
 
 Para configurar el oscilador externo a 8MHz:
 
