@@ -2,7 +2,7 @@
 
 # ¡GRACIAS A LOS QUE HICIERON POSIBLE ESTE PROYECTO!
 
-# CHEQUEAR QUE ANDE LA CALIBRACION, LA LUZ Y EL TIEMPO EN ROTAR CUANDO SE VAYA A DORMIR
+Mejoras: tomar promedio en los ldr's para luego mover.
 
 Para configurar el oscilador externo a 8MHz:
 
