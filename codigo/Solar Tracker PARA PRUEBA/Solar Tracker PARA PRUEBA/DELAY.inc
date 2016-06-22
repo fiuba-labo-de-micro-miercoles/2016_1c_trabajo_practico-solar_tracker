@@ -17,6 +17,19 @@ L4: dec  AUX1
     brne L4
 RET
 
+DELAY_25ms:
+    ldi  r18, 2
+    ldi  r19, 4
+    ldi  r20, 187
+L5: dec  r20
+    brne L5
+    dec  r19
+    brne L5
+    dec  r18
+    brne L5
+    nop
+RET
+
 DELAY_50ms:
 
     ldi  AUX, 3
